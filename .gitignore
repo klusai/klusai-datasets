@@ -13,9 +13,11 @@ htmlcov/
 # Secrets
 .env
 
-# Generated / downloaded data — published to HF, never committed
-artifacts/
-data/
+# Generated / downloaded data — published to HF, never committed.
+# Anchored to repo root with a leading slash so they DON'T match the package dir
+# klusai/privacy/datasets/data/ (which holds source, not generated data).
+/artifacts/
+/data/
 *.jsonl
 *.log
 
