@@ -21,3 +21,6 @@ data/
 
 # OS
 .DS_Store
+
+# Local review artifact
+review.html
