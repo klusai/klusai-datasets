@@ -5,7 +5,7 @@ description = "KlusAI Privacy datasets — sourcing, synthetic generation, norma
 requires-python = ">=3.13"
 dependencies = [
     "datasets>=4.0",
-    "huggingface-hub>=0.25,<1",
+    "huggingface-hub>=0.25,<2",
     "pyyaml>=6.0,<7",
     "pydantic>=2.0,<3",
     "click>=8.1,<9",
