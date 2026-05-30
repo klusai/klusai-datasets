@@ -1,0 +1,29 @@
+# Registry of KP datasets: sources, domains, languages, licenses.
+# Only cleanly-licensed sources are eligible for the redistributable benchmark.
+
+sources:
+  ai4privacy-openpii:
+    hf_id: ai4privacy/open-pii-masking-500k-ai4privacy
+    license: CC-BY-4.0        # open core only; exclude Llama-bound enterprise tiers
+    domain: general
+    role: train               # train | gold-eval | weak-supervision
+  tab-echr:
+    url: https://github.com/NorskRegnesentral/text-anonymization-benchmark
+    license: open
+    domain: legal
+    role: gold-eval
+  meddocan:
+    url: https://zenodo.org/records/4279323
+    license: open-synthetic
+    domain: clinical
+    role: gold-eval
+  eurlex:
+    hf_id: dennlinger/eur-lex-sum
+    license: CC-BY-SA-4.0
+    domain: legal
+    role: weak-supervision
+
+# Synthetic datasets we generate (Phase 2). Named ds-kp-{domain}-{lang}-{size}.
+synthetic:
+  - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
+  - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }

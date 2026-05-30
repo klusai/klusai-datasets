@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+htmlcov/
+.coverage
+
+# Secrets
+.env
+
+# Generated / downloaded data — published to HF, never committed
+artifacts/
+data/
+*.jsonl
+*.log
+
+# OS
+.DS_Store
