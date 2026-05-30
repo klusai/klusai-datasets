@@ -16,7 +16,7 @@ import random
 import string
 from dataclasses import dataclass
 
-from europriv_bench.national_id import check_digit, validate_cnp
+from europriv_bench.national_id import check_digit, parse_cnp, validate_cnp
 
 # (CNP county code, plate prefix, county name) — a curated, correct subset.
 COUNTIES = [
@@ -36,6 +36,7 @@ class Person:
     last_name: str
     sex: str          # "M" | "F"
     cnp: str
+    dob: str          # DD.MM.YYYY — DERIVED from the CNP (must stay consistent with it)
     county: str       # name
     address: str
     postcode: str
@@ -43,14 +44,25 @@ class Person:
     iban: str
 
 
-def gen_cnp(rng: random.Random, county_code: str, sex: str) -> str:
-    """Valid CNP for a given county + sex (1900s/2000s births)."""
-    s = rng.choice([1, 5]) if sex == "M" else rng.choice([2, 6])  # century+sex digit
-    year = rng.randint(0, 99)
+def gen_cnp(rng: random.Random, county_code: str, sex: str, birth_year: int | None = None) -> str:
+    """Valid CNP for a given county + sex, encoding a PLAUSIBLE birth date.
+
+    Per HG 1375/2006, the first digit S jointly encodes sex + century (1=M/1900s, 2=F/1900s,
+    5=M/2000s, 6=F/2000s) and AALLZZ is the birth date. We pick a realistic birth year (default
+    1940–2010) and derive S/AA from it, so the encoded date is plausible (never future) and the
+    document's stated date of birth can be derived back from the CNP (see gen_person.dob).
+    """
+    if birth_year is None:
+        birth_year = rng.randint(1940, 2010)
+    century_2000s = birth_year >= 2000
+    if sex == "M":
+        s = 5 if century_2000s else 1
+    else:
+        s = 6 if century_2000s else 2
     month = rng.randint(1, 12)
-    day = rng.randint(1, 28)
+    day = rng.randint(1, 28)  # ≤28 → always a valid day regardless of month/leap year
     seq = rng.randint(1, 999)
-    base = f"{s}{year:02d}{month:02d}{day:02d}{county_code}{seq:03d}"
+    base = f"{s}{birth_year % 100:02d}{month:02d}{day:02d}{county_code}{seq:03d}"
     return base + str(check_digit(base))
 
 
@@ -97,16 +109,24 @@ def gen_ci(rng: random.Random) -> str:
     return f"{rng.choice(CI_SERIES)} {rng.randint(100000, 999999)}"
 
 
+def _iso_to_ddmmyyyy(iso: str) -> str:
+    y, m, d = iso.split("-")
+    return f"{d}.{m}.{y}"
+
+
 def gen_person(rng: random.Random) -> Person:
-    """A coherent synthetic person: CNP county == address county, CNP sex == name sex."""
+    """A coherent synthetic person: CNP county == address county, CNP sex == name sex,
+    and the date of birth is DERIVED from the CNP (so they always agree)."""
     code, _plate, county = rng.choice(COUNTIES)
     sex = rng.choice(["M", "F"])
     first = rng.choice(MALE_NAMES if sex == "M" else FEMALE_NAMES)
+    cnp = gen_cnp(rng, code, sex)
     return Person(
         first_name=first,
         last_name=rng.choice(SURNAMES),
         sex=sex,
-        cnp=gen_cnp(rng, code, sex),
+        cnp=cnp,
+        dob=_iso_to_ddmmyyyy(parse_cnp(cnp).birth_date),  # consistent with the CNP by construction
         county=county,
         address=f"{rng.choice(STREETS)} nr. {rng.randint(1, 200)}, {county}",
         postcode=f"{rng.randint(100000, 999999)}",

@@ -18,15 +18,15 @@ from __future__ import annotations
 import random
 import unicodedata
 
-
-def _ascii(s: str) -> str:
-    """ASCII-fold Romanian diacritics (ă→a, î/â→i/a, ș→s, ț→t) for realistic emails."""
-    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
-
 from europriv_bench.spans import Span, char_spans_to_bioes, validate_bioes
 
 from .ro_documents import Doc, _fill
 from .ro_generators import COUNTIES, gen_ci, gen_cui, gen_person
+
+
+def _ascii(s: str) -> str:
+    """ASCII-fold Romanian diacritics (ă→a, î/â→i/a, ș→s, ț→t) for realistic emails."""
+    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
 HOSPITALS = ["Spitalul Clinic Județean", "Spitalul Municipal", "Spitalul Clinic de Urgență"]
 COMPANIES = ["SC ExempluServ SRL", "SC TehnoPlus SRL", "SC ContabExpert SRL", "SC MediCare SRL"]
@@ -104,8 +104,8 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
         "doctor": (f"{doctor.first_name} {doctor.last_name}", "PERSON"),
         "cnp": (patient.cnp, "NATIONAL_ID"),
         "ci": (gen_ci(rng), "NATIONAL_ID"),
-        "cass": (gen_person(rng).cnp, "NATIONAL_ID"),  # cod asigurat (distinct synthetic CNP)
-        "dob": (f"{rng.randint(1,28):02d}.{rng.randint(1,12):02d}.{rng.randint(1950,2005)}", "DATE"),
+        "cass": (patient.cnp, "NATIONAL_ID"),  # cod unic de asigurare = CNP (real RO practice)
+        "dob": (patient.dob, "DATE"),  # DERIVED from the CNP → birthday matches the CNP
         "address": (patient.address, "ADDRESS"),
         "address2": (doctor.address, "ADDRESS"),
         "phone": (patient.phone, "PHONE"),

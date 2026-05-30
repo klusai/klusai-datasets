@@ -29,6 +29,10 @@ def test_person_is_coherent():
         info = parse_cnp(p.cnp)
         assert info.valid
         assert info.sex == p.sex                 # CNP sex matches the chosen name's sex
+        # date of birth is decoded FROM the CNP (ISO YYYY-MM-DD ↔ displayed DD.MM.YYYY)
+        y, mo, da = info.birth_date.split("-")
+        assert p.dob == f"{da}.{mo}.{y}"
+        assert 1940 <= int(y) <= 2010            # plausible, never future
         assert p.county in p.address             # address county is consistent
         # CNP county code corresponds to the person's county.
         code = next(c for c, _pl, name in COUNTIES if name == p.county)
