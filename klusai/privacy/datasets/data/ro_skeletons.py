@@ -50,7 +50,7 @@ Domiciliu: {address}
 Telefon: {phone}
 
 Diagnostic principal: {condition} .
-Istoricul bolii: Pacientul s-a prezentat în data de {date} acuzând simptomatologia descrisă.
+Istoricul bolii: {pacient_word} s-a prezentat în data de {date} acuzând simptomatologia descrisă.
 Recomandări la externare: tratament conform schemei, control peste 30 de zile.
 
 Medic curant: Dr. {doctor}
@@ -68,7 +68,7 @@ Prezentul contract s-a încheiat astăzi, {date} , în două exemplare."""),
 
     ("legal", """DECLARAȚIE PE PROPRIA RĂSPUNDERE
 
-{subsemnat} {patient} , CNP {cnp} , {posesor} al actului de identitate seria/nr. {ci} ,
+{subsemnat} {patient} , CNP {cnp} , {posesor} actului de identitate seria/nr. {ci} ,
 {domiciliat} în {address} , telefon {phone} , e-mail {email} , declar pe propria răspundere,
 cunoscând prevederile legale privind falsul în declarații, că datele furnizate sunt reale.
 
@@ -98,8 +98,9 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
     return {
         "subsemnat": ("Subsemnatul" if m else "Subsemnata", "O"),
         "domiciliat": ("domiciliat" if m else "domiciliată", "O"),
-        "posesor": ("posesor" if m else "posesoare", "O"),
+        "posesor": ("posesor al" if m else "posesoare a", "O"),  # genitive article agrees w/ posesor(-oare)
         "salutation": ("Stimate domnule" if m else "Stimată doamnă", "O"),
+        "pacient_word": ("Pacientul" if m else "Pacienta", "O"),
         "patient": (f"{patient.first_name} {patient.last_name}", "PERSON"),
         "doctor": (f"{doctor.first_name} {doctor.last_name}", "PERSON"),
         "cnp": (patient.cnp, "NATIONAL_ID"),
