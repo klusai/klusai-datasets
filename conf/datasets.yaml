@@ -23,7 +23,15 @@ sources:
     domain: legal
     role: weak-supervision
 
-# Synthetic datasets we generate (Phase 2). Named ds-kp-{domain}-{lang}-{size}.
+# Synthetic datasets we generate. Named ds-kp-{domain}-{lang}-{size}. Released volumes (SLUGs) are
+# built from per-locale LocalePack generators (PACKs) via scripts/release_dataset.py: each row
+# carries gold spans emitted at generation time (byte-equality + strict BIOES), CC-BY-4.0, no real
+# data subject. Legal/clinical real-structure synthesis is H2.
 synthetic:
+  # Stage-A general-domain bring-up — published (50k each, validation PASS).
+  - { name: ds-kp-general-ro-50k, domain: general, language: ro, n: 50000, pack: ro, license: CC-BY-4.0 }
+  - { name: ds-kp-general-en-50k, domain: general, language: en, n: 50000, pack: en, license: CC-BY-4.0 }
+  - { name: ds-kp-general-pl-50k, domain: general, language: pl, n: 50000, pack: pl, license: CC-BY-4.0 }
+  # H2 (legal/clinical real-structure synthesis).
   - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
   - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }
