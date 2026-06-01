@@ -17,6 +17,7 @@ def _load_packs():
     """Lazily import the per-locale packs (avoids import cost / cycles at package import time)."""
     from .en_documents import en_pack
     from .pl_documents import pl_pack
+    from .pl_skeletons import pl_skeleton_pack
     from .ro_documents import ro_pack
     from .ro_skeletons import ro_skeleton_pack
 
@@ -24,6 +25,7 @@ def _load_packs():
         "ro": ro_pack,
         "ro-realskeleton": ro_skeleton_pack,
         "pl": pl_pack,
+        "pl-realskeleton": pl_skeleton_pack,
         "en": en_pack,
     }
 
