@@ -14,11 +14,21 @@ structures — a later step.
 from __future__ import annotations
 
 import random
-from dataclasses import dataclass
 
-from europriv_bench.spans import Span, char_spans_to_bioes, validate_bioes
+from europriv_bench.national_id import validate_cnp
 
-from .ro_generators import gen_cui, gen_person
+# ``Doc`` and ``_fill`` live in ``localepack`` (the splice IS the shared abstraction); re-exported
+# here so existing imports (``from .ro_documents import Doc, _fill``) keep working.
+from .localepack import ChecksummedID, Doc, LocalePack, _fill
+from .ro_generators import (
+    cui_valid,
+    gen_cui,
+    gen_iban_ro,
+    gen_person,
+    iban_ro_valid,
+)
+
+__all__ = ["Doc", "_fill", "TEMPLATES", "gen_document", "generate_dataset", "ro_pack"]
 
 # Templates: {slot} markers map to (value-builder, KP label). Slots are always whitespace/
 # punctuation separated so two entities never share a whitespace token.
@@ -43,13 +53,6 @@ TEMPLATES = [
 ]
 
 
-@dataclass
-class Doc:
-    text: str
-    spans: list[dict]
-    domain: str
-
-
 def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
     """Build a coherent set of slot → (value, KP-label)."""
     p = gen_person(rng)
@@ -67,42 +70,35 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
     }
 
 
-def _fill(template: str, fields: dict[str, tuple[str, str]]) -> tuple[str, list[dict]]:
-    """Splice values into the template, recording exact char spans. Offset-correct by construction.
-
-    Each span keeps the intended ``value`` so the caller can byte-equality-assert against the
-    re-extracted ``text[start:end]`` (catches any _fill bug), then drop it before output.
-    """
-    text = ""
-    spans: list[dict] = []
-    i = 0
-    while i < len(template):
-        if template[i] == "{":
-            j = template.index("}", i)
-            value, label = fields[template[i + 1:j]]
-            start = len(text)
-            text += value
-            spans.append({"start": start, "end": len(text), "label": label, "value": value})
-            i = j + 1
-        else:
-            text += template[i]
-            i += 1
-    return text, spans
-
-
 def gen_document(rng: random.Random) -> Doc:
-    domain, template = rng.choice(TEMPLATES)
-    text, spans = _fill(template, _fields(rng))
-    # Byte-equality self-check + well-formed BIOES projection (catches token collisions).
-    for sp in spans:
-        assert text[sp["start"]:sp["end"]] == sp.pop("value"), "offset mismatch"
-    validate_bioes(char_spans_to_bioes(text, [Span(s["start"], s["end"], s["label"]) for s in spans]))
-    return Doc(text=text, spans=spans, domain=domain)
+    """Offset-validated RO document. Delegates to the shared splice/byte-equality/BIOES gate.
+
+    Behavior-preserving: ``fill_document`` runs the exact same ``_fill`` splice, byte-equality
+    asserts, and strict ``char_spans_to_bioes`` + ``validate_bioes`` projection as before, with the
+    same RNG call order (``rng.choice(TEMPLATES)`` then ``_fields(rng)``), so seeded output is
+    unchanged.
+    """
+    return ro_pack.gen_document(rng)
 
 
 def generate_dataset(n: int, seed: int = 0):
     """Yield n offset-validated RO documents ({text, spans, language, domain})."""
-    rng = random.Random(seed)
-    for _ in range(n):
-        doc = gen_document(rng)
-        yield {"text": doc.text, "spans": doc.spans, "language": "ro", "domain": doc.domain}
+    return ro_pack.generate_dataset(n, seed=seed)
+
+
+def _gen_cnp_selftest(rng: random.Random) -> str:
+    """CNP draw for the self-test: a whole coherent person's CNP (county code + sex chosen together)."""
+    return gen_person(rng).cnp
+
+
+ro_pack = LocalePack(
+    language="ro",
+    name="Romanian",
+    checksummed_ids=(
+        ChecksummedID("CNP", _gen_cnp_selftest, validate_cnp),
+        ChecksummedID("IBAN", gen_iban_ro, iban_ro_valid),
+        ChecksummedID("CUI", gen_cui, cui_valid),
+    ),
+    fields=_fields,
+    templates=tuple(TEMPLATES),
+)

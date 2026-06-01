@@ -18,10 +18,11 @@ from __future__ import annotations
 import random
 import unicodedata
 
-from europriv_bench.spans import Span, char_spans_to_bioes, validate_bioes
+from europriv_bench.national_id import validate_cnp
 
-from .ro_documents import Doc, _fill
-from .ro_generators import COUNTIES, gen_ci, gen_cui, gen_person
+from .localepack import ChecksummedID, LocalePack
+from .ro_documents import Doc
+from .ro_generators import COUNTIES, cui_valid, gen_ci, gen_cui, gen_person
 
 
 def _ascii(s: str) -> str:
@@ -123,19 +124,34 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
 
 
 def gen_document(rng: random.Random) -> Doc:
-    domain, template = rng.choice(TEMPLATES)
-    fields = _fields(rng)
-    text, spans = _fill(template, fields)
-    spans = [s for s in spans if s["label"] != "O"]  # drop non-PII filled slots (e.g. section)
-    for sp in spans:
-        assert text[sp["start"]:sp["end"]] == sp.pop("value"), "offset mismatch"
-    validate_bioes(char_spans_to_bioes(text, [Span(s["start"], s["end"], s["label"]) for s in spans]))
-    return Doc(text=text, spans=spans, domain=domain)
+    """Offset-validated faithful-structure RO document.
+
+    Behavior-preserving delegation to the shared splice/byte-equality/strict-BIOES gate (same RNG
+    call order: ``rng.choice(TEMPLATES)`` then ``_fields(rng)``; non-PII "O" slots dropped before
+    projection — identical to the previous inline implementation).
+    """
+    return ro_skeleton_pack.gen_document(rng)
 
 
 def generate_dataset(n: int, seed: int = 0):
     """Yield n offset-validated faithful-structure RO documents ({text, spans, language, domain})."""
-    rng = random.Random(seed)
-    for _ in range(n):
-        d = gen_document(rng)
-        yield {"text": d.text, "spans": d.spans, "language": "ro", "domain": d.domain}
+    return ro_skeleton_pack.generate_dataset(n, seed=seed)
+
+
+def _gen_cnp_selftest(rng: random.Random) -> str:
+    return gen_person(rng).cnp
+
+
+# ro-realskeleton-v1 pack. CI (seria + număr) has no national checksum, so it's documented under
+# ``no_checksum_ids`` rather than faked into the self-test.
+ro_skeleton_pack = LocalePack(
+    language="ro",
+    name="Romanian (real-skeleton)",
+    checksummed_ids=(
+        ChecksummedID("CNP", _gen_cnp_selftest, validate_cnp),
+        ChecksummedID("CUI", gen_cui, cui_valid),
+    ),
+    fields=_fields,
+    templates=tuple(TEMPLATES),
+    no_checksum_ids=("CI",),  # Romanian ID-card seria/număr carries no published checksum
+)
