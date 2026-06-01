@@ -10,10 +10,10 @@ help:
 	@echo "  make check    - test + lint"
 
 install:
-	# europriv-bench is the shared source of truth (taxonomy + spans). Install the sibling
-	# editable first so the dependency resolves locally without a package index.
-	$(RUN) pip install -e ../europriv-bench
+	# Install self (pulls europriv-bench from GitHub), then override with the sibling editable
+	# so local changes to the shared taxonomy/spans are picked up during development.
 	$(RUN) pip install -e '.[dev]'
+	$(RUN) pip install -e ../europriv-bench
 
 test:
 	$(RUN) coverage run -m pytest
