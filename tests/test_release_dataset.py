@@ -46,6 +46,9 @@ def test_card_carries_all_required_fields():
         assert needle in card, f"card missing {needle!r}"
     # PACK vs SLUG distinction is explicit.
     assert "PACK" in card and "SLUG" in card
+    # Contamination pre-declaration present (KLU-51/54 trap): frontmatter flag + in_distribution note.
+    assert "contamination_role: train" in card
+    assert "in_distribution" in card
     # Valid YAML frontmatter header.
     assert card.startswith("---\n")
 

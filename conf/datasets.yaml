@@ -27,11 +27,25 @@ sources:
 # built from per-locale LocalePack generators (PACKs) via scripts/release_dataset.py: each row
 # carries gold spans emitted at generation time (byte-equality + strict BIOES), CC-BY-4.0, no real
 # data subject. Legal/clinical real-structure synthesis is H2.
+#
+# Contamination pre-declaration (the KLU-51/54 trap): every synthetic config below is intended to
+# become kp-deid-v2 TRAINING data (KLU-106). Therefore any model trained on a given config MUST
+# score the MATCHING general benchmark config as contamination=in_distribution — these are not a
+# held-out evaluation set for such a model. The per-config `contamination_role: train` flag below
+# (and the matching note in each dataset card emitted by scripts/release_dataset.py) records this so
+# KLU-106 cannot silently score in-distribution as if it were held-out.
 synthetic:
   # Stage-A general-domain bring-up — published (50k each, validation PASS).
-  - { name: ds-kp-general-ro-50k, domain: general, language: ro, n: 50000, pack: ro, license: CC-BY-4.0 }
-  - { name: ds-kp-general-en-50k, domain: general, language: en, n: 50000, pack: en, license: CC-BY-4.0 }
-  - { name: ds-kp-general-pl-50k, domain: general, language: pl, n: 50000, pack: pl, license: CC-BY-4.0 }
+  - { name: ds-kp-general-ro-50k, domain: general, language: ro, n: 50000, pack: ro, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-en-50k, domain: general, language: en, n: 50000, pack: en, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-pl-50k, domain: general, language: pl, n: 50000, pack: pl, license: CC-BY-4.0, contamination_role: train }
+  # T1 multilingual breadth (KLU-102 — generate + validate here; publishing to HF is KLU-107).
+  # IT is the critical-path decode-bearing identifier (codice fiscale → KLU-105/106).
+  - { name: ds-kp-general-it-50k, domain: general, language: it, n: 50000, pack: it, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-de-50k, domain: general, language: de, n: 50000, pack: de, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-fr-50k, domain: general, language: fr, n: 50000, pack: fr, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-es-50k, domain: general, language: es, n: 50000, pack: es, license: CC-BY-4.0, contamination_role: train }
+  - { name: ds-kp-general-nl-50k, domain: general, language: nl, n: 50000, pack: nl, license: CC-BY-4.0, contamination_role: train }
   # H2 (legal/clinical real-structure synthesis).
   - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
   - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }
