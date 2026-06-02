@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Publish the Polish real-skeleton config (pl-realskeleton-v1) to EuroPriv-Bench.
 
-The *citable* PL track and the SECOND decode-bearing measurement (after RO/CNP): faithful
+A citable-track candidate (config_status=dev; not yet validated — pending native-speaker review +
+IAA, KLU-27) and the SECOND, zero-shot decode-bearing measurement (after RO/CNP): faithful
 real-structure documents (hospital discharge card `KARTA INFORMACYJNA LECZENIA SZPITALNEGO`,
 services contract `UMOWA O ŚWIADCZENIE USŁUG`, declaration `OŚWIADCZENIE`, administrative letter)
 with synthetic PII (valid PESEL, PESEL-consistent DOB, PL NIP/REGON/IBAN/dowód/addresses).
@@ -28,21 +29,31 @@ CARD_NOTE = """
 
 ## Polish config: `pl-realskeleton-v1`
 
-The **citable Polish track** and the **second decode-bearing measurement** (after
-`ro-realskeleton-v1`): documents that mirror the STRUCTURE and boilerplate of real Polish official
-document types — the hospital discharge card `KARTA INFORMACYJNA LECZENIA SZPITALNEGO`, a services
-contract `UMOWA O ŚWIADCZENIE USŁUG`, a declaration `OŚWIADCZENIE`, and an administrative letter —
-populated with **synthetic** Polish identifiers (valid-checksum **PESEL**, **PESEL-consistent date
-of birth**, NIP/REGON/IBAN, dowód osobisty, addresses, +48 phones), with Polish gender agreement.
-Because the skeletons are authored faithful reproductions of *public document structure* and all
-identifiers are synthetic, the artifact carries **no real personal data** and is
-CC-BY-redistributable.
+A **citable-track candidate** (currently `config_status=dev`; not yet validated — pending
+native-speaker review + IAA, KLU-27) and the **second, zero-shot decode-bearing measurement**
+(after `ro-realskeleton-v1`): documents that mirror the STRUCTURE and boilerplate of real Polish
+official document types — the hospital discharge card `KARTA INFORMACYJNA LECZENIA SZPITALNEGO`, a
+services contract `UMOWA O ŚWIADCZENIE USŁUG`, a declaration `OŚWIADCZENIE`, and an administrative
+letter — populated with **synthetic** Polish identifiers (valid-checksum **PESEL**,
+**PESEL-consistent date of birth**, NIP/REGON/IBAN, dowód osobisty, addresses, +48 phones), with
+Polish gender agreement. Because the skeletons are authored faithful reproductions of *public
+document structure* (Polish official documents/materials — *dokumenty i materiały urzędowe* — are
+excluded from copyright under Art. 4 of the Polish Copyright Act, ustawa o prawie autorskim i
+prawach pokrewnych; the document *structure* is therefore non-copyright) and all identifiers are
+synthetic, the artifact carries **no real personal data** and is CC-BY-redistributable.
 
 Every row carries `country="PL"` so the country-dispatched `national_id_leakage` metric validates
 and decodes the gold IDs with the **PESEL** validator (a missed PESEL deterministically discloses
-DATE_OF_BIRTH + SEX). The discharge card legitimately repeats the patient PESEL (identity header +
-`Identyfikator pacjenta`); re-identification is counted **per distinct subject**, so the repeat
-collapses to one subject (KLU-49 dedup) and never double-counts.
+DATE_OF_BIRTH + SEX). The protection result here is **zero-shot**: `kp-deid-mdeberta-280m` leaks
+0% PESEL on PL despite being RO-trained and never having seen Polish (zero-shot transfer, not
+PL-trained performance). The protection-vs-leak contrast on PL is carried by **GLiNER (~58%)** and
+**tabularisai (~31%)**; note `openai/privacy-filter` also leaks ~0% PESEL on PL, so the
+"type-accurate detectors leak" story holds for **2 of 4** baselines here, not universally. All four
+templates are **one authored skeleton family** sharing a single fill path — a leak headline from a
+single template family is not validated generalization, so a second independent template family is
+required before this is cited. The discharge card legitimately repeats the patient PESEL (identity
+header + `Identyfikator pacjenta`); re-identification is counted **per distinct subject**, so the
+repeat collapses to one subject (KLU-49 dedup) and never double-counts.
 
 Pair with `ro-realskeleton-v1` (the first decode-bearing track): together they test whether the
 train-for-protection result holds on a SECOND identifier (PESEL) in a SECOND language (PL).

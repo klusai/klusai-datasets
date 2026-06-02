@@ -13,9 +13,17 @@ synthetic — so the artifact is GDPR-clean and CC-BY-redistributable, and human
 quality spot-check, not a personal-data hunt.
 
 Offset-determinism, the byte-equality assert and the strict BIOES gate are inherited unchanged
-from the shared ``localepack.fill_document`` (same invariants as RO). This is the **second
-decode-bearing track** (PESEL/PL) replicating the RO/CNP protection measurement: scored with
-``national_id_leakage`` (a missed PESEL deterministically discloses DATE_OF_BIRTH + SEX).
+from the shared ``localepack.fill_document`` (same invariants as RO). This is the **second,
+zero-shot decode-bearing measurement** (PESEL/PL): the RO-trained kp-deid model leaks 0% PESEL
+on PL having never seen Polish (zero-shot transfer, not PL-trained performance), with the
+protection-vs-leak contrast carried by GLiNER (~58%) and tabularisai (~31%) — note
+``openai/privacy-filter`` also leaks ~0% PESEL on PL, so that "typed detectors leak" story holds
+for 2 of 4 baselines here, not universally. Scored with ``national_id_leakage`` (a missed PESEL
+deterministically discloses DATE_OF_BIRTH + SEX). This config is ``config_status=dev`` — a
+citable-track candidate, not yet validated (pending native-speaker review + IAA, KLU-27). All
+four templates are one authored skeleton family sharing a single fill path; a leak headline from
+a single template family is not validated generalization — a second independent template family
+is required before this is cited.
 
 Re-identification accounting is **per distinct subject** (KLU-49): the discharge-card template
 deliberately repeats the patient's PESEL — once in the identity header and again in the
