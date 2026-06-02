@@ -16,6 +16,7 @@ assert → strict BIOES projection). The synthetic-context (`ro-synthetic-v1`) v
 from __future__ import annotations
 
 import random
+import re
 import unicodedata
 
 from europriv_bench.national_id import validate_cnp
@@ -134,8 +135,73 @@ def gen_document(rng: random.Random) -> Doc:
 
 
 def generate_dataset(n: int, seed: int = 0):
-    """Yield n offset-validated faithful-structure RO documents ({text, spans, language, domain})."""
+    """Yield n offset-validated faithful-structure RO documents ({text, spans, language, domain}).
+
+    Family A only (official-correspondence genre). For the published ``ro-realskeleton-v1`` config —
+    which now spans **two independent template families** (KLU-101) — use
+    :func:`generate_combined_dataset`.
+    """
     return ro_skeleton_pack.generate_dataset(n, seed=seed)
+
+
+def generate_combined_dataset(n_per_family: int, seed: int = 0):
+    """Yield ``2 * n_per_family`` rows: family A then family B, each row tagged with its ``family``.
+
+    The two families draw from **disjoint subject pools** (different name lists) and use independent
+    seeds, so no synthetic subject is shared across families. Pre-register ``n_per_family`` so the
+    per-family protector-leak Wilson upper bound is ≤ 0.02 at ≈0 leak (KLU-101 — typically ≥150–200
+    distinct subjects/family).
+    """
+    from .ro_skeletons_edu import ro_skeleton_edu_pack
+
+    # Distinct seeds per family so the two PII streams never coincide.
+    yield from ro_skeleton_pack.generate_dataset(n_per_family, seed=seed)
+    yield from ro_skeleton_edu_pack.generate_dataset(n_per_family, seed=seed + 1)
+
+
+# --------------------------------------------------------------------------- #
+# KLU-101 independence gate: token 5-gram Jaccard overlap between the two families'
+# fixed skeleton text (PII slots masked). Computed from the template literals so it is a
+# deterministic, falsifiable hard gate (asserted in make check), not eyeballing.
+# --------------------------------------------------------------------------- #
+_SLOT_RE = re.compile(r"\{[a-z0-9_]+\}")
+
+
+def _masked_skeleton_tokens(template: str) -> list[str]:
+    """Tokenize a template's FIXED text with every PII ``{slot}`` collapsed to a single ``§`` mask.
+
+    Masking the slots is what makes this a comparison of *skeleton boilerplate* (the authored fixed
+    text) rather than of the synthetic PII values — two families could share a slot name yet have
+    entirely disjoint surrounding prose.
+    """
+    masked = _SLOT_RE.sub(" § ", template)
+    # Lowercase word/number tokens; keep the mask sentinel. Punctuation is dropped (we compare prose
+    # n-grams, not layout punctuation, so the overlap reflects shared *wording*).
+    return [t for t in re.findall(r"§|\w+", masked.lower())]
+
+
+def _family_5grams(templates: tuple[tuple[str, str], ...]) -> set[tuple[str, ...]]:
+    """Union of token 5-grams across all of a family's masked skeletons."""
+    grams: set[tuple[str, ...]] = set()
+    for _domain, template in templates:
+        toks = _masked_skeleton_tokens(template)
+        grams.update(tuple(toks[i:i + 5]) for i in range(len(toks) - 4))
+    return grams
+
+
+def family_5gram_jaccard() -> float:
+    """Token 5-gram Jaccard overlap between family A and family B masked skeletons (KLU-101 gate).
+
+    Must be ≤ 0.10 for the two families to count as *independent* (different document genre with
+    disjoint boilerplate). Returns the actual measured overlap.
+    """
+    from .ro_skeletons_edu import TEMPLATES as TEMPLATES_B
+
+    a = _family_5grams(tuple(TEMPLATES))
+    b = _family_5grams(tuple(TEMPLATES_B))
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
 
 
 def _gen_cnp_selftest(rng: random.Random) -> str:
@@ -144,9 +210,14 @@ def _gen_cnp_selftest(rng: random.Random) -> str:
 
 # ro-realskeleton-v1 pack. CI (seria + număr) has no national checksum, so it's documented under
 # ``no_checksum_ids`` rather than faked into the self-test.
+# Genre label for family A (KLU-101 independence record): official correspondence — clinical
+# discharge letter, services contract, declarație, administrative letter. Family B
+# (``ro_skeletons_edu``) is the *independent* academic-registry genre.
+GENRE = "official correspondence (clinical / legal / administrative)"
+
 ro_skeleton_pack = LocalePack(
     language="ro",
-    name="Romanian (real-skeleton)",
+    name="Romanian (real-skeleton, family A — official correspondence)",
     checksummed_ids=(
         ChecksummedID("CNP", _gen_cnp_selftest, validate_cnp),
         ChecksummedID("CUI", gen_cui, cui_valid),
@@ -154,4 +225,6 @@ ro_skeleton_pack = LocalePack(
     fields=_fields,
     templates=tuple(TEMPLATES),
     no_checksum_ids=("CI",),  # Romanian ID-card seria/număr carries no published checksum
+    family="A",
+    genre=GENRE,
 )

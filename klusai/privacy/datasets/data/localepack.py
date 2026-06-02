@@ -99,17 +99,30 @@ class LocalePack:
     fields: FieldsBuilder                           # rng -> slot -> (value, label)
     templates: tuple[tuple[str, str], ...]          # (domain, template) — {slot} markers
     no_checksum_ids: tuple[str, ...] = field(default_factory=tuple)  # documented id types w/o checksum
+    # Optional template-family identity (KLU-101): when a locale ships ≥2 *independent* template
+    # families on one config, each pack tags its rows so downstream scoring can break the result
+    # down per family. ``family`` is a short stable id ("A"/"B"); ``genre`` is the human label.
+    family: str = ""
+    genre: str = ""
 
     def gen_document(self, rng: random.Random) -> Doc:
         """Generate one offset-validated document via the shared splice + byte-equality + BIOES gate."""
         return fill_document(rng, self.templates, self.fields)
 
     def generate_dataset(self, n: int, seed: int = 0) -> Iterator[dict]:
-        """Yield ``n`` offset-validated rows ({text, spans, language, domain})."""
+        """Yield ``n`` offset-validated rows ({text, spans, language, domain}).
+
+        When the pack declares a template ``family``/``genre`` (KLU-101), every row also carries
+        those tags so downstream scoring can break the result down per family.
+        """
         rng = random.Random(seed)
         for _ in range(n):
             d = self.gen_document(rng)
-            yield {"text": d.text, "spans": d.spans, "language": self.language, "domain": d.domain}
+            row = {"text": d.text, "spans": d.spans, "language": self.language, "domain": d.domain}
+            if self.family:
+                row["family"] = self.family
+                row["genre"] = self.genre
+            yield row
 
     def checksum_self_test(self, n: int = 200, seed: int = 0) -> None:
         """Assert every checksummed id type validates against its OWN validator over ``n`` draws.
