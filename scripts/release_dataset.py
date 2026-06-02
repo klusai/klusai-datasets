@@ -131,6 +131,7 @@ tags:
 - {domain}
 size_categories:
 - {size}
+contamination_role: train
 ---
 
 # {slug}
@@ -171,6 +172,14 @@ re-extracted from the text and every document is re-projected through
 `europriv_bench.spans.char_spans_to_bioes` + `validate_bioes`. `train/gold-overlap = 0` because this
 synthetic volume shares no document with the held-out benchmark gold. The synthetic data carries no
 real data subject (GDPR-safe).
+
+## Contamination pre-declaration
+
+**This volume is intended as kp-deid training data (KLU-106).** Any model trained on it MUST score
+the matching `europriv-bench` general config for language `{language}` as
+`contamination=in_distribution` — this synthetic volume is *not* a held-out evaluation set for such a
+model. The frontmatter carries `contamination_role: train` so downstream scoring (KLU-51/54 trap)
+cannot silently treat it as held-out. See `conf/datasets.yaml` for the program-wide declaration.
 
 ## License
 

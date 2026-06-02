@@ -15,7 +15,12 @@ from __future__ import annotations
 
 def _load_packs():
     """Lazily import the per-locale packs (avoids import cost / cycles at package import time)."""
+    from .de_documents import de_pack
     from .en_documents import en_pack
+    from .es_documents import es_pack
+    from .fr_documents import fr_pack
+    from .it_documents import it_pack
+    from .nl_documents import nl_pack
     from .pl_documents import pl_pack
     from .pl_skeletons import pl_skeleton_pack
     from .ro_documents import ro_pack
@@ -27,6 +32,12 @@ def _load_packs():
         "pl": pl_pack,
         "pl-realskeleton": pl_skeleton_pack,
         "en": en_pack,
+        # T1 packs (KLU-102) — IT is the critical-path decode-bearing identifier (codice fiscale).
+        "it": it_pack,
+        "de": de_pack,
+        "fr": fr_pack,
+        "es": es_pack,
+        "nl": nl_pack,
     }
 
 
