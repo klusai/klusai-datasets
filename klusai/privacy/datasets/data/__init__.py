@@ -25,10 +25,12 @@ def _load_packs():
     from .pl_skeletons import pl_skeleton_pack
     from .ro_documents import ro_pack
     from .ro_skeletons import ro_skeleton_pack
+    from .ro_skeletons_edu import ro_skeleton_edu_pack
 
     return {
         "ro": ro_pack,
         "ro-realskeleton": ro_skeleton_pack,
+        "ro-realskeleton-b": ro_skeleton_edu_pack,
         "pl": pl_pack,
         "pl-realskeleton": pl_skeleton_pack,
         "en": en_pack,
