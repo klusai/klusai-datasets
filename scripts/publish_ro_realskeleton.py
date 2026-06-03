@@ -56,8 +56,9 @@ the two is the **synthetic-context vs real-context** measurement (Paper 2). Scor
 
 
 @click.command()
-@click.option("--n-per-family", "n_per_family", type=int, default=200,
-              help="Distinct subjects per family (KLU-101 pre-registered N: ≥150–200 → leak Wilson UB ≤ 0.02).")
+@click.option("--n-per-family", "n_per_family", type=int, default=250,
+              help="Docs per family (KLU-101 pre-registered N: 250 → ≥190 distinct valid-CNP "
+                   "subjects/family → protector-leak Wilson UB ≤ 0.02 at ≈0 leak).")
 @click.option("--seed", type=int, default=20260531)
 @click.option("--private/--public", default=True)
 def main(n_per_family: int, seed: int, private: bool) -> None:

@@ -38,10 +38,12 @@ from klusai.privacy.datasets.data.ro_skeletons_edu import (
     TEMPLATES as TEMPLATES_B,
 )
 
-# Pre-registered per-family N (KLU-101): ≥150–200 distinct subjects/family so the protector-leak
-# Wilson upper bound is ≤ 0.02 at ≈0 observed leak. Family B yields one distinct CNP subject per
-# doc, so 200 docs ⇒ 200 distinct subjects.
-PREREGISTERED_N_PER_FAMILY = 200
+# Pre-registered per-family N (KLU-101): 250 docs/family so each family clears ≥150 — and in fact
+# ≥190 — distinct valid-CNP subjects, giving a protector-leak Wilson upper bound ≤ 0.02 at ≈0
+# observed leak. Family B yields one CNP subject per doc (250); family A's official-correspondence
+# templates yield ~190 distinct valid-CNP subjects per 250 docs (not every template carries a CNP,
+# and the CASS "cod asigurat" duplicate dedups to one subject — KLU-49).
+PREREGISTERED_N_PER_FAMILY = 250
 
 
 def test_genre_differs():
@@ -106,10 +108,22 @@ def test_disjoint_subject_pools():
     assert not (set(EDU_SURNAMES) & set(SURNAMES))
 
 
-def test_preregistered_n_yields_distinct_subjects():
-    """The pre-registered N actually delivers ≥150 distinct CNP subjects per family."""
+def test_preregistered_n_gives_leak_wilson_upper_bound_at_most_002():
+    """The pre-registered N delivers a protector-leak Wilson upper bound ≤ 0.02 per family at 0 leak.
+
+    This is the *exact* sizing requirement (KLU-101): per distinct VALID-CNP subject (the leak-metric
+    denominator), at ≈0 observed leak the 95% Wilson upper bound must be ≤ 0.02. Computed with the
+    harness metric (single source of truth) so the dataset size and the scored statistic agree.
+    """
+    from europriv_bench.metrics import cnp_leakage, wilson_interval
+    from europriv_bench.spans import whitespace_tokens
+
     rows = list(generate_combined_dataset(PREREGISTERED_N_PER_FAMILY, seed=20260531))
     for fam in ("A", "B"):
-        distinct = {r["text"][s["start"]:s["end"]] for r in rows if r.get("family") == fam
-                    for s in r["spans"] if s["label"] == "NATIONAL_ID"}
-        assert len(distinct) >= 150, f"family {fam}: only {len(distinct)} distinct CNP subjects"
+        fr = [r for r in rows if r.get("family") == fam]
+        # cnp_total = distinct VALID-CNP subjects after (doc, value) dedup (KLU-49).
+        all_o = [["O"] * len(whitespace_tokens(r["text"])) for r in fr]
+        total = int(cnp_leakage(fr, all_o)["cnp_total"])
+        ub = wilson_interval(0, total)[1]
+        assert total >= 150, f"family {fam}: only {total} distinct valid-CNP subjects"
+        assert ub <= 0.02, f"family {fam}: leak Wilson UB {ub:.4f} > 0.02 at n={total}"

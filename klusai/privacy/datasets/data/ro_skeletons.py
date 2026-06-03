@@ -149,8 +149,9 @@ def generate_combined_dataset(n_per_family: int, seed: int = 0):
 
     The two families draw from **disjoint subject pools** (different name lists) and use independent
     seeds, so no synthetic subject is shared across families. Pre-register ``n_per_family`` so the
-    per-family protector-leak Wilson upper bound is ≤ 0.02 at ≈0 leak (KLU-101 — typically ≥150–200
-    distinct subjects/family).
+    per-family protector-leak Wilson upper bound is ≤ 0.02 at ≈0 leak (KLU-101): 250 docs/family
+    yields ≥190 distinct valid-CNP subjects/family (family B is 1 subject/doc; family A ~0.76, since
+    not every template carries a CNP and the CASS duplicate dedups to one subject — KLU-49).
     """
     from .ro_skeletons_edu import ro_skeleton_edu_pack
 
