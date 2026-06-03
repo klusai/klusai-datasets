@@ -26,6 +26,7 @@ from dataclasses import dataclass
 
 from europriv_bench.national_id import (
     _CF_MONTHS,
+    _CF_OMOCODIA,
     _cf_control_letter,
     parse_national_id,
 )
@@ -117,6 +118,31 @@ def gen_codice_fiscale(
 def codice_fiscale_valid(cf: str) -> bool:
     """True iff ``cf`` validates against the benchmark's codice-fiscale validator (source of truth)."""
     return parse_national_id(cf, "IT").valid
+
+
+# Omocodia: the 7 *variable numeric* positions of a CF, substituted letter-for-digit (rightmost
+# first) when two people would otherwise collide. Indices into the 15-char body: year (6,7),
+# day (9,10), Belfiore digits (12,13,14). The tax authority fills these from the RIGHT, so the
+# k-th omocode substitutes the k rightmost numeric positions.
+_CF_VARIABLE_POSITIONS = (14, 13, 12, 10, 9, 7, 6)
+_CF_DIGIT_TO_OMOCODE = {v: k for k, v in _CF_OMOCODIA.items()}  # "0"→"L", "1"→"M", …
+
+
+def gen_omocode(base_cf: str, n_substitutions: int) -> str:
+    """Produce the ``n_substitutions``-th omocode of a base CF, with a recomputed valid control char.
+
+    Substitutes the ``n_substitutions`` rightmost variable numeric positions digit→letter (the
+    Agenzia delle Entrate omocodia order), then appends the control letter computed over the
+    substituted body via the SAME ``europriv_bench`` algorithm — so the omocode is checksum-valid and
+    decodes (DOB/sex/Belfiore) identically to the base CF (the decoder reverses omocodia first).
+    """
+    if not 1 <= n_substitutions <= len(_CF_VARIABLE_POSITIONS):
+        raise ValueError(f"n_substitutions must be 1..{len(_CF_VARIABLE_POSITIONS)}")
+    chars = list(base_cf[:15])
+    for i in _CF_VARIABLE_POSITIONS[:n_substitutions]:
+        chars[i] = _CF_DIGIT_TO_OMOCODE[chars[i]]
+    body = "".join(chars)
+    return body + _cf_control_letter(body)
 
 
 _PIVA_EVEN_DOUBLE = {0: 0, 1: 2, 2: 4, 3: 6, 4: 8, 5: 1, 6: 3, 7: 5, 8: 7, 9: 9}
