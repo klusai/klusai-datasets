@@ -22,6 +22,26 @@ sources:
     license: CC-BY-SA-4.0
     domain: legal
     role: weak-supervision
+  # KLU-111 legal real-skeleton track — STRUCTURE-ONLY source-license verification (no text reused).
+  # We author original legal-document skeletons that mirror the public SECTION LAYOUT of these
+  # source types; no copyrighted source text is included or redistributed (verified each license):
+  eurlex-structure:
+    url: https://eur-lex.europa.eu/
+    # EUR-Lex general reuse of Commission documents is authorised under Commission Decision
+    # 2011/833/EU (reuse + attribution, no exclusive rights). We rely only on the uncopyrightable
+    # section-layout convention, so even this permission is not load-bearing.
+    license: "Decision-2011/833/EU (EUR-Lex reuse) — structure-only, no text redistributed"
+    domain: legal
+    role: structure-only
+  echr-hudoc-structure:
+    url: https://hudoc.echr.coe.int/
+    # ECHR/HUDOC reuse is permitted only for "private use or information and education" with
+    # © ECHR-CEDH attribution, and HUDOC translations are copyright-protected — this is NOT cleanly
+    # redistributable under the program's license gate, so NO ECHR/HUDOC TEXT is included. We
+    # reproduce only the (uncopyrightable) judgment STRUCTURE: caption → facts → law → operative.
+    license: "© ECHR-CEDH (restricted reuse) — structure-only, NO text redistributed"
+    domain: legal
+    role: structure-only
 
 # Synthetic datasets we generate. Named ds-kp-{domain}-{lang}-{size}. Released volumes (SLUGs) are
 # built from per-locale LocalePack generators (PACKs) via scripts/release_dataset.py: each row
@@ -47,5 +67,9 @@ synthetic:
   - { name: ds-kp-general-es-50k, domain: general, language: es, n: 50000, pack: es, license: CC-BY-4.0, contamination_role: train }
   - { name: ds-kp-general-nl-50k, domain: general, language: nl, n: 50000, pack: nl, license: CC-BY-4.0, contamination_role: train }
   # H2 (legal/clinical real-structure synthesis).
+  # KLU-111 legal real-skeleton PoC: EUR-Lex-style instrument / ECHR-style judgment / GDPR Art.15
+  # DSAR response — STRUCTURE-ONLY (no source text reused), synthetic CNP-bearing PII, config_status
+  # =dev, single authored family. Published as the europriv-bench `legal-realskeleton-v1` config.
+  - { name: ds-kp-legal-ro-rs,     domain: legal,    language: ro, n: 1500, pack: ro-legal, license: CC-BY-4.0 }
   - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
   - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }
