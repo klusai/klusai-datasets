@@ -2,9 +2,26 @@
 # Only cleanly-licensed sources are eligible for the redistributable benchmark.
 
 sources:
+  # RES-93 LICENSE GATE (verified live 2026-06-07 against each repo's raw README YAML + body):
+  #   * ai4privacy/open-pii-masking-500k-ai4privacy → YAML `license: other`, `license_name:
+  #     cc-by-4.0`, BUT the card body binds it to the **Llama Community License Agreement**
+  #     ("created using Llama models (versions 3.1 and 3.3) ... use and distribution are subject
+  #     to the Llama Community License Agreement"; "Built with Llama" attribution + model-naming
+  #     obligation). Llama-bound → EXCLUDED by program policy (the license gate rejects `llama`).
+  #   * ai4privacy/pii-masking-300k / -200k → custom `license.md` (company-size-tiered, commercial
+  #     entities must email licensing@ai4privacy.com) → NOT cleanly redistributable → EXCLUDED.
+  #   * ai4privacy/pii-masking-openpii-1m → YAML `license: other`, `license_name: cc-by-4.0`, and
+  #     the body states plainly: "License: CC-BY-4.0. Copyright (c) 2026 Ai Suisse SA. Permitted
+  #     Use: Research, commercial use, redistribution, and modification — subject to attribution
+  #     requirements under CC-BY-4.0." The word "Llama" appears NOWHERE in the card. → CLEAN.
+  # We therefore repoint the source to the clean openpii-1m repo. The gate now blocks the 500k repo
+  # (test_licensing::test_ai4privacy_500k_llama_tier_blocked) so this can never silently regress.
+  # The verified license + a content checksum live in conf/ai4privacy_openpii_manifest.yaml.
   ai4privacy-openpii:
-    hf_id: ai4privacy/open-pii-masking-500k-ai4privacy
-    license: CC-BY-4.0        # open core only; exclude Llama-bound enterprise tiers
+    hf_id: ai4privacy/pii-masking-openpii-1m
+    license: CC-BY-4.0        # verified clean open core; the 500k tier is Llama-bound (excluded)
+    license_verified: "2026-06-07"
+    manifest: conf/ai4privacy_openpii_manifest.yaml
     domain: general
     role: train               # train | gold-eval | weak-supervision
   tab-echr:
