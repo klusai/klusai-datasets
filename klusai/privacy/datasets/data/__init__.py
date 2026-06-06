@@ -18,11 +18,13 @@ def _load_packs():
     from .cz_skeletons import cz_skeleton_pack
     from .de_documents import de_pack
     from .dk_skeletons import dk_skeleton_pack
+    from .ee_skeletons import ee_skeleton_pack
     from .en_documents import en_pack
     from .es_documents import es_pack
     from .fi_skeletons import fi_skeleton_pack
     from .fr_documents import fr_pack
     from .it_documents import it_pack
+    from .lt_skeletons import lt_skeleton_pack
     from .nl_documents import nl_pack
     from .pl_documents import pl_pack
     from .pl_skeletons import pl_skeleton_pack
@@ -45,6 +47,10 @@ def _load_packs():
         # RES-83 EU-breadth batch 2 — decode-bearing re-id for DK/FI (CPR-nummer / henkilötunnus).
         "dk-realskeleton": dk_skeleton_pack,
         "fi-realskeleton": fi_skeleton_pack,
+        # RES-84 EU-breadth batch 3 — decode-bearing re-id for EE/LT (isikukood / asmens kodas;
+        # Baltic two-pass mod-11 family; both decode DOB + sex).
+        "ee-realskeleton": ee_skeleton_pack,
+        "lt-realskeleton": lt_skeleton_pack,
         "en": en_pack,
         # T1 packs (KLU-102) — IT is the critical-path decode-bearing identifier (codice fiscale).
         "it": it_pack,
