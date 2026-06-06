@@ -17,8 +17,10 @@ def _load_packs():
     """Lazily import the per-locale packs (avoids import cost / cycles at package import time)."""
     from .cz_skeletons import cz_skeleton_pack
     from .de_documents import de_pack
+    from .dk_skeletons import dk_skeleton_pack
     from .en_documents import en_pack
     from .es_documents import es_pack
+    from .fi_skeletons import fi_skeleton_pack
     from .fr_documents import fr_pack
     from .it_documents import it_pack
     from .nl_documents import nl_pack
@@ -40,6 +42,9 @@ def _load_packs():
         # RES-80 EU-breadth batch 1 — decode-bearing re-id for SE/CZ (personnummer / rodné číslo).
         "se-realskeleton": se_skeleton_pack,
         "cz-realskeleton": cz_skeleton_pack,
+        # RES-83 EU-breadth batch 2 — decode-bearing re-id for DK/FI (CPR-nummer / henkilötunnus).
+        "dk-realskeleton": dk_skeleton_pack,
+        "fi-realskeleton": fi_skeleton_pack,
         "en": en_pack,
         # T1 packs (KLU-102) — IT is the critical-path decode-bearing identifier (codice fiscale).
         "it": it_pack,

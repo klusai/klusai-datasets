@@ -79,3 +79,10 @@ synthetic:
   # (SE) / rodné číslo (CZ) deterministically discloses DATE_OF_BIRTH + SEX.
   - { name: ds-kp-se-rs, domain: mixed, language: sv, n: 1500, pack: se-realskeleton, license: CC-BY-4.0 }
   - { name: ds-kp-cz-rs, domain: mixed, language: cs, n: 1500, pack: cz-realskeleton, license: CC-BY-4.0 }
+  # RES-83 EU-breadth batch 2: decode-bearing re-id for DK/FI — STRUCTURE-ONLY (no source text
+  # reused), synthetic checksum/format-valid PII, config_status=dev, single authored family.
+  # Published as the europriv-bench `dk-realskeleton-v1` / `fi-realskeleton-v1` configs. A missed
+  # CPR-nummer (DK) / henkilötunnus (FI) deterministically discloses DATE_OF_BIRTH + SEX. NOTE: the
+  # DK CPR mod-11 check was abolished in 2007 → format + century-table validation, not a checksum.
+  - { name: ds-kp-dk-rs, domain: mixed, language: da, n: 1500, pack: dk-realskeleton, license: CC-BY-4.0 }
+  - { name: ds-kp-fi-rs, domain: mixed, language: fi, n: 1500, pack: fi-realskeleton, license: CC-BY-4.0 }
