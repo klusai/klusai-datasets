@@ -15,6 +15,7 @@ from __future__ import annotations
 
 def _load_packs():
     """Lazily import the per-locale packs (avoids import cost / cycles at package import time)."""
+    from .cz_skeletons import cz_skeleton_pack
     from .de_documents import de_pack
     from .en_documents import en_pack
     from .es_documents import es_pack
@@ -27,6 +28,7 @@ def _load_packs():
     from .ro_skeletons import ro_skeleton_pack
     from .ro_skeletons_edu import ro_skeleton_edu_pack
     from .ro_skeletons_legal import ro_legal_skeleton_pack
+    from .se_skeletons import se_skeleton_pack
 
     return {
         "ro": ro_pack,
@@ -35,6 +37,9 @@ def _load_packs():
         "ro-legal": ro_legal_skeleton_pack,  # KLU-111 legal-domain real-skeleton (EUR-Lex/ECHR/DSAR)
         "pl": pl_pack,
         "pl-realskeleton": pl_skeleton_pack,
+        # RES-80 EU-breadth batch 1 — decode-bearing re-id for SE/CZ (personnummer / rodné číslo).
+        "se-realskeleton": se_skeleton_pack,
+        "cz-realskeleton": cz_skeleton_pack,
         "en": en_pack,
         # T1 packs (KLU-102) — IT is the critical-path decode-bearing identifier (codice fiscale).
         "it": it_pack,

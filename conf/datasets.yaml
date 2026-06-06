@@ -73,3 +73,9 @@ synthetic:
   - { name: ds-kp-legal-ro-rs,     domain: legal,    language: ro, n: 1500, pack: ro-legal, license: CC-BY-4.0 }
   - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
   - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }
+  # RES-80 EU-breadth batch 1: decode-bearing re-id for SE/CZ — STRUCTURE-ONLY (no source text
+  # reused), synthetic checksum-valid PII, config_status=dev, single authored family. Published as
+  # the europriv-bench `se-realskeleton-v1` / `cz-realskeleton-v1` configs. A missed personnummer
+  # (SE) / rodné číslo (CZ) deterministically discloses DATE_OF_BIRTH + SEX.
+  - { name: ds-kp-se-rs, domain: mixed, language: sv, n: 1500, pack: se-realskeleton, license: CC-BY-4.0 }
+  - { name: ds-kp-cz-rs, domain: mixed, language: cs, n: 1500, pack: cz-realskeleton, license: CC-BY-4.0 }
