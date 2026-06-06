@@ -33,6 +33,8 @@ def _load_packs():
     from .ro_skeletons_edu import ro_skeleton_edu_pack
     from .ro_skeletons_legal import ro_legal_skeleton_pack
     from .se_skeletons import se_skeleton_pack
+    from .si_skeletons import si_skeleton_pack
+    from .sk_skeletons import sk_skeleton_pack
 
     return {
         "ro": ro_pack,
@@ -51,6 +53,10 @@ def _load_packs():
         # Baltic two-pass mod-11 family; both decode DOB + sex).
         "ee-realskeleton": ee_skeleton_pack,
         "lt-realskeleton": lt_skeleton_pack,
+        # RES-85 EU-breadth batch 3 remainder — decode-bearing re-id for SI/SK (EMŠO / rodné číslo).
+        # SI EMŠO is a richer surface (also REGION OF BIRTH); SK reuses the CZ rodné-číslo algorithm.
+        "si-realskeleton": si_skeleton_pack,
+        "sk-realskeleton": sk_skeleton_pack,
         "en": en_pack,
         # T1 packs (KLU-102) — IT is the critical-path decode-bearing identifier (codice fiscale).
         "it": it_pack,
