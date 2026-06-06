@@ -1,0 +1,88 @@
+# Ai4Privacy open-core ingestion manifest (RES-93)
+# ----------------------------------------------------------------------------------------------
+# This manifest records the LICENSE-GATE verification and the content checksums for the
+# Ai4Privacy held-out eval slices curated for the EuroPriv-Bench `ai4privacy-openpii-*-v1`
+# external-synthetic detection track. The gold JSONL itself is NOT committed (artifacts/ is
+# gitignored — gold is pulled/curated at eval time, per the harness convention); this manifest is
+# the committed, auditable record of WHAT was ingested, from WHERE, and under WHICH license.
+
+source:
+  hf_id: ai4privacy/pii-masking-openpii-1m
+  hf_url: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1m
+  split_used: validation            # disjoint from `train`; carved further per language (see slices)
+  schema: [source_text, masked_text, privacy_mask, split, uid, language, region, script]
+  span_field: privacy_mask          # [{label, start, end, value, label_index}], char offsets
+
+# --- LICENSE GATE (verified live against the raw README, 2026-06-07) --------------------------
+license:
+  verified_on: "2026-06-07"
+  method: "raw README YAML front-matter + full card body, fetched live"
+  yaml_license: other               # the HF `license:` field is the generic `other`
+  yaml_license_name: cc-by-4.0      # cosmetic display name; NOT load-bearing on its own
+  effective: CC-BY-4.0              # the BODY states the actual grant (quoted below)
+  clean: true                       # passes the program license gate (commercial + derivative + redistribution)
+  body_quote: >
+    "License: CC-BY-4.0. Copyright (c) 2026 Ai Suisse SA. Permitted Use: Research, commercial
+    use, redistribution, and modification — subject to attribution requirements under CC-BY-4.0.
+    Attribution: When using this dataset, please credit 'Ai4Privacy / Ai Suisse SA' and link to
+    this repository."
+  llama_clause_present: false       # the word "Llama" appears NOWHERE in the openpii-1m card
+  attribution_required: "Ai4Privacy / Ai Suisse SA (CC-BY-4.0)"
+
+# --- EXCLUDED tiers (verified Llama-bound / custom-restrictive — DO NOT ingest) ----------------
+excluded_tiers:
+  - hf_id: ai4privacy/open-pii-masking-500k-ai4privacy
+    reason: >
+      Llama-Community-License-bound. Card body: "This dataset, Open PII Masking 500k, was created
+      using Llama models (versions 3.1 and 3.3) ... its use and distribution are subject to the
+      Llama Community License Agreement." Requires "Built with Llama" attribution + a "Llama"
+      model-name prefix on derivatives. Excluded by program policy (eval-only at most). NOTE its
+      YAML still says `license_name: cc-by-4.0`, which is misleading — the body is the binding term.
+    verdict: EXCLUDED
+  - hf_id: ai4privacy/pii-masking-300k
+    reason: >
+      Custom `license.md` (YAML `license_name: license.md`). Body: "Commercial entities should
+      contact us at licensing@ai4privacy.com." Company-size-tiered; not cleanly redistributable.
+    verdict: EXCLUDED
+  - hf_id: ai4privacy/pii-masking-200k
+    reason: >
+      Custom company-size-tiered license.md (free for independents / 2-3 employee firms; larger
+      orgs require a paid company license). Not cleanly redistributable.
+    verdict: EXCLUDED
+
+# --- Curated held-out eval slices (per language) ----------------------------------------------
+# config_status: dev. Label: EXTERNAL SYNTHETIC — Ai4Privacy's LLM generator, NOT the KP generator,
+# NOT real data. A fairer/harder field-comparable test than our template-splice LocalePacks; it is
+# NOT real gold. Unmapped native labels (TITLE/AGE/GENDER/SEX) are dropped + counted (see below),
+# never silently truncated. Every row validated byte-equal + strict BIOES via europriv_bench.spans.
+slices:
+  rows_per_language: 400
+  total_rows: 4000
+  total_gold_spans: 26547
+  combined_sha256: 36e910c993ac38f348dbd0dde6aa19bdc9ed7056396ae1cf11f762ef71ada631
+  unmapped_native_labels_dropped:   # honest coverage: these have no clean KP entity (no inflation)
+    TITLE: 2006
+    AGE: 1568
+    GENDER: 917
+    SEX: 853
+  per_language:
+    # lang: {config, rows, gold_spans, sha256, contamination_note}
+    ro: { config: ai4privacy-openpii-ro-v1, rows: 400, spans: 2732, sha256: 79dd44024994de7b }
+    pl: { config: ai4privacy-openpii-pl-v1, rows: 400, spans: 2799, sha256: 0b4f17d10bfee975 }
+    cs: { config: ai4privacy-openpii-cs-v1, rows: 400, spans: 2530, sha256: d1e8d248cbc284e6 }
+    sv: { config: ai4privacy-openpii-sv-v1, rows: 400, spans: 2762, sha256: 7243f3791309e992 }
+    el: { config: ai4privacy-openpii-el-v1, rows: 400, spans: 2454, sha256: 72c4c6e6ca031cda }
+    fi: { config: ai4privacy-openpii-fi-v1, rows: 400, spans: 2644, sha256: fc7e9cf9ff008551 }
+    hu: { config: ai4privacy-openpii-hu-v1, rows: 400, spans: 2752, sha256: 83d418ace1f8e58c }
+    de: { config: ai4privacy-openpii-de-v1, rows: 400, spans: 2561, sha256: 0556c73bdde14506 }
+    fr: { config: ai4privacy-openpii-fr-v1, rows: 400, spans: 2686, sha256: e08922b2fc376348 }
+    nl: { config: ai4privacy-openpii-nl-v1, rows: 400, spans: 2627, sha256: c811b08aeb53f421 }
+
+# --- Contamination policy (honest train/eval overlap) -----------------------------------------
+# Ai4Privacy is a training substrate elsewhere on the board: openmed + tabularisai were trained on
+# Ai4Privacy data, so they score these `ai4privacy-openpii-*-v1` configs as `in_distribution`
+# (NOT a fair held-out measurement for them). kp-deid (trained on KP LocalePacks ro/en/pl only) is
+# clean_held_out on these distinct-generator Ai4Privacy configs (genuine zero-shot). The rule-based /
+# third-party systems (presidio/spacy/gliner/gliner2) are clean_held_out on every config.
+# Enforced in europriv_bench.leaderboard.classify_contamination.
+contamination_substrate_adapters: [openmed, tabularisai]

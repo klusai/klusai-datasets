@@ -23,7 +23,9 @@ from klusai.privacy.datasets.logger import get_logger
 
 logger = get_logger("curate")
 
-SOURCE = "ai4privacy/open-pii-masking-500k-ai4privacy"
+# RES-93: the 500k repo is Llama-license-bound (excluded by the gate); the openpii-1m repo is the
+# verified-clean CC-BY-4.0 open core (no Llama clause). See conf/datasets.yaml + the manifest.
+SOURCE = "ai4privacy/pii-masking-openpii-1m"
 
 
 @click.command()

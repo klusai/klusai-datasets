@@ -84,3 +84,32 @@ def test_error_message_names_source_and_reason():
         assert_clean_license("CC-BY-NC-ND-4.0", source="piiranha")
     msg = str(exc.value)
     assert "piiranha" in msg and "CC-BY-NC-ND-4.0" in msg
+
+
+# --- RES-93: Ai4Privacy tier gating (live-verified licenses, 2026-06-07) -----------------------
+# The 500k flagship's card declares `license_name: cc-by-4.0` but its body binds the data to the
+# Llama Community License (created with Llama 3.1/3.3, "Built with Llama" attribution). The gate
+# must classify on the ACTUAL binding license string, not the cosmetic license_name — so we record
+# the verified string ("Llama-Community-License") and assert it is blocked, while the openpii-1m
+# tier (body says plainly "License: CC-BY-4.0", no Llama clause) passes.
+def test_ai4privacy_500k_llama_tier_blocked():
+    """open-pii-masking-500k is Llama-Community-License-bound → must be rejected."""
+    verdict = classify_license("Llama-Community-License")
+    assert not verdict.clean
+    assert "llama" in verdict.reason.lower()
+    with pytest.raises(LicenseError):
+        assert_clean_license("Llama-Community-License",
+                             source="ai4privacy/open-pii-masking-500k-ai4privacy")
+
+
+def test_ai4privacy_300k_custom_commercial_tier_blocked():
+    """pii-masking-300k/-200k carry a custom company-size-tiered license.md → fail-closed."""
+    # `license.md` (the YAML license_name) is an unrecognized custom token → rejected fail-closed.
+    assert not is_clean_license("license.md")
+    assert not is_clean_license("research-only")
+
+
+def test_ai4privacy_openpii_1m_clean_tier_passes():
+    """The verified open core (pii-masking-openpii-1m) body states CC-BY-4.0 → passes the gate."""
+    verdict = assert_clean_license("CC-BY-4.0", source="ai4privacy/pii-masking-openpii-1m")
+    assert verdict.clean
