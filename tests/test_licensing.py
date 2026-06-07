@@ -113,3 +113,15 @@ def test_ai4privacy_openpii_1m_clean_tier_passes():
     """The verified open core (pii-masking-openpii-1m) body states CC-BY-4.0 → passes the gate."""
     verdict = assert_clean_license("CC-BY-4.0", source="ai4privacy/pii-masking-openpii-1m")
     assert verdict.clean
+
+
+# --- RES-89: TAB (Text Anonymization Benchmark) MIT data license -------------------------------
+# TAB-the-DATA is MIT (LICENSE.txt = verbatim MIT; GitHub SPDX id MIT — covers the echr_*.json
+# corpus). The widely-repeated "CC-BY-4.0" applies only to the journal ARTICLE, not the data. The
+# gate must ADMIT TAB on its true MIT license (MIT is in the _CLEAN allowlist) so the first
+# real-data gold anchor can enter the redistributable benchmark.
+def test_tab_echr_mit_data_license_passes():
+    """TAB ECHR data is MIT → admitted by the license gate (the first real-data gold anchor)."""
+    verdict = assert_clean_license("MIT", source="tab-echr (NorskRegnesentral)")
+    assert verdict.clean
+    assert "mit" in verdict.normalized.lower()

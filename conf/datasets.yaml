@@ -24,9 +24,19 @@ sources:
     manifest: conf/ai4privacy_openpii_manifest.yaml
     domain: general
     role: train               # train | gold-eval | weak-supervision
+  # RES-89: TAB (Text Anonymization Benchmark) — the FIRST real-data gold anchor (1,268 real
+  # English ECHR judgments, manually annotated, peer-reviewed; Pilán et al. 2022). LICENSE = MIT
+  # (LICENSE.txt = verbatim MIT; GitHub SPDX id MIT — covers the data JSON). The widely-repeated
+  # "CC-BY-4.0" is WRONG: CC-BY covers only the journal ARTICLE, not the corpus. Cite as MIT, never
+  # CC-BY. MIT is in the license-gate _CLEAN allowlist (see klusai/.../licensing.py + test_licensing
+  # ::test_tab_echr_mit_data_license_passes). Underlying judgments are upstream Council-of-Europe
+  # public docs (provenance noted). Curated by scripts/curate_tab.py; full crosswalk + checksums in
+  # the manifest below. Published as europriv-bench config `tab-echr-legal-en-v1` (test split).
   tab-echr:
     url: https://github.com/NorskRegnesentral/text-anonymization-benchmark
-    license: open
+    license: MIT             # verified MIT — NOT CC-BY (CC-BY covers only the article)
+    license_verified: "2026-06-07"
+    manifest: conf/tab_echr_manifest.yaml
     domain: legal
     role: gold-eval
   meddocan:

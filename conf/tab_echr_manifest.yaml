@@ -1,0 +1,131 @@
+# TAB (Text Anonymization Benchmark) ingestion manifest — RES-89
+# ----------------------------------------------------------------------------------------------
+# The committed, auditable record of WHAT was ingested, from WHERE, under WHICH license, and the
+# entity_type→KP + DIRECT/QUASI/NO_MASK crosswalk used. The gold JSONL itself is NOT committed
+# (artifacts/ is gitignored — gold is curated/pulled at eval time, per the harness convention);
+# this manifest + the checksums are the durable provenance. Curated by scripts/curate_tab.py.
+#
+# TAB is the program's FIRST real-data gold anchor: 1,268 REAL English ECHR court judgments,
+# manually annotated, peer-reviewed (Pilán et al. 2022, Computational Linguistics 48(4)).
+
+source:
+  name: Text Anonymization Benchmark (TAB)
+  url: https://github.com/NorskRegnesentral/text-anonymization-benchmark
+  raw_base: https://raw.githubusercontent.com/NorskRegnesentral/text-anonymization-benchmark/master
+  files: [echr_train.json, echr_dev.json, echr_test.json]
+  citation: >
+    Ildikó Pilán, Pierre Lison, Lilja Øvrelid, Anthi Papadopoulou, David Sánchez, Montserrat Batet.
+    "The Text Anonymization Benchmark (TAB): A Dedicated Corpus and Evaluation Framework for Text
+    Anonymization." Computational Linguistics 48(4):1053-1101, 2022 (MIT Press, peer-reviewed).
+  corpus: 1268 real English ECHR (HUDOC) court judgments; manually annotated; 155,006 mentions.
+  schema: >
+    Per doc: {text, doc_id, annotations{<annotator>: {entity_mentions:[...]}}, quality_checked,
+    meta, task, dataset_type}. Per mention: entity_type, start_offset, end_offset (CHARACTER
+    offsets — verified text[start:end]==span_text exactly, 0 mismatches across all 155k mentions),
+    span_text, identifier_type (DIRECT/QUASI/NO_MASK), entity_id (co-reference), confidential_status.
+
+# --- LICENSE GATE (verified live against the repo, 2026-06-07) --------------------------------
+license:
+  verified_on: "2026-06-07"
+  spdx: MIT
+  effective: MIT
+  clean: true                       # passes the program license gate (commercial + derivative + redistribution)
+  evidence: >
+    LICENSE.txt in the repo is VERBATIM "The MIT License (MIT) / Copyright (C) 2021-2026 Norsk
+    Regnesentral" (sha256 9569b31acf50e1cb3f38f47220f2c3a42f533e07e72fe2d18c2871e89098a8c7); the
+    GitHub repository SPDX id is MIT. The MIT grant covers the data JSON.
+  not_cc_by: >
+    The widely-repeated "CC-BY-4.0" attribution is WRONG for the DATA: CC-BY-4.0 covers only the
+    journal ARTICLE (via the ACL Anthology / MIT Press), NOT the echr_*.json corpus. Cite + tag the
+    data as MIT, never CC-BY. (MIT is in the license-gate _CLEAN allowlist; see test_licensing.)
+  upstream_provenance: >
+    The underlying judgments are public European Court of Human Rights documents (© Council of
+    Europe / ECHR-CEDH, via HUDOC). TAB redistributes them under MIT; no additional redistribution
+    restriction is introduced. Noted in the dataset card for caution/explicitness.
+
+# --- Crosswalk: TAB entity_type → harmonized KP taxonomy (`tab` scheme) ------------------------
+# Authored in europriv_bench/conf/taxonomy.yaml (single source of truth). Only DIRECT+QUASI
+# mentions are kept (NO_MASK is not a detection target). Unmapped TAB types are dropped + counted
+# (honest coverage — no silent truncation, no inflation).
+entity_type_crosswalk:
+  PERSON:   PERSON        # → KP PERSON       (direct identifier)
+  CODE:     CASE_NUMBER   # → KP CASE_NUMBER  (ECHR application/case numbers, e.g. "36110/97")
+  LOC:      ADDRESS       # → KP ADDRESS      (cities/countries/regions)
+  ORG:      ORG_PARTY     # → KP ORG_PARTY    (courts, prosecutors, institutions, companies)
+  DATETIME: DATE          # → KP DATE         (dates/times/date-ranges)
+  DEM:      null          # demographic (nationality/religion/profession) — no clean KP type, DROPPED
+  QUANTITY: null          # quantities/areas — no clean KP type, DROPPED
+  MISC:     null          # misc descriptors — no clean KP type, DROPPED
+
+# --- identifier_type → program direct/quasi re-identification framing -------------------------
+# TAB's masking-aware identifier_type is preserved PER SPAN (field `identifier_type`) so it can be
+# read as an external-validation substrate for the QI / residual-distinctiveness channel (RES-88 /
+# RES-17): a natural, peer-reviewed mapping onto the program's own direct-identifier vs
+# quasi-identifier distinction. TAB co-reference (`entity_id`) is also preserved per span.
+identifier_type_mapping:
+  DIRECT:  direct-identifier        # identifies the individual on its own → KP IdentifierClass.DIRECT
+  QUASI:   quasi-identifier         # identifies in combination (residual-distinctiveness / re-id risk)
+  NO_MASK: not-a-target             # not an anonymisation target → dropped from gold spans
+
+# --- Curation method --------------------------------------------------------------------------
+curation:
+  script: scripts/curate_tab.py
+  annotator_selection: >
+    One canonical annotator per document: first quality_checked annotator, else first by name.
+    (TAB dev/test carry up to 10 annotators; its own eval micro-averages recall over annotators,
+    but the harness gold is a single non-overlapping BIOES sequence per doc.)
+  nested_spans: longest-wins  # TAB legitimately nests mentions; keep the outermost, drop sub-spans
+  alignment: byte-equality + strict BIOES via europriv_bench.spans (fail loud; misaligned docs dropped+counted)
+  misaligned_cause: >
+    The few dropped docs are NOT offset errors (TAB offsets are exact). They are sub-token
+    annotations — two char-disjoint TAB mentions inside one whitespace token (e.g.
+    "14553-14554/89" → two CASE_NUMBERs) — which a whitespace-token BIOES cannot represent. Dropped
+    + counted rather than shipping misaligned gold (per the RES-89 guard).
+
+# --- Per-split coverage (computed by scripts/curate_tab.py, 2026-06-07) ------------------------
+# file_sha256 = sha256 of the raw upstream echr_<split>.json; rows_sha256 = sha256 of the curated
+# KP rows (sorted-key JSON) — both pin exact provenance.
+splits:
+  train:
+    input_docs: 1014
+    rows: 1010
+    spans: 51916
+    misaligned_dropped: [001-68605, 001-77657, 001-90751, 001-57974]
+    kept_labels: {DATE: 26732, PERSON: 10688, ORG_PARTY: 8691, ADDRESS: 3867, CASE_NUMBER: 1938}
+    identifier_type: {QUASI: 48567, DIRECT: 3349}
+    dropped_unmapped_entity_type: {QUANTITY: 1871, DEM: 2161, MISC: 2341}
+    file_sha256: 4aba41f8ac305ff9e93dd6f0bbc16756e57e9ace396c827931fab70e18d8c6a6
+    rows_sha256: b2be394ecfaabcc3398819d74d39943dcb63cfe9f07a4c09e20fd06ad79ea44d
+  dev:
+    input_docs: 127
+    rows: 126
+    spans: 4912
+    misaligned_dropped: [001-57819]
+    kept_labels: {DATE: 2434, PERSON: 1077, ORG_PARTY: 622, CASE_NUMBER: 436, ADDRESS: 343}
+    identifier_type: {QUASI: 4521, DIRECT: 391}
+    dropped_unmapped_entity_type: {DEM: 304, QUANTITY: 207, MISC: 193}
+    file_sha256: 8c3c7306f46b8d54debeb38ae11d8b0b8bcf4bdccbc3b6f13c12ad7be16893ec
+    rows_sha256: 52fcf6215ecac93751d21ed8f3c9c41b076adccece316fd07acc24aae6fd8f94
+  test:                              # ← the published gold config (tab-echr-legal-en-v1)
+    input_docs: 127
+    rows: 127
+    spans: 4821
+    misaligned_dropped: []           # FULLY CLEAN: 127/127 docs aligned, zero misalignments
+    kept_labels: {DATE: 2467, PERSON: 987, ORG_PARTY: 648, ADDRESS: 390, CASE_NUMBER: 329}
+    identifier_type: {QUASI: 4460, DIRECT: 361}
+    dropped_unmapped_entity_type: {DEM: 233, MISC: 192, QUANTITY: 171}
+    file_sha256: cd0f0f15f84a8739654c7cf30c6be8ce27b051ef73974d39d792a0cb8c846379
+    rows_sha256: 8e26ac5ae7b9c785f28338f09322d7c4d1143ffef635c7703cace8a66be50926
+
+# --- Published config -------------------------------------------------------------------------
+published:
+  repo: klusai/europriv-bench
+  config: tab-echr-legal-en-v1
+  split: test                        # held-out gold (the TAB test split)
+  license: MIT
+  domain: legal
+  language: en
+  config_status: real-gold           # REAL, peer-reviewed, externally-annotated human gold —
+                                      # distinct from synthetic `dev`; does NOT depend on RES-77
+                                      # native-speaker IAA (annotations are already human gold).
+  contamination: clean_held_out       # no board model was trained on TAB ECHR.
