@@ -17,6 +17,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.11", "coverage>=7.0"]
+# RES-95 stage-B RO narrative generation: a LOCAL, OFFLINE LLM authors document bodies (no network,
+# no API key). mlx-lm loads the model from the on-disk HF cache. Optional so the repo's core
+# (splice + span validation + tests) stays dependency-free; only batch generation needs it.
+stageb = ["mlx-lm>=0.20"]
 
 [build-system]
 requires = ["setuptools>=75.0"]
