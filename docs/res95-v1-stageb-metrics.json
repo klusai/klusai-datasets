@@ -1,0 +1,38 @@
+{
+  "issue": "RES-95",
+  "config_status": "dev",
+  "language": "ro",
+  "approach": "stage-B narrative: local offline LLM authors the body; PII injected deterministically (checksum-valid) and spliced offset-deterministically.",
+  "llm": {
+    "model_id": "Qwen/Qwen3-1.7B",
+    "runtime": "mlx-lm (local, offline)",
+    "network": false,
+    "api_key": false
+  },
+  "n": 2000,
+  "seed": 20260607,
+  "seconds": 3535.2,
+  "seconds_per_doc": 1.768,
+  "gold_integrity": {
+    "national_id_spans": 2186,
+    "invalid_cnp": 0,
+    "all_rows_byte_equal_and_bioes_valid": true
+  },
+  "diversity_unique_skeleton_ratio": {
+    "method": "europriv-bench analysis/synthetic_realism_gap.py::template_repetition",
+    "before_stage_a": {
+      "n_docs": 2000,
+      "unique_skeletons": 6,
+      "unique_ratio": 0.003,
+      "top_skeleton_share": 0.18
+    },
+    "after_stage_b": {
+      "n_docs": 2000,
+      "unique_skeletons": 1817,
+      "unique_ratio": 0.9085,
+      "top_skeleton_share": 0.032
+    },
+    "ai4privacy_reference_ratio": 1.0,
+    "res94_ro_baseline_ratio": 0.004
+  }
+}
