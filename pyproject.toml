@@ -31,6 +31,10 @@ where = ["."]
 include = ["klusai*"]
 namespaces = true        # PEP 420: klusai/ and klusai/privacy/ carry no __init__.py
 
+[tool.setuptools.package-data]
+# RES-72 EN real-skeleton scaffold: mined CJEU layout signatures (structure-only, no source prose).
+"klusai.privacy.datasets.data.res72" = ["*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
