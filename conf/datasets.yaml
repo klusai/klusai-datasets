@@ -69,6 +69,19 @@ sources:
     license: "© ECHR-CEDH (restricted reuse) — structure-only, NO text redistributed"
     domain: legal
     role: structure-only
+  # RES-72 EN real-legal training scaffold — feeds the RES-104 zero-shot win-track (TAB ECHR board).
+  # Layout-only signatures mined from real CJEU judgments; STRUCTURE-ONLY (no source text reused).
+  # License verified live 2026-06-08 (HF API): Apache-2.0. CJEU material on EUR-Lex is also reusable
+  # commercially under Decision 2011/833/EU — but we rely only on the uncopyrightable section LAYOUT.
+  # Contamination: CJEU (Court of Justice of the EU) is a DIFFERENT court/corpus from TAB's
+  # ECHR/HUDOC judgments → zero document overlap → CJEU-structure→TAB is genuine zero-shot. The
+  # ECHR-domain alternatives (ecthr_cases NC-SA; LexGLUE ecthr_a/b HUDOC-derived) are EXCLUDED on
+  # contamination (same HUDOC family as the TAB test set) and/or license grounds.
+  cjeu-opendata-structure:
+    url: https://huggingface.co/datasets/davidwickerhf/cjeu-opendata
+    license: Apache-2.0       # verified clean (HF API, 2026-06-08); structure-only, no text reused
+    domain: legal
+    role: structure-only
 
 # Synthetic datasets we generate. Named ds-kp-{domain}-{lang}-{size}. Released volumes (SLUGs) are
 # built from per-locale LocalePack generators (PACKs) via scripts/release_dataset.py: each row
@@ -98,6 +111,10 @@ synthetic:
   # DSAR response — STRUCTURE-ONLY (no source text reused), synthetic CNP-bearing PII, config_status
   # =dev, single authored family. Published as the europriv-bench `legal-realskeleton-v1` config.
   - { name: ds-kp-legal-ro-rs,     domain: legal,    language: ro, n: 1500, pack: ro-legal, license: CC-BY-4.0 }
+  # RES-72 EN real-legal real-skeleton (CJEU-structured). SCOPING + TINY-PROOF only (n=50): not a
+  # full corpus, not published. Real CJEU layout signatures scaffold authored prose + synthetic
+  # checksum-valid EN PII; gold by construction (byte-equality + strict BIOES). config_status=dev.
+  - { name: ds-kp-legal-en-rs,     domain: legal,    language: en, n: 50,   pack: en-legal, license: CC-BY-4.0, contamination_role: train }
   - { name: ds-kp-legal-ro-50k,    domain: legal,    language: ro, n: 50000 }
   - { name: ds-kp-clinical-de-20k, domain: clinical, language: de, n: 20000 }
   # RES-80 EU-breadth batch 1: decode-bearing re-id for SE/CZ — STRUCTURE-ONLY (no source text
