@@ -72,3 +72,6 @@ and offline coverage/training-overlap gates for `gateway-traffic-v1`.
 See [the contract and audit instructions](docs/gateway-traffic-v1.md).
 RES-124 now contains the full local 8,000 test / 1,600 dev conversations (status `dev`).
 See [authoring and QA](docs/gateway-authoring/README.md); independent blind/native review remains open.
+RES-127 adds a local 40,000-prompt TRAIN split (5,000 per language), independent train
+families and subject pools, and a KP-label model export. See [train reproduction and
+limitations](docs/gateway-authoring/train.md) and the [census audit](docs/gateway-authoring/train-audit.json).
