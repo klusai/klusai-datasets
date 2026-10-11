@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install
+        run: |
+          python -m venv "$RUNNER_TEMP/ci-venv"
+          source "$RUNNER_TEMP/ci-venv/bin/activate"
+          # Match make install without its local sibling override: pyproject.toml
+          # already installs europriv-bench from its public Git URL.
+          python -m pip install -e '.[dev]'
+      - name: Lint and test
+        env:
+          HF_HUB_OFFLINE: '1'
+          HF_DATASETS_OFFLINE: '1'
+        run: make check SHELL=/bin/bash VENV="$RUNNER_TEMP/ci-venv/bin/activate"
