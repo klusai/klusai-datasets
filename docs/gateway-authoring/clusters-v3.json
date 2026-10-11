@@ -1,0 +1,662 @@
+{
+  "source": "review-v2/judgments.json",
+  "n_reviewed": 300,
+  "n_flagged": 108,
+  "clusters": {
+    "repeated_scaffolds": 63,
+    "inappropriate_or_unused_pii": 11,
+    "missing_task_material": 20,
+    "inconsistent_context": 9,
+    "forced_quotations": 5
+  },
+  "documents": [
+    {
+      "review_id": "R003",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Clear reminder distinction, but the eight-digit public-help version feels generated."
+    },
+    {
+      "review_id": "R004",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Useful statutory glossary request; arbitrary edition number adds little."
+    },
+    {
+      "review_id": "R005",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Readable expense export with separate claimants; repeating price endings still look manufactured."
+    },
+    {
+      "review_id": "R006",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Idiomatic glossary request with a traceable public reference; edition number is over-engineered."
+    },
+    {
+      "review_id": "R008",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The duplicate line supplies an answerable reconciliation task; amounts have a regular synthetic pattern."
+    },
+    {
+      "review_id": "R014",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Reconciliation input is substantive and correctly attributed; item prices still follow an obvious pattern."
+    },
+    {
+      "review_id": "R019",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "unused_secret",
+      "reason": "The insert/ack sequence is useful, but the unused TOKEN assignment looks inserted to carry a secret."
+    },
+    {
+      "review_id": "R020",
+      "cluster": "missing_task_material",
+      "cause": "missing_receipt",
+      "reason": "Asks to explain receipts but supplies only a name, reference and mismatch label."
+    },
+    {
+      "review_id": "R023",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Executable replay example is credible; the repeated 28-row fixture is longer than needed."
+    },
+    {
+      "review_id": "R024",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Correction list can use the supplied statuses; price patterns and missing actual merchant strings limit realism."
+    },
+    {
+      "review_id": "R027",
+      "cluster": "inconsistent_context",
+      "cause": "contradictory_counts",
+      "reason": "The opening requests three questions, while the pasted plan requests seven."
+    },
+    {
+      "review_id": "R031",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The shared intact-box narrative does not fit the wet-box status of the first customer."
+    },
+    {
+      "review_id": "R035",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "excess_intake_fields",
+      "reason": "Recruitment comparison has almost no skills but includes NIR and birth month for both applicants."
+    },
+    {
+      "review_id": "R037",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Detailed line-level expense comparison is possible; repeating price endings and many bank fields remain artificial."
+    },
+    {
+      "review_id": "R041",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "excess_intake_fields",
+      "reason": "The shortlist comparison carries BSNs and dates of birth but very little candidate experience."
+    },
+    {
+      "review_id": "R042",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Reproducible retry failure with a clear assertion; the large repeated fixture feels expanded."
+    },
+    {
+      "review_id": "R047",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The failing replay assertion is concrete; many nearly identical product fixtures are unnecessary."
+    },
+    {
+      "review_id": "R050",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "A complete code reproduction supplies the expected behavior; input volume looks deliberately expanded."
+    },
+    {
+      "review_id": "R051",
+      "cluster": "missing_task_material",
+      "cause": "missing_merchant_values",
+      "reason": "A long export about merchant-name mismatches never shows either merchant string; repeated prices add artificiality."
+    },
+    {
+      "review_id": "R053",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "A real reconciliation task is supported by the duplicate line; amounts retain a regular pattern."
+    },
+    {
+      "review_id": "R054",
+      "cluster": "missing_task_material",
+      "cause": "missing_export",
+      "reason": "Claims to paste a payment export but supplies only one reference and a status."
+    },
+    {
+      "review_id": "R055",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Executable catalogue replay example is useful; the fixture repeats beyond what the bug requires."
+    },
+    {
+      "review_id": "R057",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Public-law wording is plausible, while the arbitrary edition ID is unnecessary."
+    },
+    {
+      "review_id": "R059",
+      "cluster": "missing_task_material",
+      "cause": "missing_ticket_mapping",
+      "reason": "Explicitly asks to preserve passenger-to-ticket mapping, but the supplied rows contain only phone numbers."
+    },
+    {
+      "review_id": "R061",
+      "cluster": "missing_task_material",
+      "cause": "missing_export",
+      "reason": "Says the payment export is pasted, but only a single customer/status/reference appears."
+    },
+    {
+      "review_id": "R066",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Runnable replay example has a meaningful assertion; fixture expansion is conspicuous."
+    },
+    {
+      "review_id": "R068",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Clear catalogue bug with reproducible expected behavior; sequential fixture is unnecessarily long."
+    },
+    {
+      "review_id": "R069",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Retry example is coherent and readable; repeated product entries provide little additional evidence."
+    },
+    {
+      "review_id": "R076",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The replay bug is executable and clear, but the catalogue fixture is expanded beyond the need."
+    },
+    {
+      "review_id": "R077",
+      "cluster": "missing_task_material",
+      "cause": "missing_accounts",
+      "reason": "Asks to retain accounts beside test results, but gives only names and symptoms."
+    },
+    {
+      "review_id": "R078",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The duplicate expense row gives a meaningful comparison; pricing and the two-digit IBAN continuation look mechanical."
+    },
+    {
+      "review_id": "R082",
+      "cluster": "inconsistent_context",
+      "cause": "contradictory_delivery",
+      "reason": "The opening says the parcel arrived damaged while the status says delivered in the app but not found."
+    },
+    {
+      "review_id": "R084",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "unused_secret",
+      "reason": "The insert-before-ack code matches the retry question; the unused token looks artificially included."
+    },
+    {
+      "review_id": "R086",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "An answerable replay failure with a test assertion; repetitive fixture rows feel expanded."
+    },
+    {
+      "review_id": "R087",
+      "cluster": "repeated_scaffolds",
+      "cause": "padded_statute_list",
+      "reason": "The unrelated article list and send-a-draft instruction do not suit a request for one public-page heading."
+    },
+    {
+      "review_id": "R093",
+      "cluster": "missing_task_material",
+      "cause": "missing_receipts",
+      "reason": "Refers to receipts but does not provide either merchant wording or any receipt lines."
+    },
+    {
+      "review_id": "R098",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "unused_secret",
+      "reason": "The retry sequence is clear; unused TOKEN and slightly literal Polish phrasing reduce realism."
+    },
+    {
+      "review_id": "R100",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Code and assertion show the bug; the phrasing about a second effect is slightly literal and the fixture oversized."
+    },
+    {
+      "review_id": "R101",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Line-level duplicate reconciliation is supported; uniform price endings and a leading-zero card look synthetic."
+    },
+    {
+      "review_id": "R104",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "wrong_workflow_identifier",
+      "reason": "A Steuer-ID is implausible in a routine clinical rescheduling record despite valid syntax."
+    },
+    {
+      "review_id": "R108",
+      "cluster": "repeated_scaffolds",
+      "cause": "padded_statute_list",
+      "reason": "The article-number list and before-sending instruction pad a public glossary question without useful content."
+    },
+    {
+      "review_id": "R111",
+      "cluster": "missing_task_material",
+      "cause": "missing_merchant_values",
+      "reason": "A long receipt explanation request omits the competing merchant strings; the export instead repeats product/status rows."
+    },
+    {
+      "review_id": "R114",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The correction-list task can use the statuses, but regular prices and extensive payment fields feel synthetic."
+    },
+    {
+      "review_id": "R123",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Claimant-specific statuses allow a correction list; identical price endings remain a template artifact."
+    },
+    {
+      "review_id": "R125",
+      "cluster": "missing_task_material",
+      "cause": "missing_receipts",
+      "reason": "The request refers to receipts but includes no actual names or receipt amounts to explain."
+    },
+    {
+      "review_id": "R129",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "wrong_workflow_identifier",
+      "reason": "A German tax identifier is out of place in a routine appointment-reminder record."
+    },
+    {
+      "review_id": "R131",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "excess_intake_fields",
+      "reason": "Applicant comparison has sparse skills but PESEL and birth dates, including an unusually old candidate."
+    },
+    {
+      "review_id": "R132",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "wrong_workflow_identifier",
+      "reason": "The fluent medical question includes a Steuer-ID, which does not naturally belong in this record."
+    },
+    {
+      "review_id": "R133",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The intact/opened package narrative conflicts with not-found status; the quoted greeting/status also feels constructed."
+    },
+    {
+      "review_id": "R134",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Replay code and assertion are substantive; many sequential product rows are excessive."
+    },
+    {
+      "review_id": "R135",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Reminder wording is relevant and fluent; arbitrary version and timing values look generated."
+    },
+    {
+      "review_id": "R149",
+      "cluster": "forced_quotations",
+      "cause": "forced_quote",
+      "reason": "The greeting plus status fragment reads assembled; Polish direct address would normally use Joanno."
+    },
+    {
+      "review_id": "R157",
+      "cluster": "missing_task_material",
+      "cause": "missing_ticket_mapping",
+      "reason": "The requested passenger-to-ticket mapping cannot be preserved from phone-only rows."
+    },
+    {
+      "review_id": "R162",
+      "cluster": "missing_task_material",
+      "cause": "missing_ticket_mapping",
+      "reason": "The request promises passenger-ticket associations but supplies phone numbers instead of ticket references."
+    },
+    {
+      "review_id": "R164",
+      "cluster": "inconsistent_context",
+      "cause": "contradictory_counts",
+      "reason": "The opening asks for three questions while the workshop note specifies six."
+    },
+    {
+      "review_id": "R177",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Claimant-specific statuses support a correction list; uniformly patterned prices remain synthetic."
+    },
+    {
+      "review_id": "R179",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "A runnable replay example with an expected-state assertion; excessive fixture rows reduce naturalness."
+    },
+    {
+      "review_id": "R180",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The code reproduces the catalogue problem, but the long sequential fixture feels expanded."
+    },
+    {
+      "review_id": "R181",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Correction requests are supported by distinct line statuses; the repeated price pattern is conspicuous."
+    },
+    {
+      "review_id": "R188",
+      "cluster": "forced_quotations",
+      "cause": "forced_quote",
+      "reason": "A greeting followed only by a status fragment and the same person's signature still reads assembled."
+    },
+    {
+      "review_id": "R189",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The replay assertion makes the bug answerable; the long regular fixture is unnecessary."
+    },
+    {
+      "review_id": "R192",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "An actual duplicate line supports expense reconciliation; repeating price endings remain artificial."
+    },
+    {
+      "review_id": "R193",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The replay bug is concrete and testable; the long regular fixture adds little."
+    },
+    {
+      "review_id": "R194",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "A clear public-page heading request with a usable citation; arbitrary edition numbering is unnecessary."
+    },
+    {
+      "review_id": "R198",
+      "cluster": "missing_task_material",
+      "cause": "missing_merchant_values",
+      "reason": "The long export never includes the merchant names that the personal receipt-explanation request depends on."
+    },
+    {
+      "review_id": "R204",
+      "cluster": "forced_quotations",
+      "cause": "forced_quote",
+      "reason": "The greeting/status-only quotation and matching signature feel assembled rather than like a pasted exchange."
+    },
+    {
+      "review_id": "R205",
+      "cluster": "missing_task_material",
+      "cause": "missing_export",
+      "reason": "Announces a payment export but supplies only one name, reference and possible-duplicate status."
+    },
+    {
+      "review_id": "R206",
+      "cluster": "missing_task_material",
+      "cause": "missing_accounts",
+      "reason": "The requested account-to-result association has no actual account identifiers in the supplied rows."
+    },
+    {
+      "review_id": "R208",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "An actionable duplicate expense line and owner references are present; prices remain overly regular."
+    },
+    {
+      "review_id": "R214",
+      "cluster": "missing_task_material",
+      "cause": "missing_ticket_mapping",
+      "reason": "Six phone records cannot supply the passenger-to-ticket mapping explicitly requested."
+    },
+    {
+      "review_id": "R218",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The return-flow wording directly supports the rewrite; the arbitrary version string is a minor artifact."
+    },
+    {
+      "review_id": "R221",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Claim correction statuses provide useful input; patterned prices and dense payment fields limit realism."
+    },
+    {
+      "review_id": "R222",
+      "cluster": "repeated_scaffolds",
+      "cause": "padded_statute_list",
+      "reason": "An article-number list and next-step instruction pad a simple request for a public-page heading."
+    },
+    {
+      "review_id": "R223",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The claimant-specific correction list is answerable from statuses; price patterns remain manufactured."
+    },
+    {
+      "review_id": "R227",
+      "cluster": "missing_task_material",
+      "cause": "missing_expenses",
+      "reason": "Asks to compare expense rows but gives only names and status labels, without amounts or references."
+    },
+    {
+      "review_id": "R229",
+      "cluster": "forced_quotations",
+      "cause": "forced_quote",
+      "reason": "The status-only quotation is artificial, and direct address should normally be Andrzeju."
+    },
+    {
+      "review_id": "R230",
+      "cluster": "missing_task_material",
+      "cause": "missing_expenses",
+      "reason": "Expense reconciliation is requested without any expense amounts, references or line items."
+    },
+    {
+      "review_id": "R234",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Executable retry reproduction is clear; the many sequential fixture rows look expanded."
+    },
+    {
+      "review_id": "R237",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Clear catalogue failure with an assertion; the long fixture is more repetitive than necessary."
+    },
+    {
+      "review_id": "R243",
+      "cluster": "repeated_scaffolds",
+      "cause": "repetitive_fares",
+      "reason": "The change-condition table supports the task, though fare rules cycle identically across several codes."
+    },
+    {
+      "review_id": "R245",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The duplicated expense line is actionable; prices and payment fields retain a synthetic pattern."
+    },
+    {
+      "review_id": "R251",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The reminder distinction is useful; 35 minute needs de and the large version number looks generated."
+    },
+    {
+      "review_id": "R252",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Clear booking-help rewrite with useful hold behavior; arbitrary timing and version are minor artifacts."
+    },
+    {
+      "review_id": "R253",
+      "cluster": "missing_task_material",
+      "cause": "missing_export",
+      "reason": "Announces a payment export but supplies a single name, status and reference instead of payment data."
+    },
+    {
+      "review_id": "R254",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "unused_secret",
+      "reason": "Insert/commit/ack shows the retry problem, but the unused token is an artificial secret carrier."
+    },
+    {
+      "review_id": "R256",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "A real duplicate line and references support comparison; price patterns and the IBAN wrap remain conspicuous."
+    },
+    {
+      "review_id": "R258",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The reminder options suit the editing task, but the arbitrary version and 43-minute interval feel generated."
+    },
+    {
+      "review_id": "R260",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The assertion captures the catalogue replay bug; the repeated input rows are excessive."
+    },
+    {
+      "review_id": "R263",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Expense ownership and a concrete duplicate line are clear; uniformly patterned prices still look synthetic."
+    },
+    {
+      "review_id": "R264",
+      "cluster": "forced_quotations",
+      "cause": "forced_quote",
+      "reason": "A greeting plus only Rechnung angefordert and the same-name signature is not a plausible pasted exchange."
+    },
+    {
+      "review_id": "R266",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Runnable retry code and an assertion establish the problem; the fixture is longer than needed."
+    },
+    {
+      "review_id": "R268",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The public booking instructions are usable; the eight-digit version remains an unnecessary artifact."
+    },
+    {
+      "review_id": "R269",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The shared opened/intact-box narrative conflicts with the not-found parcel among the customer rows."
+    },
+    {
+      "review_id": "R271",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The common intact-package narrative does not fit the missing and wet parcels in the same batch."
+    },
+    {
+      "review_id": "R272",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "Useful reminder distinction and clear Dutch; arbitrary timing/version values are slightly artificial."
+    },
+    {
+      "review_id": "R273",
+      "cluster": "inappropriate_or_unused_pii",
+      "cause": "wrong_workflow_identifier",
+      "reason": "A National Insurance number is implausible in a routine clinical appointment record."
+    },
+    {
+      "review_id": "R274",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The public GDPR glossary task is clear; the edition number is unnecessary synthetic detail."
+    },
+    {
+      "review_id": "R276",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Claimant-specific correction statuses are useful; price patterns and bank details remain mechanically arranged."
+    },
+    {
+      "review_id": "R279",
+      "cluster": "missing_task_material",
+      "cause": "missing_receipts",
+      "reason": "Refers to explaining receipts but supplies no receipt content or merchant-name comparison."
+    },
+    {
+      "review_id": "R281",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_version",
+      "reason": "The return-flow explanation fits the rewrite task; arbitrary version numbering is a minor artifact."
+    },
+    {
+      "review_id": "R282",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The shared intact/opened-box description conflicts with missing and wet-package statuses."
+    },
+    {
+      "review_id": "R284",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "The duplicate line supports team expense reconciliation; regular prices and the wrapped IBAN remain synthetic."
+    },
+    {
+      "review_id": "R285",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "The failing replay test is concrete, while the long sequential product list is excessive."
+    },
+    {
+      "review_id": "R287",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "Correction statuses can drive the requested list, but payment fields and repeated price endings reduce realism."
+    },
+    {
+      "review_id": "R290",
+      "cluster": "repeated_scaffolds",
+      "cause": "oversized_fixture",
+      "reason": "Executable retry example supplies a real bug; the fixture repeats well beyond the minimum reproduction."
+    },
+    {
+      "review_id": "R292",
+      "cluster": "missing_task_material",
+      "cause": "missing_accounts",
+      "reason": "Explicitly requests account-to-result associations but only provides names and symptoms."
+    },
+    {
+      "review_id": "R294",
+      "cluster": "inconsistent_context",
+      "cause": "context_mismatch",
+      "reason": "The common opened-package narrative does not fit the missing delivery listed for one customer."
+    },
+    {
+      "review_id": "R296",
+      "cluster": "repeated_scaffolds",
+      "cause": "mechanical_amounts",
+      "reason": "A claimant correction list is supported by line statuses; regular prices and extensive payment fields remain artificial."
+    }
+  ]
+}

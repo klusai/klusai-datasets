@@ -39,7 +39,7 @@ def drafts():
 
 @pytest.fixture(scope="module")
 def rows(drafts):
-    hashes = {p: file_digest(p) for p, _ in drafts}
+    hashes = {p: file_digest(p) for p in {path for path, _ in drafts}}
     return [attach_provenance(d, p, "a" * 40, hashes[p]) for p, d in drafts]
 
 
@@ -109,8 +109,8 @@ def test_ids_decode_dob_card_and_cross_split_values(rows):
                 assert card_valid(span.text)
 
 
-def test_source_commit_and_artifact_hash_when_finalized():
-    import subprocess
+def test_source_revision_and_artifact_hash_when_finalized():
+    from klusai.privacy.datasets.data.gateway_artifact_provenance import revision_bytes
 
     for split in ("test", "dev"):
         path = ROOT / "artifacts/gateway-traffic-v1" / f"{split}.jsonl"
@@ -120,18 +120,19 @@ def test_source_commit_and_artifact_hash_when_finalized():
         provenance = rows[0]["provenance"]
         artifact = ROOT / provenance["artifact_path"]
         assert file_digest(artifact) == provenance["file_sha256"]
-        committed = subprocess.check_output(
-            ["git", "show", f"{provenance['source_revision']}:{provenance['artifact_path']}"], cwd=ROOT
-        )
+        committed = revision_bytes(provenance["source_revision"], artifact, ROOT)
         assert committed == artifact.read_bytes()
         drafts = [json.loads(line) for line in artifact.read_text().splitlines()]
         assert len(drafts) == len(rows)
+        materialize = attach_provenance
+        if provenance["generator_version"] == "res124-tranche2-v2":
+            from klusai.privacy.datasets.data.gateway_authoring_v2 import attach_provenance as materialize
+        if provenance["generator_version"] == "res124-tranche3-v3":
+            from klusai.privacy.datasets.data.gateway_authoring_v3 import attach_provenance as materialize
         for draft, final in zip(drafts, rows):
             assert (
                 final
-                == attach_provenance(
-                    draft, artifact, provenance["source_revision"], provenance["file_sha256"]
-                ).model_dump()
+                == materialize(draft, artifact, provenance["source_revision"], provenance["file_sha256"]).model_dump()
             )
         assert all(r["provenance"]["source_revision"] == provenance["source_revision"] for r in rows)
 

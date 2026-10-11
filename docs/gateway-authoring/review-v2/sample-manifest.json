@@ -1,0 +1,35 @@
+{
+  "n": 300,
+  "population_n": 9600,
+  "sampling_seed": 12402,
+  "seed_count": 1,
+  "method": "two per eligible language/split/family cell plus random extras, then shuffled opaque IDs",
+  "exclusion": "every scenario/translation group present in the earlier sample, across all languages",
+  "previous_sample_sha256": "7a336c040f7379c0a782621bdc052d50ce4ee656c51ba6c4fc617249cf79d4ed",
+  "packet_sha256": "d2514ea1c60f70f72f4707a42354f5890048145dd5c254ad866b71597d59378e",
+  "mapping_sha256": "98121932e5863aaf9dfb8af8ea172a69acc293a13ff2fa550b76669536f2be76",
+  "sources": {
+    "artifacts/gateway-traffic-v1/originals/v2/test.jsonl": "6ad70db72fea2533b085800e4f9992aab5baab44ac416c7c0142725d21a05a2f",
+    "artifacts/gateway-traffic-v1/originals/v2/dev.jsonl": "853f9b3dacb6d728a6c6709f1f677f0d52effd47c7f5109f00ff304e5db9858e"
+  },
+  "strata": {
+    "fr/dev": 19,
+    "nl/dev": 19,
+    "fr/test": 19,
+    "de/test": 19,
+    "en/test": 19,
+    "es/test": 18,
+    "en/dev": 19,
+    "it/test": 18,
+    "es/dev": 19,
+    "pl/test": 18,
+    "de/dev": 19,
+    "pl/dev": 19,
+    "ro/test": 19,
+    "nl/test": 18,
+    "ro/dev": 19,
+    "it/dev": 19
+  },
+  "bench_revision": "14cfc44d5218e2f96081fc7ea8db5b07eb2880b3",
+  "credential_sanitization": "Same sample, provider-neutral token substitution; historical author ratings not rerun."
+}

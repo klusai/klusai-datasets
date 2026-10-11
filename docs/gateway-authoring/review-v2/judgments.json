@@ -1,0 +1,2632 @@
+{
+  "R001": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Clear cancellation-file task with separate owners; addresses are plausible copied intake fields.",
+    "text_sha256": "a0995358d2ce5178c4cf5775f4e760aa660c1c091a9695248d4d4fb71795dc26",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R002": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural short retry question; the failing insertion is present although transaction context is thin.",
+    "text_sha256": "8e1b7ae53c93021033082595482de4eee8e6f49839ba865c15a393f2f84bb45b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R003": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Clear reminder distinction, but the eight-digit public-help version feels generated.",
+    "text_sha256": "97c870eb46de732eec863e47a418727b78b4e93935289ec9658358969a4e40e8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R004": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Useful statutory glossary request; arbitrary edition number adds little.",
+    "text_sha256": "855e37ef4f8149ff58330b34fa6f749589bd174bd4418309a2ec05f5f560d4ad",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R005": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Readable expense export with separate claimants; repeating price endings still look manufactured.",
+    "text_sha256": "af5cf6c4ee8a3f0fd95aee528e11cb6d8b6a25b6c9f5cc1b6f1a87d5778100d0",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R006": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Idiomatic glossary request with a traceable public reference; edition number is over-engineered.",
+    "text_sha256": "a1edbcb77021307e8d19c85edd25e78acb41dd043f61ef170c1dfba99830638b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R007": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Credible scheduling request; each patient has a record and a different practical need.",
+    "text_sha256": "8a2d238f2db8594ac3f2eee2627d20aea5e89e245f984aa07fff0beb8a23012d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R008": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The duplicate line supplies an answerable reconciliation task; amounts have a regular synthetic pattern.",
+    "text_sha256": "b3c481cc4e69999525733395256eb592ab1f935c630e1a8ee70370e7f4e2c931",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R009": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Brief usable booking instructions accompany the rewrite request; hold duration is unusually precise.",
+    "text_sha256": "c21e73ec5b082c40053eb1d6c6add4713cbc1452337b08b6f03b6b03e9b7941b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R010": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Plausible shared return workload with distinct customer preferences and usable contact rows.",
+    "text_sha256": "1babe5d64bed65d542b222bc72ceeb2adf3097dd2e024a676a04289d4fd5b960",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R011": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Concise replacement-device problem with the account needed by support.",
+    "text_sha256": "44094c0f9763b2f0af217b4dc36644123293f042a4df1e191b2c0825aa73bdfa",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R012": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic configuration-explanation request and a relevant small YAML example.",
+    "text_sha256": "cd771956b687058fd2e0d4fd608325060400d255dd735868a5ad0f6cb1df61dd",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R013": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Pasted medical records support a follow-up request; administrative details are somewhat heavy.",
+    "text_sha256": "7b372df7d963dabc80198669b07fa85e00cae896369dd03a6d143dbda22a409b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R014": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Reconciliation input is substantive and correctly attributed; item prices still follow an obvious pattern.",
+    "text_sha256": "eea122bc32260e1f22ef381561d905052e2e098a9a4a18e59956b2df971b31ab",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R015": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Records and reminder problems stay separated; diagnoses are extra but plausible in a portal paste.",
+    "text_sha256": "5e79fad951039be4cc7113357c0174f5b00ed623c73494542c27200f7f558526",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R016": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural retry request with a relevant one-line database operation.",
+    "text_sha256": "ebd7985c7ff71902e4a3827fc5c852ff0f1211a581d893c249c4490c836a8613",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R017": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A believable concise access complaint with the affected account.",
+    "text_sha256": "ee7135a3edfe1f9e813272720cc8366e2ad360fe95c70922e3e8e892cb65b21c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R018": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Tenant roles and evidence are clear; the request is more carefully framed than casual chat.",
+    "text_sha256": "c958b082028afc29517386a3468f2e7902789675ccdf25e4abc73e115fbb5f48",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R019": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "unused_secret"
+    ],
+    "reason": "The insert/ack sequence is useful, but the unused TOKEN assignment looks inserted to carry a secret.",
+    "text_sha256": "a4241facc90e46b9189e9067cff9f705986db3652f9c7cba616aca8c1188deef",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "90ff60fe199c9e2e07776d6a1bc9c845b6ba93ed9742dd9a04ae7c79b4e2da80",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R020": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_receipt"
+    ],
+    "reason": "Asks to explain receipts but supplies only a name, reference and mismatch label.",
+    "text_sha256": "30236d668d4ca0161125eef56bc55f6e185b5dd811ad005bd16616edec9a1268",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R021": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Local/staging outcomes and a header construction are relevant; the token provides a plausible debugging leak.",
+    "text_sha256": "eb0a49e62240e07238bf20213f15b6fadf4d24053b3dea9c7492de787c1b0024",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "e8d2cf4917df28eea652343f3847042cad8504be9d88f1a03c8f8f8234fcb1a1",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R022": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate candidates have skills to summarize, though the CV notes are very sparse.",
+    "text_sha256": "a94156f0c17b0f76caeb9811e509aff09b1bf67a656241e4ae249de501cd2404",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R023": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Executable replay example is credible; the repeated 28-row fixture is longer than needed.",
+    "text_sha256": "6a22f851a02ad85f71b66186f65662d4b3748ad8da997906441d4df0a136899e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R024": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Correction list can use the supplied statuses; price patterns and missing actual merchant strings limit realism.",
+    "text_sha256": "86f76b3952a550fe12ecbff0d30ff5420b99b468b62fcb259851e6592b06e14b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R025": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise lost-delivery reply request with a specific tracking symptom.",
+    "text_sha256": "e61f11228ba77e2ecee6fc3150327d63cf9d0b1c6e6ca748dece24703843fd00",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R026": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural short request about cancellation; evidence is thin but asking for a reply is plausible.",
+    "text_sha256": "95029acb7af8982e1c24e1c8564b20d02654e089160df000e68a9a9985106999",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R027": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "contradictory_counts"
+    ],
+    "reason": "The opening requests three questions, while the pasted plan requests seven.",
+    "text_sha256": "8c80bfb3cf16fa9e19168fa88b2ba72fc72707723d1a9ea126d53cec14bc6f49",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R028": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Joint deposit request has attributed evidence; the careful legal framing is slightly formal.",
+    "text_sha256": "91c7e8035653ce308cb187b4c44ac69621a3abcaaf500f57242d4a53e9a35e17",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R029": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible initial follow-up question, though the portal results themselves are not pasted.",
+    "text_sha256": "66f3c367311127d38ecb13a9610a0e483fa6cc63942b8e0b5aaec068decfbb7a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R030": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The baggage rows provide dimensions and weights needed for a checklist; technical headers are slightly stiff.",
+    "text_sha256": "f9180db5bcf3ef9d4c3f057c93da59f6f5a0da1004c4e93f2f96c99c1e13920d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R031": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The shared intact-box narrative does not fit the wet-box status of the first customer.",
+    "text_sha256": "7520291399141c592686f6bbe473fbaa67bcf6cd262211053c0fe235082e1777",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R032": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A coherent workshop brief with audience and teaching sequence; unusually precise duration is a minor defect.",
+    "text_sha256": "1cdc9a6cfe087ce870abb488c964833e3f538b047733731864d0ac81a0d77035",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R033": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Passenger references and distinct luggage needs make the transfer request useful and believable.",
+    "text_sha256": "9e60f5c9604102924c5345b9c3d13e79d45f9e10ce5b057ef710ad61f7ced8f5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R034": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural connection-validity question; missing itinerary is an ordinary but material information gap.",
+    "text_sha256": "8252849b860df9393d765b29c869c0ad1a952470b060994a5b5b926c22342f51",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R035": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "excess_intake_fields"
+    ],
+    "reason": "Recruitment comparison has almost no skills but includes NIR and birth month for both applicants.",
+    "text_sha256": "903a6b04346d7a1e1b29365321fad90e46ec8d12c5df5d0e88a8f7f3217d0326",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R036": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Routine check-up question sounds natural; the actual results are only mentioned, not supplied.",
+    "text_sha256": "46a8e4aa2f4c423c791a738814891b91858cbbf6faaed97b8d0f670eaaf24416",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R037": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Detailed line-level expense comparison is possible; repeating price endings and many bank fields remain artificial.",
+    "text_sha256": "70ba3f48b304a89212f73b214616129527eb2fff15391c954a4dd426e624de44",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R038": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Concise candidate summaries have distinct skills, albeit only two keywords each.",
+    "text_sha256": "433ea81ddfb77fcabb85904946e14c493b3c5ed29eef12594f8b8a1b65079bb1",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R039": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The header snippet and per-user results support the debugging request, with limited surrounding code.",
+    "text_sha256": "ab948e2d7d57ffedf5e4ff148b54ea3ea8220987f014b26148d4e860fd5c2328",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R040": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A direct, plausible request to ask for a deposit breakdown, with the relevant case reference.",
+    "text_sha256": "8e0dfcdb52355e74be7a2a7d1e2625f799fd74d6de8e0cca54ca5283c0d8cfc5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R041": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "excess_intake_fields"
+    ],
+    "reason": "The shortlist comparison carries BSNs and dates of birth but very little candidate experience.",
+    "text_sha256": "a4f9a3af835fdc87f064ff46ea7ae4de45199e75d7dc8e26c85556a3d0cc5f9b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R042": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Reproducible retry failure with a clear assertion; the large repeated fixture feels expanded.",
+    "text_sha256": "b27796df29feb48cf1164f075b1f11bfd2db3b645ac19c5809f12e17ec1bf344",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R043": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Configuration fields match the setup-guide question and the Dutch phrasing is straightforward.",
+    "text_sha256": "58192a4d3bc9409d7a8da3a2bff9388e915eb86d0cc89bac9f884ddbfc7ffabf",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R044": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Useful baggage source rows; machine-style English headers are a small register mismatch.",
+    "text_sha256": "5d11fed5a49722295b7839dc8510934126a6d6868c917e905f49abaa51f551ad",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R045": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic internal-application request with very thin but relevant skills and contact details.",
+    "text_sha256": "3dc4e89a43b4dd36b4ac361671e2dd8ec4ea7f43f88b8a4ddd4399eaa3dd2887",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R046": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Distinct user outcomes and the offending header assignment make a plausible compact debugging message.",
+    "text_sha256": "0e419dd3b7a66e45d396e2f45ae368ace6c4f2d9f55f7ce8ea22d0df8a099ef2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R047": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The failing replay assertion is concrete; many nearly identical product fixtures are unnecessary.",
+    "text_sha256": "8e8d89f7bf052223d1606a5f9bdf7badd144417f31887fc3ba918fba44925ebf",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R048": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Short, clear device-assignment complaint with the account to investigate.",
+    "text_sha256": "4a09117593f2c94afd9dc6864859397c4a5419bc68e124899607b639710127c6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R049": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A passenger and booking reference make the request plausible; arrival details would still need asking.",
+    "text_sha256": "1948148bd275196d1d0d720608a31e23848cfdbc0d5dad053961ecc40466fb32",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R050": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "A complete code reproduction supplies the expected behavior; input volume looks deliberately expanded.",
+    "text_sha256": "c5a5140d97133b64b6ee1ab1bc96a3c384c55b2ad0fea4c50629977bdfe77fa6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R051": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_merchant_values"
+    ],
+    "reason": "A long export about merchant-name mismatches never shows either merchant string; repeated prices add artificiality.",
+    "text_sha256": "04552b873dbce19d451edb7e31eb792e6ad6471fbeadf136f80404aa111e514c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R052": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Appointment/reminder mismatch is stated naturally and includes the patient reference.",
+    "text_sha256": "84400bd28377512b385de785c8e97a5cec58db7f1c2f14e0c5b7efebc1683744",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R053": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "A real reconciliation task is supported by the duplicate line; amounts retain a regular pattern.",
+    "text_sha256": "c13d647a6aa68d4a578fca48ea0c154f87e1c83910919980fbadcfdda2747403",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R054": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_export"
+    ],
+    "reason": "Claims to paste a payment export but supplies only one reference and a status.",
+    "text_sha256": "016cee3c0684b36d486c77c38e600940c94fb54794e5ce65f6e8bce202e02cea",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R055": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Executable catalogue replay example is useful; the fixture repeats beyond what the bug requires.",
+    "text_sha256": "90ad70fbbcd367f4f6d5bfe8e9f72fdec40734d4f94258a5c6b32ed46350762f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R056": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible joint cancellation file with separately attributed evidence and missing-date questions.",
+    "text_sha256": "2256f52f30343b52d7dac35d272975f7d83a42255fda90714b3a73cce965a676",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R057": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Public-law wording is plausible, while the arbitrary edition ID is unnecessary.",
+    "text_sha256": "d0724a3fed88818495c89064d28489a8e1ca09a193b4903cbc9de1c01a092ee2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R058": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Useful transfer enquiry with an actual passenger contact; slightly over-prescriptive drafting instructions.",
+    "text_sha256": "8e734adb5efdeb19ec72ffba65dec9799b4251111a126167452fe05604ca6257",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R059": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_ticket_mapping"
+    ],
+    "reason": "Explicitly asks to preserve passenger-to-ticket mapping, but the supplied rows contain only phone numbers.",
+    "text_sha256": "8b92db3128d68c490645b59fa9dc8e2fb2de87a1ccfcdd8cabd28c03faa76e20",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R060": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Passenger references and separate rebooking statuses support the requested group enquiry.",
+    "text_sha256": "ec5d9921b9a018cdb1817005539a49413b1f9936df9572a245a1ad7065e553b6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R061": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_export"
+    ],
+    "reason": "Says the payment export is pasted, but only a single customer/status/reference appears.",
+    "text_sha256": "d99e51e4c5161ef056f5f79ebe03119ef1b4c004d15ef338ef2af16d47fc022d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R062": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural helpdesk request with the account and cross-device symptom.",
+    "text_sha256": "b918c5f9e21f3476ddda385ed05cae65bf46a9633f01da5c419c116126a4a90a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R063": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A compact update operation and example product make a credible retry question.",
+    "text_sha256": "950a1a35b55a354d557655956a144d402e406d1321cf5067e566e6b7a607e9e8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R064": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Transfer problem is coherent and has contact details; broader instructions are mildly formal.",
+    "text_sha256": "932cc5c0ee99b018179f10d13b4d0c730c97da1f93b7802f58b508cca89b1c11",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R065": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural return-label request with the right-size issue and customer contact.",
+    "text_sha256": "97afa9d0912320652a7d05638723cc25aa643ec41494672bcbd28393731d62cd",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R066": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Runnable replay example has a meaningful assertion; fixture expansion is conspicuous.",
+    "text_sha256": "c4b8d09f3372252210991cede450d73c15e72a0867b1566d45763ca182d686c7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R067": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Believable team device-enrolment problem with a colleague quote and tool result tied to one account.",
+    "text_sha256": "f13599d5eaf3d3cd5f2ee35a961847872039c3d6287aab0fd5c6fae3e7d6cb9d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R068": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Clear catalogue bug with reproducible expected behavior; sequential fixture is unnecessarily long.",
+    "text_sha256": "2f22588239b1c1e031f576a552d8ae5d079448867b80433e40acf5f937dc9842",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R069": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Retry example is coherent and readable; repeated product entries provide little additional evidence.",
+    "text_sha256": "c288eeb0b87dc4e692539f23148c08223dfc4e521430fe9f206fa08c234c0d60",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R070": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A short access-loop complaint naturally asks what to send support and supplies the affected account.",
+    "text_sha256": "2421e9a1a3a454956e3274d285eb6117e64d3384ba2cec73f2a1f5d77174fa02",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R071": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Baggage dimensions and weights support the checklist; technical column names are a minor mismatch.",
+    "text_sha256": "2b99fdec8f5d57a8c01b319289fa77d6fb6d8e997db9bd1f2e9f2b33a042c56a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R072": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural group transfer request with useful passenger references and luggage distinctions.",
+    "text_sha256": "00d8c3ae1384f9b47e3d3f90314d28b58a586784bacf80ac6e97040312d415e8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R073": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Plausible rebooking enquiry with a case reference; the absent itinerary would require follow-up.",
+    "text_sha256": "ddcd450b90781f2f7ee456894b8364fab2c97091036aa253c66a20cbf59d45fe",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R074": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Relevant candidate skills are separated by person; the repeated drafting constraints are slightly formal.",
+    "text_sha256": "e7b144d04ff7ea200b66ff973d11aa416dda05d5a7bba83463de24cb9adf4c2a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R075": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "An ordinary wrong-size return request with enough information to draft the initial enquiry.",
+    "text_sha256": "b449669dd479cc0e9cd7c7df81b561704fc8fdbdec378030405b0e26a37465c2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R076": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The replay bug is executable and clear, but the catalogue fixture is expanded beyond the need.",
+    "text_sha256": "2bd155c1d9fb97ef8858efd021155bb24f9556141e448804132c0523988f8bd5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R077": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_accounts"
+    ],
+    "reason": "Asks to retain accounts beside test results, but gives only names and symptoms.",
+    "text_sha256": "2f25cb1fc3f588f49940777e3ec4465b8eeb310ccd1c0dad300b6356c7f64360",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R078": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The duplicate expense row gives a meaningful comparison; pricing and the two-digit IBAN continuation look mechanical.",
+    "text_sha256": "183307b89e2786d093820680b6495c8377668bf0fd08dcbf65c789ec40ec616c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R079": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A realistic queue of return tasks with distinct customer preferences and contact rows.",
+    "text_sha256": "570b5fc015d11b353d55c48c0ac31e603dac3160dd358397fbba30e3d09afe16",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R080": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic Polish return-label request with a specific sizing problem.",
+    "text_sha256": "ef1d8f774fde5ae4058514d79360a5dcbce400bc73bcbf00b80a1c77288cdbfd",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R081": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural first legal-preparation message, although the promised documents are reduced to a status.",
+    "text_sha256": "3dfeaa92b55e0e2711419a0ed5001c99795db3219e951d45ce9f36733fd47c10",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R082": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "contradictory_delivery"
+    ],
+    "reason": "The opening says the parcel arrived damaged while the status says delivered in the app but not found.",
+    "text_sha256": "21a87e6b69fc8e671c26e6df913940b4757b15e8cfb00061b09ed704443b1a25",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R083": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Six candidates have attributable notes and open questions; very terse skills are a minor limitation.",
+    "text_sha256": "0e9b6ac68c6659aca9f599fa12f0895a4478ce6b1c2304c5e17162fc369cc651",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R084": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "unused_secret"
+    ],
+    "reason": "The insert-before-ack code matches the retry question; the unused token looks artificially included.",
+    "text_sha256": "d0551a03992003f38c25c2a87e51753a9eacac73b5985a9958fe3d7e68cfcd02",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "bf45d0827607e2eb740887db1332ff1f6a2c5b4fe248ec6b2b23559a3339f96a",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R085": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Believable missing-transfer enquiry with a named passenger and booking reference.",
+    "text_sha256": "c60c958a0a2293d875d0224e5911f7b0134ff68258f328abcc67ebf476ff8420",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R086": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "An answerable replay failure with a test assertion; repetitive fixture rows feel expanded.",
+    "text_sha256": "f8f773df9986b14ce7e374b42fce0a7e12bac8a19a9a089a33986409fcd8d35a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R087": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "padded_statute_list"
+    ],
+    "reason": "The unrelated article list and send-a-draft instruction do not suit a request for one public-page heading.",
+    "text_sha256": "2a7a49028cdd0aa7bb351561f6ab84cfa42deccedae6c3f5912aeedb8ab426c7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R088": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Short, idiomatic device-assignment ticket request with the affected account.",
+    "text_sha256": "6930322443085b6ec53ce4a993a4e55e91dabaeae73893b9133582174f219440",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R089": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Group rebooking request keeps useful references beside the three passenger situations.",
+    "text_sha256": "8cd1f53aa989640c161cfee09f3f102f007bc794f1b7dd1c75cb4518c59ec67c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R090": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible portal paste with separate patient records; diagnoses are unnecessary but understandable copied fields.",
+    "text_sha256": "b230f89ccebfd0e98ede6917ea45678cfbd0717d3ddea01532e43f4df302aa22",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R091": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural recruitment handover request with one relevant skill and a pending reference check.",
+    "text_sha256": "7272338f9ff8810a553cc09e673e45a3f164c4488634eb8f5484aeb7fecfcc66",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R092": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Clear coordination request and individually attributed patient records; diagnosis fields are slightly excessive.",
+    "text_sha256": "a0e300a947402d394d65fe96d3aa45f3a4547591222b281aacad000fc1184e7f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R093": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_receipts"
+    ],
+    "reason": "Refers to receipts but does not provide either merchant wording or any receipt lines.",
+    "text_sha256": "92f86e70bb12f08f762dbbf98aa45d5387222c5044cf22644064c4e601f12278",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R094": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise appointment-confirmation request with an actionable record reference and duplicate-slot symptom.",
+    "text_sha256": "1a32aaf8c00bb7445744ad2cd8f8fb784d94aa90502427713fdc8030d8d15f21",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R095": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The supplied YAML directly supports the requested setup explanation.",
+    "text_sha256": "5f16bc90db1f9bfe74daea8659f14f06af038d068b2658f6854bfbe03d3a8d1d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R096": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Plausible initial check-up preparation question; actual portal findings remain absent.",
+    "text_sha256": "8b54693eae699f89bb5350638bcae556ed91ef6ac34bc0b041d89ad99ea1f4ab",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R097": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A compact configuration example fits a public setup-guide request.",
+    "text_sha256": "2a67cf73370bd3850469d05d339446548b9680f6a33eb9d6311406f35e835f2b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R098": {
+    "naturalness": 4,
+    "fluency": 4,
+    "artifacts": [
+      "unused_secret"
+    ],
+    "reason": "The retry sequence is clear; unused TOKEN and slightly literal Polish phrasing reduce realism.",
+    "text_sha256": "82433668b4561b2661083b5f99c02118e9b7b02295cf8668a98855748d0141e8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "309db560618f826f4c274d8698e069dd2a6ad676c363eaaebe4317d68ea832e1",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R099": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible shortlist handover with individual skill notes, albeit very evenly structured.",
+    "text_sha256": "017166717886d2974094f940cd1c000991bea5ccb7faefa56dceda92aad7f38c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R100": {
+    "naturalness": 4,
+    "fluency": 4,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Code and assertion show the bug; the phrasing about a second effect is slightly literal and the fixture oversized.",
+    "text_sha256": "feddb27654d0c25c9ba5a6974ba0fa29041101ca116496714881166b3aa9c921",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R101": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Line-level duplicate reconciliation is supported; uniform price endings and a leading-zero card look synthetic.",
+    "text_sha256": "bcc8d1d8b7788326dbc13aa9e6d631fa97e63dc28eefd09a6db424721fb747a3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R102": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The follow-up question is natural but only a record pointer, not the medical information, is supplied.",
+    "text_sha256": "362800515ecff79f3987bdc1821be07978519d95e6145c063a60dbe5901af231",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R103": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Customer return preferences are kept separate; copied obfuscated contacts are plausible.",
+    "text_sha256": "05dd419833b00d2b93f2b82ff34fd6e1f9c6a96c0098d7661aab6c91e86949bc",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R104": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "wrong_workflow_identifier"
+    ],
+    "reason": "A Steuer-ID is implausible in a routine clinical rescheduling record despite valid syntax.",
+    "text_sha256": "e10085bb311469dffaaac8e59b3eaeeb52167ea676ef8592b6bb1397c4d80486",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R105": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Per-user outcomes and the header-building code support an ordinary authentication debugging request.",
+    "text_sha256": "c9b33cb1b342ed280e090cef6ae162bc584eca72b527c91a58c4e61dc0167d3f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "2435f1ba6a5dd48f3e3301e94c4ba1390fb85a59fe45359bd7881ae229938993",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R106": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Clear registration failure with the affected account and old-device clue.",
+    "text_sha256": "942a157c116cfe6b8386db7541cb13626e88429ca1db2dedbdda9323100eaaa6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R107": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural short IT-ticket question with a relevant account and device symptom.",
+    "text_sha256": "efb05ca0c098f519ecf63edd3cd4de005128576bafbfecfa4690efd2175c191f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R108": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "padded_statute_list"
+    ],
+    "reason": "The article-number list and before-sending instruction pad a public glossary question without useful content.",
+    "text_sha256": "43e39d8c8b60f3ff66b896fabe664b1ae3c63581925857d31e916d1d1de1931e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R109": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic application-editing request, though the supplied experience is only two keywords.",
+    "text_sha256": "9a565b1d50ef38fa71fd115444aed2015a8063fac5af611e19ce47306d405a0b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R110": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise ticket-validity question with the passenger and reference attached.",
+    "text_sha256": "e18fdb542a6df64b1c31b61e12b8f7d498a182a08877e6d1fd5440bfc153ee15",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R111": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_merchant_values"
+    ],
+    "reason": "A long receipt explanation request omits the competing merchant strings; the export instead repeats product/status rows.",
+    "text_sha256": "9880034b42049cba8b760dfb075fd4804369a4c4396f8c41299d509209d8d2f7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R112": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural cancellation-response request with a case reference, though evidence is sparse.",
+    "text_sha256": "1996cc6d461a3457d8537d2e78fd15a8a7a20e339cea4173631b49df56ced637",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R113": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Plausible concise deposit reply request; only key return is supplied as supporting context.",
+    "text_sha256": "4f400a20dd0c6a68c70bde4a33558b87b16a19888c8920909a5eb3b8384b97ca",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R114": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The correction-list task can use the statuses, but regular prices and extensive payment fields feel synthetic.",
+    "text_sha256": "a089cd1c28a7d0e74e2dbc895e6b6e12c1754e179ff46e4fb0fe5b17ddbdd147",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R115": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Distinct patients have relevant scheduling needs and portal-style records; copied diagnoses are mildly excessive.",
+    "text_sha256": "37ba7c79f7227447603dbc3bd2039fbc3a2776aefaf49cebfb083f0652a9f9db",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R116": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A believable routine follow-up portal extract with coherent identity, birth date and condition.",
+    "text_sha256": "f92b90a18a785b3a89b37d5a29f69ef5912b83406eb0299a2d77fcf336358f71",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R117": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate service-cancellation files and addresses fit intake notes; wording is somewhat formal.",
+    "text_sha256": "475a3714af61eff1a3b3fc2636853f49d4140ef449895e55b7ad4634958a6cec",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R118": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Usable shortlist handover with separate skills and pending steps, though highly abbreviated.",
+    "text_sha256": "45229b6c0d7ac31fd468931200adc12d69bac8e9d7654715d081051b8ec8f988",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R119": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural request for a deposit breakdown with a reference and previously requested invoice.",
+    "text_sha256": "5e11f9bd57b6005eaba5b5d23debb86de49b82b03fd009e770045c0a81a10538",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R120": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The wet-carton status fits a concise delivery-response request and copied obfuscated email.",
+    "text_sha256": "71079a94d8a2431e2fb1097790047f27081bcba16bb282cc863a2535d6e18d46",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R121": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic recruitment handover request, but the source notes offer only a single broad skill.",
+    "text_sha256": "1a86b809f435143e5d64f6c53833756d438c8056b94880114e6cad1b35c75707",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R122": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Each internal candidate has a distinct work area; the terse notes are plausible but minimal.",
+    "text_sha256": "904bbd5d6ac2ba0aa9587c0aa795f3b92a1071de6998d26833187f76c0d304fe",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R123": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Claimant-specific statuses allow a correction list; identical price endings remain a template artifact.",
+    "text_sha256": "b02f65e538ed3ec5be409577436d9b5ceec0c7d7599f7129e155b3574278048d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R124": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural administrative clinic message with a patient reference and a practical scheduling preference.",
+    "text_sha256": "89e4d8338a69027be56e2d3f1b57a663df5bb6611fe731ec49cef094958d3fbc",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R125": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_receipts"
+    ],
+    "reason": "The request refers to receipts but includes no actual names or receipt amounts to explain.",
+    "text_sha256": "d6a03f59d52e83f54b39803013d9ca4a7d4bd9dd360cac463994e6da29ef34a2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R126": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible first legal-preparation question, though the documents themselves are not pasted.",
+    "text_sha256": "4a9d174af519c56ab400adcd80019a6dd06426af0539d722afb5b393f8543e4a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R127": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "An ordinary clinic-message task with a record reference; the status adds a location question rather than document detail.",
+    "text_sha256": "3e479b64df1dca731b3d2f7adf3c8f8698bc39f33adbbbb8ca0aa0b3027ea8a6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R128": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Asks what to write about a rejected claim rather than to reconcile absent receipts; a brief status can support that.",
+    "text_sha256": "1d15b2812aa794727564d2717f59aa5237b2cf83c47fc05e1822db318cf2ee7d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R129": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "wrong_workflow_identifier"
+    ],
+    "reason": "A German tax identifier is out of place in a routine appointment-reminder record.",
+    "text_sha256": "3da849d2887c36bc6d86dfd3ab0401dd8f2ad4d9eb56fdf4f2a7f5eef4350433",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R130": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Three concrete return situations support separate replies without unnecessary personal fields.",
+    "text_sha256": "ba3d67cf85d8b87105a4d440f71525d6d7588a46fd825fe6a03ea0ab7e18e6a4",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R131": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "excess_intake_fields"
+    ],
+    "reason": "Applicant comparison has sparse skills but PESEL and birth dates, including an unusually old candidate.",
+    "text_sha256": "dd53b52b23c831387a94cf3fd5e0d24828638a7744367303b5ca57af30a5eebf",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R132": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "wrong_workflow_identifier"
+    ],
+    "reason": "The fluent medical question includes a Steuer-ID, which does not naturally belong in this record.",
+    "text_sha256": "6d48c46a48844e27afc0cab57c199c29f30e0656ed9602c4d1ec2611fc86c8b0",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R133": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The intact/opened package narrative conflicts with not-found status; the quoted greeting/status also feels constructed.",
+    "text_sha256": "214c6203d883938124cd2aacaa84fa11a824da092c477487d99160227aa0f905",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R134": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Replay code and assertion are substantive; many sequential product rows are excessive.",
+    "text_sha256": "f0500af3ce860b42f45dcccfb141582ccfa52fb1ab227ab890e5b81fe55aadb3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R135": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Reminder wording is relevant and fluent; arbitrary version and timing values look generated.",
+    "text_sha256": "2a7ff82797cceae518d365bd2aa785c7e31c4b5dac845ecc30c66698b2b859a7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R136": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Concise device-enrolment complaint with a relevant network clue and account.",
+    "text_sha256": "6fba01a4b2f989d925146346b8a9da52a3f758cce3eceb9729071b1a9ece1137",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R137": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Straightforward train-cancellation request with passenger and booking reference.",
+    "text_sha256": "523f90f84fc0caab019e022c9cf143f32676e47dbf45501cd136410964879c4d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R138": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Patients have distinct practical needs and conditions; the common follow-up paragraph is slightly formal.",
+    "text_sha256": "46b928d4a741bbc8946bd1b683e4d82382963755d40016556a4501f9bd90fb7c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R139": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A usable compatibility table supports the accessory question; sequential model values are somewhat regular.",
+    "text_sha256": "db0b13f9d4d2ee1bf5f92858e914bd5c21087fc2ca6e7307c5772cd5d67063de",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R140": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural deposit-enquiry request with an unanswered invoice request and reference.",
+    "text_sha256": "e0adbd3aa5aa0dd8f727d9997c3db461baa84701c1d5be62fabec5bdfd386534",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R141": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible joint tenant message with attributed evidence, though the entries are terse.",
+    "text_sha256": "3cd0e3700dcbeb0ac4b251539d722247964ad498dd68a9a45a69f8c2f30f9b3d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R142": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural Romanian recruitment handover with a relevant skill and pending references.",
+    "text_sha256": "b0ce734be755b945964ed415fe4dbe29e7593be6b6cb2911783d2eba91d57771",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R143": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The common cancellation context and individually attributed evidence support the document-ordering task.",
+    "text_sha256": "929de7b8d257e2dcf8f8770f800aa872237904aa94e84a87236b6bb99d524143",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R144": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic handover request; sparse spreadsheet/reference notes leave details to ask later.",
+    "text_sha256": "f6cface8550c81943db9e777c5d3f1414199d49ffde1293e25a5bc8fc8a32e21",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R145": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The permission configuration is concrete and useful; the final before-sending instruction is slightly generic.",
+    "text_sha256": "fcca0ef00b7f3ed3fb56589dd7bb8a18dffdc0e0201326ee1aa4d725782f990b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R146": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A believable short idempotency question with the problematic insertion line.",
+    "text_sha256": "fcc4723b60e265ebb5d5c1c1222a85480cd9e22e066d0356a33a1286da800c35",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R147": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Joint cancellation file has separately owned references and evidence states; register is mildly formal.",
+    "text_sha256": "f7392790d5f550a5d0e1c52e905f2aa932cb921a7bdcc758d181ea6cfe960086",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R148": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A coherent transfer enquiry with contact details and practical luggage/meeting concerns.",
+    "text_sha256": "dc71113546a467900815c8e5eb8b14745c585f48eaa12ef3fc1ef288b00c48ec",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R149": {
+    "naturalness": 3,
+    "fluency": 4,
+    "artifacts": [
+      "forced_quote"
+    ],
+    "reason": "The greeting plus status fragment reads assembled; Polish direct address would normally use Joanno.",
+    "text_sha256": "51f7ad39a6f0f313babe5888119e2e6def8e7ffbb2cc52af9e94b4da9d823498",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R150": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural appointment-reminder discrepancy with the patient record required for checking it.",
+    "text_sha256": "146f2bc6fe83b17847d22bd2b0fa51f3738aeb4e03c38286da48a41824347494",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R151": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible coordinated follow-up request with separate patient records; diagnoses add some unnecessary density.",
+    "text_sha256": "dd278c379cb811baa0fcb13f54eaf29cd525c734916d029a68e629f2c364db54",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R152": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "An ordinary wrong-size return request with the customer contact and unused-item status.",
+    "text_sha256": "d184a51b3425bd279ac3fef91e800ef11ee1bdfa3006b41aaad2539da0a6350e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R153": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible request to organize a cancellation dispute, though actual documents are still missing.",
+    "text_sha256": "29de249eac2c6d0baa58370477f4a63eec63657a92c4ae4447d44a465e07a722",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R154": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Three distinct delivery problems are easy to turn into individual replies; no irrelevant fields.",
+    "text_sha256": "a45249cff64f43910811a60a43db45bea6d82d8f89df1fc712abccef49f5e8df",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R155": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Useful passenger references and varied luggage needs support the shared-transfer enquiry.",
+    "text_sha256": "781e4629f0ee7a2edf5a4528be2b7b0e713cfee223665205d551147677fce7f3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R156": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The fare-change table answers the stated need; English machine headers are a minor register mismatch.",
+    "text_sha256": "f49ad229c7b4dbafa904fc2b3ca8428ea1c12a53d8bf8c84cea21af19671ce81",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R157": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_ticket_mapping"
+    ],
+    "reason": "The requested passenger-to-ticket mapping cannot be preserved from phone-only rows.",
+    "text_sha256": "5a50c472222d6cffd629821b8246c3e60ba0f91047628ae403547874c5a1a8ac",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R158": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural Italian request for a return label after a wrong-size delivery.",
+    "text_sha256": "4b3dde0b4e19f623c5db0054e4199ca383252110415710bf7c7a7f2d72ca6258",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R159": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A clear device-assignment issue with the affected user's contact.",
+    "text_sha256": "1ff46c197d2cef13914f68b8245d277f3f87ebcf0183e6dbcf0014acf99065bb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R160": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise group transfer task with passenger references and practical bag counts.",
+    "text_sha256": "a788d9c450b5c3d68ecf51d694b06bea21383ef1b6a58872a1b652d4e6ff726e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R161": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate internal candidates have relevant experience notes; the structure is evenly templated but usable.",
+    "text_sha256": "c5bc01308369908d5ee82b6172ef9f268f078e820afdb61632bba8931ea0e7d2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R162": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_ticket_mapping"
+    ],
+    "reason": "The request promises passenger-ticket associations but supplies phone numbers instead of ticket references.",
+    "text_sha256": "8b95ed83a17fc1b5842967f06a406bc81567c73a43ad6a51ee92b53060f9ec41",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R163": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A coherent common cancellation-file task with individually attributed evidence states.",
+    "text_sha256": "5cba0605a5824cf11a3c4cd904033c7d7b16d47f38c2e5df47b1de4409616e6b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R164": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "contradictory_counts"
+    ],
+    "reason": "The opening asks for three questions while the workshop note specifies six.",
+    "text_sha256": "f85d9cb0eefcc2fcdd5b4f5c134aae0350d3447983bc6b9c2e5e6afbbda86095",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R165": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic internal-application editing request; experience consists of only two brief notes.",
+    "text_sha256": "56f56a7d2bdd4e8657163b62d762dac4c432cb721dcdb5a9dd8b93494fd74ee1",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R166": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate patient records and concrete follow-up needs form a believable administrative message.",
+    "text_sha256": "741fb756a6f8dc6aa9ac3749ab09bfa00a1c7a8e49146e1e55c59f4b4445d752",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R167": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Clear lost-delivery complaint with a specific tracking symptom and customer contact.",
+    "text_sha256": "7e10611162574b76d613b69711c7d66f12d13cdeac58fd03b03b56b6713d7005",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R168": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible connection-validity enquiry; itinerary details would need a follow-up.",
+    "text_sha256": "26e6559ca664f60c95dd0fc27fbfabbcc73f273cc2df9bb038fb448a59cf60ed",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R169": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Scheduling needs and medical record references are usable; the pasted conditions are slightly excessive.",
+    "text_sha256": "4fce11c7323d44b18aef4277e89418cf094da83d8e8ddd6c35e559b3125fd393",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R170": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Direct Romanian return-label request with the wrong-size and unused-item facts.",
+    "text_sha256": "96f482a05c6ddce51497edfd3aaeb98578a33ee189382acdc7e1b8860e2d0ca9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R171": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The rights configuration supports the explanation task; the generic final drafting instruction is a minor defect.",
+    "text_sha256": "f866f6de46d570e95f30121ea35db42e788b2008bbe48b06a7dbda8507ff493f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R172": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural missing-transfer message with the relevant passenger booking reference.",
+    "text_sha256": "a8683be2f261406b52b84c81007b8ea685f82e9c02777115e21b4757006720a1",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R173": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The transfer request has practical contact and luggage details; drafting constraints are a little formal.",
+    "text_sha256": "e453aadb2afe84bd4c3313741f103b6d6b343b3bc2b6d8b7b90e95490f291af4",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R174": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Wet/damaged parcel status fits the question to the warehouse, with a plausible copied contact.",
+    "text_sha256": "39fdfea41e7d76e527541e1f6e73079e39a48cd4f94060095fd51b7713ed5710",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R175": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural agency enquiry with a passenger reference; the connection itself is unspecified.",
+    "text_sha256": "9796bf4eb8d00d813d2c94ccdd1412f8222e9f53994159dee41f706b95ddf716",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R176": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Short code and one product input show exactly the repeated-update operation being questioned.",
+    "text_sha256": "477f00309beb50dae3aa33b28411a56911b49e73191bfe2c1521816b55209d6a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R177": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Claimant-specific statuses support a correction list; uniformly patterned prices remain synthetic.",
+    "text_sha256": "339aeb230553f3e1a04b2bca8b2993ee7c0c8470b2290ad8b55c7c357aaccc21",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R178": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise, credible idempotency question with the relevant SQL insertion.",
+    "text_sha256": "069619c2990b15a4670981ee71b333307318936c38c91e8ed5396eca7c0013c9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R179": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "A runnable replay example with an expected-state assertion; excessive fixture rows reduce naturalness.",
+    "text_sha256": "3ee696d7039480353644753587e998248614f24a6042542b0cfb5259e879023c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R180": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The code reproduces the catalogue problem, but the long sequential fixture feels expanded.",
+    "text_sha256": "7a04be5be4321d4907d92787ea465eb4466774a03ca3d07d466a8495833af9eb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R181": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Correction requests are supported by distinct line statuses; the repeated price pattern is conspicuous.",
+    "text_sha256": "17fe30eadbcd821e9a9fd6d41838ea82f7c0718f9ae026c5bbe4f8ff603a8fc7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R182": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Mixed-language colleague quote and account-specific tool output make the access-ticket task credible.",
+    "text_sha256": "15476aafae9e9965b2dd4c210887532cd26f2aee4309134fd590dc33015c228a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R183": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate affected accounts and a Romanian colleague quote fit an EU team support message.",
+    "text_sha256": "e746f2ef28a7836acb1c54885bca4c5f9bb2bbdd02e67d7b22f0492ab98e4073",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R184": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic application request with relevant but very thin customer/handover experience notes.",
+    "text_sha256": "1fc9e507874715f01275d55e594f9104a0df2118585c53d6a61b1f9f181c6170",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R185": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Distinct enrolment symptoms and an English colleague quote support a realistic team ticket.",
+    "text_sha256": "807805fcd406acd4f16a9004bfa9a48e47639b5c3a0bf4c145275b741e8290e9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R186": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Tenant evidence stays attributed, and the common deposit question is coherent though formally framed.",
+    "text_sha256": "a0480a561a4610cae61023e957eaa0ce5e7f628d517041952453ab792c3f614f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R187": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A straightforward request for a deposit breakdown with evidence and case reference.",
+    "text_sha256": "fd5e07cd614f6f541e5dff3b3ca6f97c36cb687fba18c93c4b01cd11fdf84a1d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R188": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "forced_quote"
+    ],
+    "reason": "A greeting followed only by a status fragment and the same person's signature still reads assembled.",
+    "text_sha256": "29d2528a66276449ca188ce607b4968287dcfb1b20eb47102051d32837a18a69",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R189": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The replay assertion makes the bug answerable; the long regular fixture is unnecessary.",
+    "text_sha256": "f17fc680890996a2654f83b9eb4a765f4ea98bca0ff94657a3654fa78d34f126",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R190": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Baggage rows provide useful dimensions and weights; technical English column names are a minor defect.",
+    "text_sha256": "2f30be837c0a5224b9c122668ae6fc45334908088cab6d0f8fbf31ae4404c2fb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R191": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate candidate skill notes and pending actions support a brief handover, with little detail.",
+    "text_sha256": "cce1f35416dd80e84f72fef0f3a9aefc2c50c045f657530bcf06e4e38ab2d2f1",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R192": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "An actual duplicate line supports expense reconciliation; repeating price endings remain artificial.",
+    "text_sha256": "bfa53b19c9b3921b426690f0b10d0e562c98d19a83c713304208f838bf5180a0",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R193": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The replay bug is concrete and testable; the long regular fixture adds little.",
+    "text_sha256": "8c48f05c39bcadae0861adee764fd49de1b05d41c53bede044ffcfb548697189",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R194": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "A clear public-page heading request with a usable citation; arbitrary edition numbering is unnecessary.",
+    "text_sha256": "14f0c373bf2b3280e58f0653632628803052e1503434c906949030f009665ee9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R195": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible French patient-portal paste supporting an appointment confirmation request.",
+    "text_sha256": "1850343bdba60f03feabc87fd361364966ef8c4c208ffe86cd08ea96d226fa6c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R196": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Three distinct return situations support individual customer replies without irrelevant fields.",
+    "text_sha256": "f11cc05db810d222451195c2c915382e3e0d1929cd2c158e812124b4cd2d5d55",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R197": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A coherent short cancellation-file request with attributed evidence, though documents are only summarized.",
+    "text_sha256": "6f8b9f84f3f0853d9079362b8ff933e0cc5e85a02e75b27dea48d56c1d3f7936",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R198": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_merchant_values"
+    ],
+    "reason": "The long export never includes the merchant names that the personal receipt-explanation request depends on.",
+    "text_sha256": "0ea8167a291dd94527969a711f8da1e2740545af6d4b054fd45119add73c72a5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R199": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Believable team device-enrolment message with a colleague quote and account-specific diagnostic output.",
+    "text_sha256": "813dc14dc4fbaad701225eb94c946f321c5b4611ff42c40ae0b2c310375a4a48",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R200": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise accessory question with the relevant compatibility mapping supplied.",
+    "text_sha256": "76a6c2f6762ecc0a9c9b3bda50d6bb403ac31e7356bf6875cab62f9b271163a8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R201": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural public product-table query with numeric codes explicitly used as catalogue references.",
+    "text_sha256": "31d72bc5b008cc8a6f12db7672515b799e8733b7ca9a7e6c8d9c00baf29c5097",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R202": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Plausible first request to organize cancellation evidence; the saved receipt itself is not included.",
+    "text_sha256": "c6c17c38840533571a20802d215cf8afe640e1d4d96d408b241ead1e7a235397",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R203": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A clear lost-delivery support request with the relevant tracking symptom and contact.",
+    "text_sha256": "78dcb6f8198d65a6c3899ac6d1e0d79b9ba44960b0c45e41b0982678a2a560a2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R204": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "forced_quote"
+    ],
+    "reason": "The greeting/status-only quotation and matching signature feel assembled rather than like a pasted exchange.",
+    "text_sha256": "5415829884f3e56cbb21f892548364aec68c44471eb906d3dd68fcdd834664cb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R205": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_export"
+    ],
+    "reason": "Announces a payment export but supplies only one name, reference and possible-duplicate status.",
+    "text_sha256": "7defb4b2a5d77f16f7fe018c914da0e42cf0f8f578eb71791403fe8ab9bd60b0",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R206": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_accounts"
+    ],
+    "reason": "The requested account-to-result association has no actual account identifiers in the supplied rows.",
+    "text_sha256": "addcd27b2d1c55d9b1f1995f12fead90daa4c4abbc8981b4b1fa6c1e6690f1c7",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R207": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Italian clinic reminder issue is coherent with a plausible administrative record paste.",
+    "text_sha256": "cd37bec4b4b16e0285ec9c3f92afd0c45dc8758e4d37b5ba43e6788a31dd47c2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R208": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "An actionable duplicate expense line and owner references are present; prices remain overly regular.",
+    "text_sha256": "23a867e904a26020f75d810c674a97e0ab215fd83875d9c1aa1602a1619f78b5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R209": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural handover request with a relevant skill and open question, but sparse source notes.",
+    "text_sha256": "25b7d7c4527b2c630a2017597ca419cf5a1e2087828b1c48c7b271d8c1e4db73",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R210": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible authentication question shows the likely header issue, although the full request is omitted.",
+    "text_sha256": "d21527df8107c73073d6832de1f59b9a3e02167f4f1305e0432fa41ac8528a5b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R211": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Distinct enrolment symptoms support a straightforward team summary without extraneous data.",
+    "text_sha256": "585f0e576a0c38a78fd25243e9f19ec09c8000cf75f08d8cb4b259207fc61a53",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R212": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Compact configuration and an ordinary public-help explanation request fit each other.",
+    "text_sha256": "27bf31b0bff9a87f251c4738afcae1101c8ffc79991891b57e78252221cd4f5b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R213": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic application request with very abbreviated but relevant experience notes.",
+    "text_sha256": "c4a9c8a74e78aaa65d7512d23277c133038d1acec40d1be699924578e04a9edf",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R214": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_ticket_mapping"
+    ],
+    "reason": "Six phone records cannot supply the passenger-to-ticket mapping explicitly requested.",
+    "text_sha256": "11e42e115586e110d5ae63cae46a472d1302c161c54d9802561ea39bfc0d725c",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R215": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Patient records and practical follow-up needs stay separated; the common prose is somewhat formal.",
+    "text_sha256": "2a85cc799909d7fbb892c6136a37b44057caaf87c8c42b337aa2385d22017673",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R216": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Passenger references and distinct cancellation statuses make the group rebooking request usable.",
+    "text_sha256": "64dab269c9b2f34f0a69d734658dfaced2b7dd1f33f06b650b0c91771eedcdb9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R217": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural initial appointment-preparation question; detailed portal results are not actually included.",
+    "text_sha256": "292050a0d74cf84ed1a95fc0eed76716bfa649ff680aace95705f9de5bddfc52",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R218": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The return-flow wording directly supports the rewrite; the arbitrary version string is a minor artifact.",
+    "text_sha256": "ecfa1352104b29e95e97d33812932d38f93d5a8e89badc45fee6afb228db65c3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R219": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Clear, concise Romanian device-assignment complaint with the affected account.",
+    "text_sha256": "d486de2a81b2d57fa87ecb68ee874c06e7e12b7759febadad718dad7d3891d26",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R220": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A well-matched configuration example supports an ordinary device-setup explanation.",
+    "text_sha256": "2e89ee74616f378a6066530e1d7c26f3d7fe5af54e4f0fe693464de1672f0f9f",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R221": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Claim correction statuses provide useful input; patterned prices and dense payment fields limit realism.",
+    "text_sha256": "3438889dd4c4b787668249f84221d640cc15efc446c0f93e377a2e4b818e9d3a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R222": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "padded_statute_list"
+    ],
+    "reason": "An article-number list and next-step instruction pad a simple request for a public-page heading.",
+    "text_sha256": "08fd184d13b4245cda97a18971f3d3094ccefc62f60c7d2eb7dd37d29b7ca501",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R223": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The claimant-specific correction list is answerable from statuses; price patterns remain manufactured.",
+    "text_sha256": "a129bfb9c1c77c44935838656ff314f388eb5626e106145d8d0d800c284d4a6a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R224": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Named account owners have clear per-person symptoms; actual account handles would help but are not essential to grouping.",
+    "text_sha256": "65cc121d6a5d7dac52bbbe09339855727045669a7d5a88d5c2ef8f3d42ce70fe",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R225": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Wrong-door delivery context can support a follow-up question, though the opened-parcel phrasing is slightly awkward.",
+    "text_sha256": "27eb9cdd6e38fd0eed5c4cbe7ffab7451a09e0bd10dffe6f24bf541868ecd455",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R226": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural return-label request with exchange preference and stock uncertainty.",
+    "text_sha256": "2e1c5f61523ed69e6eb6f45e7978c7ad4a20b0b42ae545270c92081e52a32b01",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R227": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_expenses"
+    ],
+    "reason": "Asks to compare expense rows but gives only names and status labels, without amounts or references.",
+    "text_sha256": "fd99106f87fd728f0b956bdf188dbab3098168c317bc9a957864b450c3f347a8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R228": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise repeated-update code example with a concrete product input is plausible.",
+    "text_sha256": "59d805a3223c79af3bf691a8aaef23d4567cccd6ec6bcfb95b94049982035fe8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R229": {
+    "naturalness": 3,
+    "fluency": 4,
+    "artifacts": [
+      "forced_quote"
+    ],
+    "reason": "The status-only quotation is artificial, and direct address should normally be Andrzeju.",
+    "text_sha256": "08579d3d4b16dd1a5f5429719c74e6100572411494df8081ac98330553139c20",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R230": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_expenses"
+    ],
+    "reason": "Expense reconciliation is requested without any expense amounts, references or line items.",
+    "text_sha256": "8969e91f2edee3ecb262100677aa20a566373e32441e5a5496431cd395d0f404",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R231": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A coherent team enrolment ticket with a colleague quote and account-specific diagnostic output.",
+    "text_sha256": "8ed1354543b78425a9d7d12c98dcc38755851cca1adfc548c2b626e63d926465",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R232": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate internal candidates have useful experience keywords, though the notes are minimal.",
+    "text_sha256": "1a8c07539c0727791342888907a14264f6c984045b3c6a8a6515a525daf80b0d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R233": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Dimensions and weights support the baggage checklist; technical English headers are a small mismatch.",
+    "text_sha256": "ca3f96fd09d40d90ca23dafd0ee4e155e874a3325ee092d2f860328b376b6e20",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R234": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Executable retry reproduction is clear; the many sequential fixture rows look expanded.",
+    "text_sha256": "1cefc6286679ea45b68cc53d3c012e05287e7a6cbe894c87d12d0afc2e203acb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R235": {
+    "naturalness": 4,
+    "fluency": 4,
+    "artifacts": [],
+    "reason": "Attributed tenant evidence supports the request; faktura zamówiona is slightly awkward for an invoice being requested.",
+    "text_sha256": "6c14b433a7ea3dfefada9f22a38cca06e9d13fcb69a3f05c7cac783185c64269",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R236": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Shared cancellation context and distinct evidence states make a plausible group file.",
+    "text_sha256": "1cfea428a48fcb9286e3a03738843bb514da33f2209cdc4b823f3d840325e640",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R237": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Clear catalogue failure with an assertion; the long fixture is more repetitive than necessary.",
+    "text_sha256": "34d7435201c2f5d9421a2319a74a41498a12138ba4f230ba27720f9efc3a7af6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R238": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible short idempotency question with the offending database insertion line.",
+    "text_sha256": "f5c2217a8e076949949d887e2bff3bceca1092a4108b7f8d71c7b26b5b34f734",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R239": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Passenger luggage needs and contacts support a group transfer message; the common prose is somewhat formal.",
+    "text_sha256": "70170698c771fb3dcb537cf477e5bfa74446e20c1db034efb43a24e054afab1d",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R240": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "An internal CV request plausibly includes accidentally copied onboarding fields, with explicit instruction to omit them.",
+    "text_sha256": "c586b0801b3b21fd0c5eaf42a5c3af09ed6462576b44af945d40cf0bb482b7bb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R241": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural rebooking request with a passenger reference; itinerary detail is still missing.",
+    "text_sha256": "5602c2a32f515de5bfa2c989a53c6a99023b3ee694b0ccd7fdc9842e734f87a3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R242": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise wrong-size return-label request with the customer's contact.",
+    "text_sha256": "0cea1bbf02ad3554d1bde6bb3ecff2057b8880511380bab6b08b308f28047ca8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R243": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "repetitive_fares"
+    ],
+    "reason": "The change-condition table supports the task, though fare rules cycle identically across several codes.",
+    "text_sha256": "d35cffddc0d9b217e9218bc257520b880b1d2a17651394fcd67956b416f8f891",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R244": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible enrolment issue with a colleague's English message and relevant tool output.",
+    "text_sha256": "e827ce94716bf65adadd468789483a644311cacdcf283315062affad75af64cb",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R245": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The duplicated expense line is actionable; prices and payment fields retain a synthetic pattern.",
+    "text_sha256": "8596ce0917b15019e606e559d4138ffe354082ac87641390fa00016bfcc3622b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R246": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible first cancellation-evidence request with an acknowledgement status and case reference.",
+    "text_sha256": "fcba5cc0b8040800a18b38a2e19e99a62466a387690cb18556d716605874dde3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R247": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural enquiry about connection validity with a passenger reference, but no itinerary details.",
+    "text_sha256": "9c6ac840cd90c8e8514153421a77b41350388a1c3b0f3c4e4af6c60bd07bbdf8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R248": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Idiomatic recruitment handover request with sparse but relevant spreadsheet/reference notes.",
+    "text_sha256": "ab986e4bfcbc08a8bd1906b37481069bfaf9b6bdb76c8000fecd45282ca3514a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R249": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A believable queue of distinct return requests with copied obfuscated contacts.",
+    "text_sha256": "d93319789f531a6775225c626816e3049c617bf17fa0af9bb23348fec116669b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R250": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Candidate-specific skills and pending questions support the handover despite very uniform structure.",
+    "text_sha256": "8477f32d77808bd5f2b104b6fab0ab0408ea9ef2ac09764fa2cb7379e685f7e8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R251": {
+    "naturalness": 4,
+    "fluency": 4,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The reminder distinction is useful; 35 minute needs de and the large version number looks generated.",
+    "text_sha256": "83d46e4df9040cf20d78b5066cce04ba5f1e13bd9b4a084f7d493be201acdd0a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R252": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Clear booking-help rewrite with useful hold behavior; arbitrary timing and version are minor artifacts.",
+    "text_sha256": "98e9dfd0de4749df7fe9527d5fe1a22eb6057197e739fbd3b1ab15c28d9d2da3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R253": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_export"
+    ],
+    "reason": "Announces a payment export but supplies a single name, status and reference instead of payment data.",
+    "text_sha256": "3e19d0bb3df00e9ce6f4e5f8699bd1f6dac3c7f1f0ef86c8031b2038b1558ef4",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R254": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "unused_secret"
+    ],
+    "reason": "Insert/commit/ack shows the retry problem, but the unused token is an artificial secret carrier.",
+    "text_sha256": "385893f821fc3cdd0315f3d91e2bb740be96923afd9b597906c45ee6fff4ae48",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "57ec5b18eeb803bdf8260cc702063b08f04f9d13f72212d9a060b3d052e7d7f8",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R255": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural recruitment handover with only one broad skill to summarize.",
+    "text_sha256": "6aa9ec5d083ed619b2a1f7a3da072f078f94b2348ded92fccb36d56af58db868",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R256": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "A real duplicate line and references support comparison; price patterns and the IBAN wrap remain conspicuous.",
+    "text_sha256": "1f6f15e806dfb17785a6f5f4df1341092eb3a582ec41da968e4c8aabab0810bf",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R257": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Short, idiomatic cross-device access complaint with the account needed by IT.",
+    "text_sha256": "6e39cc288d0a15c158363abfc144e24b6e5bd4e00a1d84c0845e4067f564a8f9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R258": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The reminder options suit the editing task, but the arbitrary version and 43-minute interval feel generated.",
+    "text_sha256": "18105d3103f99ecc1ae01ca0b088d04f2551f2058f67a08568a803c5322ae271",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R259": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Individual internal applicants have plausible experience notes; repeated role patterns are a mild defect.",
+    "text_sha256": "3c183549b74310abb5e02871a1fb10477cca31e44af0a155d2d7c43342c28f21",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R260": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The assertion captures the catalogue replay bug; the repeated input rows are excessive.",
+    "text_sha256": "57f5c920c8d1526e52353be43cc58059d66c6bb4cca75e4bf9ba901613d60923",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R261": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural transfer-confirmation enquiry with a passenger reference and meeting-point need.",
+    "text_sha256": "920a5288b6e5ba183720cadc6a172e7221460c3d81ed87dd3bc7739fdd942038",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R262": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "The booking configuration provides useful behavior to explain; the exact 44-minute hold is a minor realism defect.",
+    "text_sha256": "ab431b56a2c9c721ed56ee06f20524f46cb12c5829be1bb0f4005515dfd93a3e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R263": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Expense ownership and a concrete duplicate line are clear; uniformly patterned prices still look synthetic.",
+    "text_sha256": "c2c7d6fed96067b1867d2fd62f48816a930ede3fc85ad7af6a8c95c28f815f79",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R264": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "forced_quote"
+    ],
+    "reason": "A greeting plus only Rechnung angefordert and the same-name signature is not a plausible pasted exchange.",
+    "text_sha256": "2f95f64f1ab490425f1c88abaa14b68ce4ad1d1caabd950294fe516f2d0712f5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R265": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Internal-application notes explicitly distinguish copied onboarding fields from the requested skills introduction.",
+    "text_sha256": "01ac4af073120059518b47a74e1b709bdb3560cec10e96de822b8494bd54b470",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R266": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Runnable retry code and an assertion establish the problem; the fixture is longer than needed.",
+    "text_sha256": "d46ba30a0547504bf84260d40a7842988c1eee07f8a0fce65e2f16a33277cad6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R267": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Local versus staging outcomes and the header-building code support an ordinary authentication question.",
+    "text_sha256": "f99e078b070ed6d85b4ffdb1bbebf5b23186272dbe45c9e6575c2e8043869fc9",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating",
+    "pre_sanitization_text_sha256": "2b2f5c13877c93f17fea759f04662b5f145748406fc6e48259119ce6ae39b582",
+    "credential_sanitization": "Length-preserving credential replacement; historical rating not rerun."
+  },
+  "R268": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The public booking instructions are usable; the eight-digit version remains an unnecessary artifact.",
+    "text_sha256": "b7709dd3274d805a779724a2b74cdff5e1e55a8de38731d7b31af151c6a1e340",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R269": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The shared opened/intact-box narrative conflicts with the not-found parcel among the customer rows.",
+    "text_sha256": "f5cf3b448fd05f9444d8a5dfd1fce4c8015faa04a7f531dd9809b0f13589e279",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R270": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural appointment-confirmation request with a clear reminder discrepancy and record reference.",
+    "text_sha256": "da5934932b9650796e36c3c9b9ac3f8a1f27b3c58e92e990ecbef4fc43282cf5",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R271": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The common intact-package narrative does not fit the missing and wet parcels in the same batch.",
+    "text_sha256": "1f239a5f9861b6c6c0bb861be22d0927c0203cb6a2690d6b4896ef3276f964bc",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R272": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "Useful reminder distinction and clear Dutch; arbitrary timing/version values are slightly artificial.",
+    "text_sha256": "df5fe696de38c2f14bcd8f7914487e44db0ce0c2cf1223014152a66e8ef41745",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R273": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "wrong_workflow_identifier"
+    ],
+    "reason": "A National Insurance number is implausible in a routine clinical appointment record.",
+    "text_sha256": "5eae6a286a140deb67bcaf729cf6ff23cfbe3c90cf8d03646e841ce50872c4a0",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R274": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The public GDPR glossary task is clear; the edition number is unnecessary synthetic detail.",
+    "text_sha256": "8252f95e7671fcdbc7b1dfe74f7aeab1bc2c3f219defbc1d567416d2774631c2",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R275": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Two tenant files have attributed evidence and plausible intake addresses; the framing is slightly formal.",
+    "text_sha256": "9b16e6810c055a0b65745ab2029d2fe895ad0f2e345146eec80a74039ceb7e1a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R276": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Claimant-specific correction statuses are useful; price patterns and bank details remain mechanically arranged.",
+    "text_sha256": "8b6c02e107fcd2fad35ddc5c78ff8fa5bd06bc419e70209a03e6079af7b2e674",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R277": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A concise, natural cross-device folder problem with the account to investigate.",
+    "text_sha256": "47239dd39b57b79bd1a8985ffc8f74e3e7c7211ffde7ade6a25ae0964ee90568",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R278": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A credible joint deposit request with individual evidence notes, though terse.",
+    "text_sha256": "d56eb5c1212ed2667486a7ea6de84ed82984565e9a58cf5780f4880a84e59c41",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R279": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_receipts"
+    ],
+    "reason": "Refers to explaining receipts but supplies no receipt content or merchant-name comparison.",
+    "text_sha256": "534eb96ccd40fd4ed8ab5d9087d516a44d3de988938c9abbde82b22774884b06",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R280": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural Romanian access-loop complaint with the affected account and a direct helpdesk question.",
+    "text_sha256": "3016329fdcc6d55027504f3c680848ff685207fc96df2da51bb1a8623b44ebc4",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R281": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_version"
+    ],
+    "reason": "The return-flow explanation fits the rewrite task; arbitrary version numbering is a minor artifact.",
+    "text_sha256": "49e83608e83fba109e42809d7ae11a1aee80ba2edff1579245522e2d822e7b6a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R282": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The shared intact/opened-box description conflicts with missing and wet-package statuses.",
+    "text_sha256": "897e4e27364a187b121de8897d11dda8b1783d6c1a5d918fe39d78979f3f06d1",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R283": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate appointment records and administrative fields plausibly come from a clinic portal.",
+    "text_sha256": "11e029e60940437f54288572ce8157c99e5be5d095abd0be1ecdc3427baac66b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R284": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "The duplicate line supports team expense reconciliation; regular prices and the wrapped IBAN remain synthetic.",
+    "text_sha256": "b23a0698938d8e7d2d5fb1f41fb76b9045d919d2181bc0086bdc02f1927a70fd",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R285": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "The failing replay test is concrete, while the long sequential product list is excessive.",
+    "text_sha256": "5f97b592d86085997298108546880ea96ec2c988bf423cb91796f8b2f1df8da3",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R286": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A plausible multilingual team access ticket with accounts, symptoms and diagnostic tool output.",
+    "text_sha256": "97c82baf64bfcefb8bc0db6b7fa6653c8d40eb3dadd0c796059f8fcd16d135ec",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R287": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "Correction statuses can drive the requested list, but payment fields and repeated price endings reduce realism.",
+    "text_sha256": "aa9730c5fd05edeaa8095c066c1bd4800d1013e0be69bc6865eb36412c62ad10",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R288": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "An English colleague quote and account-specific tool result fit the Spanish helpdesk request.",
+    "text_sha256": "70c20a852e4aa8cb8dc7d831a9c0945b2f4121d730abb939667205da52cab77a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R289": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A natural initial follow-up preparation question with a record and report reminder, but limited detail.",
+    "text_sha256": "9b2a0af741bfd5f22f644657a5834f295a8cafcab49108e0b428f1175ac6a6e6",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R290": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "oversized_fixture"
+    ],
+    "reason": "Executable retry example supplies a real bug; the fixture repeats well beyond the minimum reproduction.",
+    "text_sha256": "3712c59cd065cfed268f1da70c4643a52d61c6ac80e60eabab01d8184a433c4b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R291": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Distinct internal applicants have relevant skills, although the source notes are highly abbreviated.",
+    "text_sha256": "cd4284c3facb033c3573508b00baf0352d16d62ad61875681938a4047c9154f8",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R292": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "missing_accounts"
+    ],
+    "reason": "Explicitly requests account-to-result associations but only provides names and symptoms.",
+    "text_sha256": "a52a2c614b7bc09fbc3ad8627b50f9357117af6105e32fc883c2c0ca9108dc82",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R293": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A useful short candidate handover with separate experience and open questions.",
+    "text_sha256": "0de35803d8079df9e2b17bb69ac9f4b7a3d19751a298c59f9ea0047889bc8676",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R294": {
+    "naturalness": 3,
+    "fluency": 5,
+    "artifacts": [
+      "context_mismatch"
+    ],
+    "reason": "The common opened-package narrative does not fit the missing delivery listed for one customer.",
+    "text_sha256": "f3784c1b12a68be17c574b3c3cd1453cd7d11b9a25b175f6e372e2495d87d44a",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R295": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Joint cancellation evidence is individually attributed and supports a coherent preparation task.",
+    "text_sha256": "316ae7b4be7259cfe851b7f7d06cf53c98590a8b9d9a9120f1da0eaee0860a6b",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R296": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [
+      "mechanical_amounts"
+    ],
+    "reason": "A claimant correction list is supported by line statuses; regular prices and extensive payment fields remain artificial.",
+    "text_sha256": "9c8fef63d72d909e9edbc6e04781439926c66ff3236600730b9f08bc7c03c679",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R297": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Separate patient records and reminder symptoms are useful; diagnoses are extra but plausible copied fields.",
+    "text_sha256": "227f592693c72254ace130fa437342ea5dd79eb495218cc26c0aeb1b26b27d51",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R298": {
+    "naturalness": 4,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Natural first request to organize a cancellation dispute, though the actual documents are absent.",
+    "text_sha256": "4a5d845f35d74353d3b4f78d5c11726c0f8af1b3135930d07fbaf44dd6c7851e",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R299": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "A direct Italian wrong-size return-label request with relevant contact information.",
+    "text_sha256": "4458ec3b18b8a3bb0a5232fa63938689aa99cd079a790f4720cc1df0aa8c5519",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  },
+  "R300": {
+    "naturalness": 5,
+    "fluency": 5,
+    "artifacts": [],
+    "reason": "Passenger references and varied luggage requirements support a realistic shared-transfer message.",
+    "text_sha256": "2c0f8f03cb8e2bd8eb3dea6997e84d151278152f240362b8e575767af3ba1b32",
+    "review_mode": "author self-review; earlier aggregate known; earlier per-document judgments withheld during rating"
+  }
+}

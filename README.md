@@ -45,5 +45,5 @@ Naming: `ds-kp-{domain}-{lang}-{size}`. Cards carry YAML frontmatter
 RES-123 defines the source manifest, frozen split reservations, conversation schema
 and offline coverage/training-overlap gates for `gateway-traffic-v1`.
 See [the contract and audit instructions](docs/gateway-traffic-v1.md).
-RES-124 adds a local first tranche of 2,240 test / 480 dev conversations (status `dev`).
-See [authoring and QA](docs/gateway-authoring/README.md); full 8,000 / 1,600 targets remain open.
+RES-124 now contains the full local 8,000 test / 1,600 dev conversations (status `dev`).
+See [authoring and QA](docs/gateway-authoring/README.md); independent blind/native review remains open.

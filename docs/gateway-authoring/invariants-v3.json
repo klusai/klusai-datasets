@@ -1,0 +1,1028 @@
+{
+  "n": 9600,
+  "generation_seed": 124,
+  "generation_seed_count": 1,
+  "model_scoring_seed_count": 0,
+  "config_status": "dev",
+  "sources": {
+    "test": {
+      "n": 8000,
+      "input_revision": "8874b2423e328bf087446fdba780deed84ae8ded",
+      "input_revision_kind": "git_blob",
+      "input_sha256": "ca372c5b58deaca514c553ac5326565d136f9abe7293ffe0729ef171778abe2e",
+      "records_sha256": "bfca65fcc3ac59eef2019bc600e4cee9266b6b4b203413511336467841b93cd6"
+    },
+    "dev": {
+      "n": 1600,
+      "input_revision": "78d2baaa8e0bfb5d3ba783a95186525dcce936f0",
+      "input_revision_kind": "git_blob",
+      "input_sha256": "3401e3b42d739c6450e833e9f44b85fafa3cd44dae498c863f84d1b75ed743a8",
+      "records_sha256": "eb59f81485860c100682253471bbba218a648ccb4f6926666bab3c29dfc4e751"
+    }
+  },
+  "counts": {
+    "spans": 86664,
+    "plain_email_mentions": 6504
+  },
+  "identifiers": {
+    "DE": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "ES": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "FR": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "GB": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "format-only; no checksum exists"
+    },
+    "IT": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "NL": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "PL": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    },
+    "RO": {
+      "n": 20,
+      "valid": 20,
+      "ci95": [
+        0.8388753915139584,
+        1.0
+      ],
+      "kind": "harness checksum/structure"
+    }
+  },
+  "decoded_dob_comparisons": {
+    "full_date": 40,
+    "month_two_digit_year": 20,
+    "day_month_two_digit_year": 20
+  },
+  "tranche_coverage": {
+    "status": "incomplete",
+    "cells": {
+      "test/ro": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/en": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/de": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/fr": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/es": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/it": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/nl": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "test/pl": {
+        "n": 1000,
+        "mix": {
+          "medium": 300,
+          "small": 400,
+          "negative": 200,
+          "dense": 100
+        },
+        "lengths": {
+          "medium": 350,
+          "long": 150,
+          "short": 500
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/ro": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/en": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/de": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/fr": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/es": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/it": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/nl": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      },
+      "dev/pl": {
+        "n": 200,
+        "mix": {
+          "medium": 60,
+          "small": 80,
+          "negative": 40,
+          "dense": 20
+        },
+        "lengths": {
+          "medium": 70,
+          "long": 30,
+          "short": 100
+        },
+        "native_double_reviewed": 0,
+        "labels": [
+          "ACCOUNT_ID",
+          "ADDRESS",
+          "CASE_NUMBER",
+          "COMPANY_ID",
+          "DATE",
+          "EMAIL",
+          "HEALTH_CONDITION",
+          "MRN",
+          "NATIONAL_ID",
+          "PERSON",
+          "PHONE",
+          "SECRET"
+        ],
+        "features": [
+          "address",
+          "aliases",
+          "bank_account",
+          "card",
+          "case_id",
+          "code_switch",
+          "company_id",
+          "dob",
+          "email",
+          "health_condition",
+          "json_code",
+          "medical_id",
+          "national_id",
+          "obfuscated_identifier",
+          "phone",
+          "public_date",
+          "public_org",
+          "public_statute",
+          "punctuation",
+          "quoted_history",
+          "repeated_entity",
+          "secret",
+          "split_identifier",
+          "tool_payload",
+          "unicode"
+        ]
+      }
+    },
+    "errors": [
+      "ro: fewer than 100 native double-reviewed/adjudicated conversations",
+      "en: fewer than 100 native double-reviewed/adjudicated conversations",
+      "de: fewer than 100 native double-reviewed/adjudicated conversations",
+      "fr: fewer than 100 native double-reviewed/adjudicated conversations",
+      "es: fewer than 100 native double-reviewed/adjudicated conversations",
+      "it: fewer than 100 native double-reviewed/adjudicated conversations",
+      "nl: fewer than 100 native double-reviewed/adjudicated conversations",
+      "pl: fewer than 100 native double-reviewed/adjudicated conversations"
+    ]
+  },
+  "tokenizer": {
+    "id": "FacebookAI/xlm-roberta-large",
+    "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "tokens_min": 32,
+    "tokens_max": 1449
+  },
+  "caveats": [
+    "Census checks, not model scores; Wilson intervals are descriptive only.",
+    "No real registry assignment, exact street geography or account existence checked.",
+    "Full volume met; independent blind/naturalness and native review gates are not established here."
+  ]
+}
