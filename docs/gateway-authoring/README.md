@@ -92,3 +92,29 @@ The scoring tool never changes status from `dev`. A release requires the remaini
 volume, independent human review/adjudication, substantially more natural/diverse
 prose, and documented semantic provenance clearance. Continue the existing ledger
 with `--prior-ledger docs/gateway-authoring/audit.json`; never move siblings across splits.
+
+## Final integrity and overlap receipts
+
+Input commit: `a4646944a95db5e0cfe7ac89e6971001fdf38830`. Strict output records reconstruct
+exactly from those committed inputs. There are 13,184 valid gold spans and 1,120 plain
+email mentions. The cached tokenizer gives 48–804 tokens per conversation. All 14 pinned
+training corpora (446,326 rows) were hash/count checked, with zero normalized exact-text
+hits. This is **exact-text clearance only**, not semantic disjointness. The imported
+RES-123 parent receipt is preserved in `parent-audit.json`; `audit.json` links its hash.
+
+| Harness ID check | n | Validity [Wilson 95% CI] |
+|---|---:|---|
+| RO CNP, including English cross-border records | 83 | 100% [95.58%, 100%] |
+| Each of DE/ES/FR/IT/NL/PL | 67 per country | 100% [94.58%, 100%] |
+| UK NINO format only | 67 | 100% [94.58%, 100%] |
+
+Decoded DOB comparisons: 72 full dates, 36 French month/year pairs, 36 Italian
+day/month/two-digit-year values; all agree at the decoder's actual precision.
+These are whole-tranche checks, not sampled model performance estimates. The Wilson
+intervals are descriptive and do not turn deterministic synthetic validation into a
+population claim. The local ID registry's checks do not prove administrative issuance.
+
+Final verification: Python 3.13, `make check` (450 tests + ruff); whole-tranche checker;
+real input-commit byte verification; final records-to-input equality; full inventory
+hash/count/overlap scan. No independent recall/missed-entity score, human adjudication,
+clinical/legal answer correctness, or model comparison was measured.

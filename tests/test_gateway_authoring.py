@@ -124,6 +124,15 @@ def test_source_commit_and_artifact_hash_when_finalized():
             ["git", "show", f"{provenance['source_revision']}:{provenance['artifact_path']}"], cwd=ROOT
         )
         assert committed == artifact.read_bytes()
+        drafts = [json.loads(line) for line in artifact.read_text().splitlines()]
+        assert len(drafts) == len(rows)
+        for draft, final in zip(drafts, rows):
+            assert (
+                final
+                == attach_provenance(
+                    draft, artifact, provenance["source_revision"], provenance["file_sha256"]
+                ).model_dump()
+            )
         assert all(r["provenance"]["source_revision"] == provenance["source_revision"] for r in rows)
 
 
