@@ -1,0 +1,978 @@
+{
+  "en": {
+    "tasks": [
+      [
+        "Build search filters for this stationery catalogue. Group the items by size and material.",
+        "Suggest catalogue facets that let a buyer distinguish paper sizes from printer models.",
+        "Turn these product lines into a compact comparison grid for the shop's search page."
+      ],
+      [
+        "Prepare a two-column layout for these packaging labels; separate handling instructions from product descriptions.",
+        "Shorten the packaging copy to fit narrow shelf labels without dropping size or handling information.",
+        "Find inconsistent wording across these package labels and propose one house style."
+      ],
+      [
+        "Arrange these museum-shop display cards by their historical subject. Keep the merchandise details beside each card.",
+        "Prepare an exhibition-shop stock sheet from these commemorative products and their captions.",
+        "Group these science-history display cards into a visitor-friendly index with a separate merchandise column."
+      ],
+      [
+        "Recover the column boundaries in this receipt OCR excerpt. Explain which cells belong to each heading.",
+        "Convert this till export into a tidy table; keep the merchant heading separate from the transaction rows.",
+        "Repair the layout of these scanned receipt fragments without filling in unreadable cells."
+      ],
+      [
+        "Write concise interface messages for this stock dashboard, using the supplied status values.",
+        "Map these warehouse statuses to filter tabs and explain which items need a stock check.",
+        "Draft a status legend for a stock-count screen; distinguish pending checks from completed ones."
+      ],
+      [
+        "Merge these supplier catalogue entries. Flag conflicting sizes while retaining each merchant's wording.",
+        "Design an import mapping for these supplier product sheets and list ambiguous columns.",
+        "Suggest deduplication rules for these catalogue rows; a shared paper size alone is not a duplicate."
+      ],
+      [
+        "Assemble workshop material kits from these stock lines. Show which packaging units can be split.",
+        "Turn this craft-room stock sheet into a picking list grouped by material.",
+        "Prepare a materials checklist for a printmaking session, retaining the article codes for ordering."
+      ],
+      [
+        "Plan a bookshop window using these historical-subject cards and matching shelf supplies.",
+        "Draft shelf cards for a science-history book display, keeping stock information in a separate column.",
+        "Organise the display props for a history reading week and identify which supplies are ready."
+      ]
+    ],
+    "names": [
+      "Alistair Bevan Cedric Dorian Emrys Fergus Hamish Idris",
+      "Ainsley Beckett Cresswell Dunmore Ellwood Frobisher Gladstone Hartwell"
+    ],
+    "merchants": [
+      "Paper Lantern Supplies",
+      "Copper Finch Stationery",
+      "Blue Acorn Books",
+      "Willow Shelf Depot",
+      "Cedar Kite Crafts",
+      "Amber Press Shop",
+      "North Loom Paper",
+      "Silver Fern Office"
+    ],
+    "products": [
+      "A4 paper",
+      "A5 notebook",
+      "DL envelope",
+      "HB pencil",
+      "C6 sleeve",
+      "B5 folder",
+      "200 g/m² card",
+      "M8 bracket"
+    ],
+    "packaging": [
+      "keep dry",
+      "fragile",
+      "this side up",
+      "recyclable",
+      "pack of 12",
+      "matte finish",
+      "uncoated",
+      "do not stack"
+    ],
+    "statuses": [
+      "awaiting stock check",
+      "ready for shelving",
+      "count agreed",
+      "temporarily unavailable",
+      "inspection complete",
+      "restock requested",
+      "on display",
+      "in transit"
+    ],
+    "headers": [
+      "Description",
+      "Quantity",
+      "Unit price",
+      "Amount due",
+      "Posting text",
+      "Subtotal",
+      "Article code",
+      "Tax rate"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Historical subject on the display card",
+    "contact": "Workshop organiser / delivery contact",
+    "private": [
+      "Name",
+      "Email",
+      "Phone",
+      "Delivery address"
+    ],
+    "closing": [
+      "Give the result as a table with a short note about ambiguous entries.",
+      "Keep the original wording beside each proposed correction.",
+      "List unresolved items before suggesting the next step.",
+      "Use the quantities to explain your grouping; do not invent missing stock."
+    ]
+  },
+  "ro": {
+    "tasks": [
+      [
+        "Construiește filtre pentru acest catalog de papetărie. Grupează articolele după format și material.",
+        "Propune filtre care să distingă formatele de hârtie de modelele de imprimantă.",
+        "Transformă aceste articole într-un tabel comparativ pentru pagina de căutare a magazinului."
+      ],
+      [
+        "Pregătește un aranjament pe două coloane pentru etichetele ambalajelor: instrucțiuni de manipulare și descrieri de produs.",
+        "Scurtează textele pentru etichete înguste de raft, păstrând dimensiunile și instrucțiunile de manipulare.",
+        "Identifică formulările neuniforme de pe ambalaje și propune un stil comun."
+      ],
+      [
+        "Ordonează cartonașele magazinului muzeului după personalitatea istorică prezentată. Păstrează alături detaliile produselor.",
+        "Pregătește o fișă de stoc pentru magazinul expoziției, pe baza acestor produse comemorative și legende.",
+        "Grupează cartonașele despre istoria științei într-un index pentru vizitatori, cu o coloană separată pentru produse."
+      ],
+      [
+        "Refă delimitarea coloanelor din acest fragment OCR de bon. Explică ce celule corespund fiecărui antet.",
+        "Transformă exportul casei de marcat într-un tabel ordonat; separă antetul comerciantului de rândurile tranzacției.",
+        "Repară aranjamentul acestor fragmente de bon scanat fără să completezi celulele ilizibile."
+      ],
+      [
+        "Scrie mesaje scurte pentru interfața de stocuri, folosind stările furnizate.",
+        "Asociază stările din depozit cu file de filtrare și arată ce articole necesită inventariere.",
+        "Redactează o legendă pentru ecranul de inventar; distinge verificările în așteptare de cele încheiate."
+      ],
+      [
+        "Combină aceste poziții din cataloagele furnizorilor. Semnalează dimensiunile contradictorii și păstrează formularea fiecărui comerciant.",
+        "Propune corespondența câmpurilor la importul fișelor de produs și enumeră coloanele ambigue.",
+        "Propune reguli de deduplicare pentru catalog; același format de hârtie nu înseamnă automat același produs."
+      ],
+      [
+        "Alcătuiește seturi de materiale pentru atelier din aceste poziții de stoc. Arată ce ambalaje pot fi desfăcute.",
+        "Transformă inventarul sălii de lucru într-o listă de pregătire grupată după material.",
+        "Pregătește lista de materiale pentru un atelier de gravură, păstrând codurile de articol necesare comenzii."
+      ],
+      [
+        "Planifică vitrina unei librării folosind cartonașele istorice și accesoriile de raft de mai jos.",
+        "Redactează etichete pentru o selecție de cărți despre istoria științei, cu stocurile într-o coloană separată.",
+        "Organizează accesoriile pentru săptămâna lecturilor istorice și indică materialele pregătite."
+      ]
+    ],
+    "names": [
+      "Aurelian Bogdana Ciprian Dragoș Eugenia Florina Horia Lavinia",
+      "Brumaru Cernăian Duțescu Făgăraș Gherghel Hălăuceanu Istrățescu Lăcrămioaru"
+    ],
+    "merchants": [
+      "Papetăria Felinarul Albastru",
+      "Librăria Frunza de Cupru",
+      "Depozitul Ghiocel",
+      "Atelierul Penița Verde",
+      "Hârtia de Chihlimbar",
+      "Raftul cu Tei",
+      "Prăvălia Cocorul",
+      "Colțul de Celuloză"
+    ],
+    "products": [
+      "hârtie A4",
+      "caiet A5",
+      "plic DL",
+      "creion HB",
+      "mapă C6",
+      "dosar B5",
+      "carton 200 g/m²",
+      "suport M8"
+    ],
+    "packaging": [
+      "a se feri de umezeală",
+      "fragil",
+      "a se păstra vertical",
+      "reciclabil",
+      "set de 12 bucăți",
+      "finisaj mat",
+      "necretat",
+      "nu se stivuiește"
+    ],
+    "statuses": [
+      "în așteptarea inventarierii",
+      "pregătit pentru raft",
+      "cantitate confirmată",
+      "temporar indisponibil",
+      "verificare încheiată",
+      "reaprovizionare solicitată",
+      "expus în vitrină",
+      "în tranzit"
+    ],
+    "headers": [
+      "Descriere",
+      "Cantitate",
+      "Preț unitar",
+      "Total de plată",
+      "Explicație operațiune",
+      "Subtotal",
+      "Cod articol",
+      "Cotă TVA"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Personalitate istorică prezentată pe cartonaș",
+    "contact": "Organizatorul atelierului / persoana de contact pentru livrare",
+    "private": [
+      "Nume",
+      "E-mail",
+      "Telefon",
+      "Adresă de livrare"
+    ],
+    "closing": [
+      "Prezintă rezultatul într-un tabel și explică pe scurt intrările ambigue.",
+      "Păstrează formularea inițială lângă fiecare corectură propusă.",
+      "Enumeră neclaritățile înainte de a sugera următorul pas.",
+      "Explică gruparea folosind cantitățile; nu inventa stocuri lipsă."
+    ]
+  },
+  "de": {
+    "tasks": [
+      [
+        "Entwirf Suchfilter für diesen Schreibwarenkatalog. Gruppiere die Artikel nach Format und Material.",
+        "Schlage Katalogfilter vor, mit denen sich Papierformate von Druckermodellen unterscheiden lassen.",
+        "Erstelle aus diesen Produktzeilen eine kompakte Vergleichstabelle für die Shopsuche."
+      ],
+      [
+        "Entwirf ein zweispaltiges Layout für diese Verpackungsetiketten: Handhabungshinweise links, Produktbeschreibung rechts.",
+        "Kürze die Verpackungstexte für schmale Regaletiketten, ohne Größenangaben oder Handhabungshinweise zu verlieren.",
+        "Prüfe die Verpackungsetiketten auf uneinheitliche Formulierungen und schlage einen gemeinsamen Stil vor."
+      ],
+      [
+        "Ordne diese Aufsteller des Museumsshops nach der dargestellten historischen Persönlichkeit. Lass die Produktangaben daneben stehen.",
+        "Erstelle eine Bestandsliste für den Ausstellungsshop aus diesen Erinnerungsartikeln und Bildunterschriften.",
+        "Erstelle aus diesen Schautafeln zur Wissenschaftsgeschichte ein Besucherregister mit einer eigenen Warenspalte."
+      ],
+      [
+        "Stelle die Spaltengrenzen dieses Kassenbon-OCR-Ausschnitts wieder her. Erkläre die Zuordnung zu den Überschriften.",
+        "Wandle diesen Kassenexport in eine übersichtliche Tabelle um und trenne den Händlerkopf von den Buchungszeilen.",
+        "Korrigiere das Layout der eingescannten Bonfragmente, ohne unleserliche Zellen zu ergänzen."
+      ],
+      [
+        "Formuliere kurze Oberflächentexte für diese Bestandsübersicht anhand der angegebenen Statuswerte.",
+        "Ordne die Lagerstatus passenden Filterreitern zu und kennzeichne Artikel mit Prüfbedarf.",
+        "Schreibe eine Statuslegende für die Inventuransicht; unterscheide ausstehende von abgeschlossenen Prüfungen."
+      ],
+      [
+        "Führe diese Lieferantenkataloge zusammen. Markiere widersprüchliche Größen und erhalte die Händlerformulierungen.",
+        "Entwirf eine Feldzuordnung für den Import dieser Produktblätter und liste mehrdeutige Spalten auf.",
+        "Schlage Regeln zur Dublettenerkennung vor; dasselbe Papierformat allein macht zwei Artikel nicht identisch."
+      ],
+      [
+        "Stelle aus diesen Lagerpositionen Materialpakete für den Workshop zusammen. Zeige, welche Verpackungseinheiten teilbar sind.",
+        "Mache aus dem Bestand des Bastelraums eine nach Material gegliederte Kommissionierliste.",
+        "Erstelle eine Materialcheckliste für einen Druckworkshop und behalte die Artikelcodes für die Nachbestellung bei."
+      ],
+      [
+        "Plane ein Buchhandlungs-Schaufenster mit diesen historischen Motivkarten und den passenden Regalutensilien.",
+        "Entwirf Regalkarten für eine Auswahl zur Wissenschaftsgeschichte; führe Bestandsangaben in einer eigenen Spalte.",
+        "Ordne die Dekoration für eine historische Lesewoche und zeige, welche Materialien bereitliegen."
+      ]
+    ],
+    "names": [
+      "Alwin Brunhild Detlef Eckart Fridolin Gundula Hartmut Irmhild",
+      "Buchenroth Drosselmeier Falkenrath Goldammer Hainmüller Klingenbach Mohnhaupt Rabenhorst"
+    ],
+    "merchants": [
+      "Papierhaus Kupferfink",
+      "Bücherstube Blaue Eiche",
+      "Schreibwaren Lindenblatt",
+      "Kontor Bernstein",
+      "Bastelmarkt Silberweide",
+      "Regalwerk Kranich",
+      "Papierlager Abendrot",
+      "Druckladen Moosgrün"
+    ],
+    "products": [
+      "A4-Papier",
+      "A5-Heft",
+      "DL-Umschlag",
+      "HB-Bleistift",
+      "C6-Hülle",
+      "B5-Mappe",
+      "Karton 200 g/m²",
+      "M8-Winkel"
+    ],
+    "packaging": [
+      "vor Nässe schützen",
+      "zerbrechlich",
+      "oben",
+      "recyclingfähig",
+      "12 Stück",
+      "matt",
+      "ungestrichen",
+      "nicht stapeln"
+    ],
+    "statuses": [
+      "Bestandsprüfung ausstehend",
+      "einräumbereit",
+      "Menge stimmt",
+      "vorübergehend nicht lieferbar",
+      "Prüfung abgeschlossen",
+      "Nachschub angefordert",
+      "ausgestellt",
+      "unterwegs"
+    ],
+    "headers": [
+      "Bezeichnung",
+      "Menge",
+      "Einzelpreis",
+      "Zahlbetrag",
+      "Buchungstext",
+      "Zwischensumme",
+      "Artikelnummer",
+      "Steuersatz"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Historische Persönlichkeit auf der Motivkarte",
+    "contact": "Workshoporganisation / Kontakt für die Lieferung",
+    "private": [
+      "Name",
+      "E-Mail",
+      "Telefon",
+      "Lieferanschrift"
+    ],
+    "closing": [
+      "Gib das Ergebnis als Tabelle aus und erläutere mehrdeutige Einträge kurz.",
+      "Stelle die ursprüngliche Formulierung neben jeden Korrekturvorschlag.",
+      "Liste offene Punkte auf, bevor du den nächsten Schritt empfiehlst.",
+      "Begründe die Gruppierung mit den Mengen; erfinde keine fehlenden Bestände."
+    ]
+  },
+  "fr": {
+    "tasks": [
+      [
+        "Construis des filtres de recherche pour ce catalogue de papeterie. Regroupe les articles par format et matière.",
+        "Propose des facettes qui permettent de distinguer les formats de papier des modèles d'imprimante.",
+        "Transforme ces lignes de produits en tableau comparatif pour la recherche de la boutique."
+      ],
+      [
+        "Prépare une mise en page à deux colonnes pour ces étiquettes : consignes de manutention et descriptions des produits.",
+        "Raccourcis les textes pour des étiquettes de rayon étroites sans perdre les dimensions ni les précautions.",
+        "Repère les formulations incohérentes sur ces emballages et propose un style commun."
+      ],
+      [
+        "Classe les présentoirs de la boutique du musée selon la personnalité historique représentée. Garde les détails des articles à côté.",
+        "Prépare une fiche de stock pour la boutique de l'exposition à partir de ces objets commémoratifs et légendes.",
+        "Organise ces fiches d'histoire des sciences en index pour les visiteurs, avec une colonne distincte pour les produits."
+      ],
+      [
+        "Rétablis les limites des colonnes dans cet extrait OCR de ticket. Explique à quel en-tête appartient chaque cellule.",
+        "Transforme cet export de caisse en tableau lisible en séparant l'en-tête du commerçant des lignes de transaction.",
+        "Corrige la mise en page de ces fragments de tickets numérisés sans compléter les cellules illisibles."
+      ],
+      [
+        "Rédige des messages d'interface courts pour ce tableau de stock à partir des statuts fournis.",
+        "Associe les statuts d'entrepôt aux onglets de filtrage et indique les articles à recompter.",
+        "Rédige une légende des statuts pour l'écran d'inventaire en distinguant les contrôles en attente et terminés."
+      ],
+      [
+        "Fusionne ces entrées de catalogues fournisseurs. Signale les dimensions contradictoires en conservant les formulations d'origine.",
+        "Propose une correspondance des champs pour importer ces fiches produits et relève les colonnes ambiguës.",
+        "Propose des règles de dédoublonnage ; un même format de papier ne suffit pas à identifier un doublon."
+      ],
+      [
+        "Compose des lots de matériel pour l'atelier à partir de ce stock. Indique quels conditionnements peuvent être divisés.",
+        "Transforme l'inventaire de la salle de création en liste de prélèvement classée par matière.",
+        "Prépare une liste de matériel pour un atelier de gravure en conservant les codes articles nécessaires aux commandes."
+      ],
+      [
+        "Prépare une vitrine de librairie avec ces cartes de personnages historiques et les accessoires de rayon assortis.",
+        "Rédige des fiches de rayon pour une sélection d'histoire des sciences, avec le stock dans une colonne séparée.",
+        "Organise les accessoires d'une semaine de lectures historiques et indique le matériel prêt à l'emploi."
+      ]
+    ],
+    "names": [
+      "Anatole Bérénice Cyprien Domitille Eulalie Firmin Gaspard Héloïse",
+      "Boisrond Chantepie Desforges Églantier Fleuryval Grandchêne Lormeraie Vauclerc"
+    ],
+    "merchants": [
+      "Papeterie du Pinson Cuivré",
+      "Librairie du Chêne Bleu",
+      "Comptoir du Tilleul",
+      "Atelier Papier d'Ambre",
+      "Le Rayon des Saules",
+      "Dépôt de la Grue",
+      "Les Feuilles du Soir",
+      "Boutique Encre Mousse"
+    ],
+    "products": [
+      "papier A4",
+      "cahier A5",
+      "enveloppe DL",
+      "crayon HB",
+      "pochette C6",
+      "chemise B5",
+      "carton 200 g/m²",
+      "équerre M8"
+    ],
+    "packaging": [
+      "craint l'humidité",
+      "fragile",
+      "haut",
+      "recyclable",
+      "lot de 12",
+      "finition mate",
+      "non couché",
+      "ne pas empiler"
+    ],
+    "statuses": [
+      "comptage en attente",
+      "prêt à mettre en rayon",
+      "quantité conforme",
+      "temporairement indisponible",
+      "contrôle terminé",
+      "réassort demandé",
+      "en exposition",
+      "en transit"
+    ],
+    "headers": [
+      "Désignation",
+      "Quantité",
+      "Prix unitaire",
+      "Net à payer",
+      "Libellé",
+      "Sous-total",
+      "Code article",
+      "Taux de TVA"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galilée",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Personnalité historique représentée sur la carte",
+    "contact": "Organisation de l'atelier / contact pour la livraison",
+    "private": [
+      "Nom",
+      "Courriel",
+      "Téléphone",
+      "Adresse de livraison"
+    ],
+    "closing": [
+      "Présente le résultat dans un tableau avec une brève note sur les entrées ambiguës.",
+      "Conserve la formulation d'origine à côté de chaque correction proposée.",
+      "Énumère les points non résolus avant de proposer la suite.",
+      "Explique le classement à partir des quantités ; n'invente pas de stock manquant."
+    ]
+  },
+  "es": {
+    "tasks": [
+      [
+        "Diseña filtros de búsqueda para este catálogo de papelería. Agrupa los artículos por tamaño y material.",
+        "Propón filtros que permitan distinguir los formatos de papel de los modelos de impresora.",
+        "Convierte estas líneas de productos en una tabla comparativa para el buscador de la tienda."
+      ],
+      [
+        "Prepara una maquetación a dos columnas para estas etiquetas: instrucciones de manipulación y descripción del producto.",
+        "Acorta los textos para etiquetas de estantería estrechas sin perder medidas ni precauciones.",
+        "Detecta expresiones inconsistentes en estos envases y propone un estilo común."
+      ],
+      [
+        "Ordena las tarjetas de la tienda del museo por la figura histórica representada. Conserva al lado los detalles del producto.",
+        "Prepara una ficha de existencias para la tienda de la exposición con estos artículos conmemorativos y sus leyendas.",
+        "Organiza estas tarjetas de historia de la ciencia en un índice para visitantes con una columna separada para los productos."
+      ],
+      [
+        "Recupera los límites de las columnas de este fragmento OCR de un tique. Explica a qué encabezado corresponde cada celda.",
+        "Convierte esta exportación de caja en una tabla clara; separa la cabecera del comercio de las líneas de compra.",
+        "Corrige la maquetación de estos fragmentos de tiques escaneados sin completar las celdas ilegibles."
+      ],
+      [
+        "Redacta mensajes breves para esta pantalla de existencias a partir de los estados indicados.",
+        "Asocia los estados del almacén con pestañas de filtrado e indica qué artículos necesitan un recuento.",
+        "Redacta una leyenda de estados para la pantalla de inventario que distinga las revisiones pendientes de las finalizadas."
+      ],
+      [
+        "Combina estas entradas de catálogos de proveedores. Señala las medidas contradictorias y conserva la redacción de cada comercio.",
+        "Diseña una correspondencia de campos para importar estas fichas de producto y enumera las columnas ambiguas.",
+        "Propón reglas para detectar duplicados; compartir un formato de papel no basta para considerar idénticos dos artículos."
+      ],
+      [
+        "Prepara lotes de material para el taller con estas existencias. Indica qué envases se pueden dividir.",
+        "Convierte el inventario de la sala de manualidades en una lista de recogida agrupada por material.",
+        "Prepara una lista de materiales para un taller de grabado conservando los códigos de artículo para los pedidos."
+      ],
+      [
+        "Diseña un escaparate de librería con estas tarjetas de figuras históricas y los accesorios de estantería correspondientes.",
+        "Redacta fichas para una selección de historia de la ciencia, con las existencias en una columna separada.",
+        "Organiza los accesorios de una semana de lecturas históricas e indica qué materiales están preparados."
+      ]
+    ],
+    "names": [
+      "Amadeo Beltrán Casilda Damián Elvira Florián Herminia Leandro",
+      "Almenara Balbuena Castañeda Dorado Escudero Fresneda Guijarro Madroñal"
+    ],
+    "merchants": [
+      "Papelería Pinzón de Cobre",
+      "Librería Roble Azul",
+      "Almacén Hoja de Tilo",
+      "El Papel de Ámbar",
+      "Estantes del Sauce",
+      "Taller de la Grulla",
+      "Depósito Hojas del Ocaso",
+      "Tienda Tinta de Musgo"
+    ],
+    "products": [
+      "papel A4",
+      "cuaderno A5",
+      "sobre DL",
+      "lápiz HB",
+      "funda C6",
+      "carpeta B5",
+      "cartulina 200 g/m²",
+      "escuadra M8"
+    ],
+    "packaging": [
+      "proteger de la humedad",
+      "frágil",
+      "este lado arriba",
+      "reciclable",
+      "paquete de 12",
+      "acabado mate",
+      "sin estucar",
+      "no apilar"
+    ],
+    "statuses": [
+      "pendiente de recuento",
+      "listo para colocar",
+      "cantidad conforme",
+      "no disponible temporalmente",
+      "revisión terminada",
+      "reposición solicitada",
+      "en exposición",
+      "en tránsito"
+    ],
+    "headers": [
+      "Descripción",
+      "Cantidad",
+      "Precio unitario",
+      "Importe a pagar",
+      "Concepto",
+      "Subtotal",
+      "Código de artículo",
+      "Tipo de IVA"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Figura histórica representada en la tarjeta",
+    "contact": "Organización del taller / contacto para la entrega",
+    "private": [
+      "Nombre",
+      "Correo",
+      "Teléfono",
+      "Dirección de entrega"
+    ],
+    "closing": [
+      "Presenta el resultado en una tabla con una nota breve sobre las entradas ambiguas.",
+      "Conserva el texto original junto a cada corrección propuesta.",
+      "Enumera los puntos sin resolver antes de sugerir el siguiente paso.",
+      "Justifica la agrupación con las cantidades; no inventes existencias."
+    ]
+  },
+  "it": {
+    "tasks": [
+      [
+        "Crea filtri di ricerca per questo catalogo di cartoleria. Raggruppa gli articoli per formato e materiale.",
+        "Proponi filtri che distinguano i formati della carta dai modelli di stampante.",
+        "Trasforma queste righe di prodotto in una tabella comparativa per la ricerca del negozio."
+      ],
+      [
+        "Prepara un'impaginazione a due colonne per queste etichette: istruzioni di movimentazione e descrizioni dei prodotti.",
+        "Accorcia i testi per etichette da scaffale strette senza perdere dimensioni o precauzioni.",
+        "Individua le formulazioni incoerenti sulle confezioni e proponi uno stile uniforme."
+      ],
+      [
+        "Ordina i cartoncini del negozio del museo per personaggio storico raffigurato. Mantieni accanto i dettagli della merce.",
+        "Prepara una scheda delle scorte per il negozio della mostra usando questi articoli commemorativi e le relative didascalie.",
+        "Organizza queste schede di storia della scienza in un indice per i visitatori, con una colonna distinta per i prodotti."
+      ],
+      [
+        "Ricostruisci i confini delle colonne di questo estratto OCR di scontrino. Spiega a quale intestazione appartiene ogni cella.",
+        "Trasforma questa esportazione di cassa in una tabella leggibile, separando l'intestazione del negozio dalle righe della transazione.",
+        "Correggi l'impaginazione di questi frammenti di scontrini scansionati senza completare le celle illeggibili."
+      ],
+      [
+        "Scrivi messaggi brevi per questa schermata delle scorte usando gli stati forniti.",
+        "Associa gli stati di magazzino alle schede di filtro e indica quali articoli richiedono un conteggio.",
+        "Prepara una legenda degli stati per l'inventario distinguendo i controlli in attesa da quelli conclusi."
+      ],
+      [
+        "Unisci queste voci dei cataloghi fornitori. Segnala le misure discordanti mantenendo la dicitura di ogni negozio.",
+        "Proponi una mappatura dei campi per importare queste schede prodotto ed elenca le colonne ambigue.",
+        "Proponi regole per individuare i duplicati; lo stesso formato di carta non basta a rendere identici due articoli."
+      ],
+      [
+        "Componi kit per il laboratorio usando queste scorte. Indica quali confezioni possono essere suddivise.",
+        "Trasforma l'inventario della sala creativa in una lista di prelievo raggruppata per materiale.",
+        "Prepara una lista dei materiali per un laboratorio di incisione conservando i codici articolo per gli ordini."
+      ],
+      [
+        "Progetta una vetrina di libreria con queste schede di personaggi storici e i relativi accessori da scaffale.",
+        "Scrivi cartellini per una selezione di storia della scienza, riportando le scorte in una colonna separata.",
+        "Organizza gli accessori per una settimana di letture storiche e indica quali materiali sono pronti."
+      ]
+    ],
+    "names": [
+      "Adelmo Berenice Corrado Domiziana Erminio Fiorella Gregorio Loredana",
+      "Alberoni Bellacqua Castelfranco Dallavalle Fioravanti Ghirlanda Malaspina Roverella"
+    ],
+    "merchants": [
+      "Cartoleria Fringuello di Rame",
+      "Libreria Quercia Blu",
+      "Emporio Foglia di Tiglio",
+      "La Carta d'Ambra",
+      "Scaffali del Salice",
+      "Bottega della Gru",
+      "Deposito Foglie al Tramonto",
+      "Negozio Inchiostro Muschio"
+    ],
+    "products": [
+      "carta A4",
+      "quaderno A5",
+      "busta DL",
+      "matita HB",
+      "custodia C6",
+      "cartellina B5",
+      "cartoncino 200 g/m²",
+      "staffa M8"
+    ],
+    "packaging": [
+      "teme l'umidità",
+      "fragile",
+      "alto",
+      "riciclabile",
+      "confezione da 12",
+      "finitura opaca",
+      "non patinato",
+      "non impilare"
+    ],
+    "statuses": [
+      "conteggio in attesa",
+      "pronto per lo scaffale",
+      "quantità conforme",
+      "temporaneamente non disponibile",
+      "controllo concluso",
+      "riassortimento richiesto",
+      "in esposizione",
+      "in transito"
+    ],
+    "headers": [
+      "Descrizione",
+      "Quantità",
+      "Prezzo unitario",
+      "Totale da pagare",
+      "Causale",
+      "Subtotale",
+      "Codice articolo",
+      "Aliquota IVA"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Giovanni Keplero",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Personaggio storico raffigurato sul cartoncino",
+    "contact": "Organizzazione del laboratorio / contatto per la consegna",
+    "private": [
+      "Nome",
+      "E-mail",
+      "Telefono",
+      "Indirizzo di consegna"
+    ],
+    "closing": [
+      "Presenta il risultato in una tabella con una breve nota sulle voci ambigue.",
+      "Mantieni la formulazione originale accanto a ogni correzione proposta.",
+      "Elenca i punti irrisolti prima di suggerire il passo successivo.",
+      "Spiega il raggruppamento usando le quantità; non inventare scorte mancanti."
+    ]
+  },
+  "nl": {
+    "tasks": [
+      [
+        "Maak zoekfilters voor deze catalogus met kantoorartikelen. Groepeer de artikelen op formaat en materiaal.",
+        "Stel catalogusfilters voor waarmee kopers papierformaten van printermodellen kunnen onderscheiden.",
+        "Zet deze productregels om in een compacte vergelijkingstabel voor de zoekpagina van de winkel."
+      ],
+      [
+        "Maak een indeling met twee kolommen voor deze verpakkingsetiketten: behandelinstructies en productbeschrijvingen.",
+        "Kort de teksten in voor smalle schapetiketten zonder maten of behandelinstructies weg te laten.",
+        "Zoek afwijkende formuleringen op deze verpakkingen en stel een vaste schrijfstijl voor."
+      ],
+      [
+        "Orden de kaarten van de museumwinkel op de afgebeelde historische persoon. Laat de productgegevens ernaast staan.",
+        "Maak een voorraadstaat voor de tentoonstellingswinkel op basis van deze herdenkingsartikelen en bijschriften.",
+        "Maak van deze kaarten over wetenschapsgeschiedenis een bezoekersindex met een aparte productkolom."
+      ],
+      [
+        "Herstel de kolomgrenzen in dit OCR-fragment van een kassabon. Leg uit welke cellen bij elke kop horen.",
+        "Zet deze kassa-export om in een overzichtelijke tabel en scheid de winkelkop van de transactieregels.",
+        "Herstel de indeling van deze gescande bonfragmenten zonder onleesbare cellen in te vullen."
+      ],
+      [
+        "Schrijf korte schermteksten voor dit voorraadoverzicht met de opgegeven statuswaarden.",
+        "Koppel de magazijnstatussen aan filtertabbladen en geef aan welke artikelen opnieuw geteld moeten worden.",
+        "Maak een statuslegenda voor het inventarisatiescherm en onderscheid openstaande van afgeronde controles."
+      ],
+      [
+        "Voeg deze leverancierscatalogi samen. Markeer tegenstrijdige maten en behoud de formulering van elke winkel.",
+        "Maak een veldkoppeling voor de import van deze productbladen en som dubbelzinnige kolommen op.",
+        "Stel regels voor ontdubbeling voor; hetzelfde papierformaat maakt twee artikelen nog niet identiek."
+      ],
+      [
+        "Stel materiaalpakketten voor de workshop samen uit deze voorraadregels. Geef aan welke verpakkingen opgedeeld kunnen worden.",
+        "Maak van de voorraadlijst van het knutsellokaal een picklijst per materiaalsoort.",
+        "Maak een materialenlijst voor een grafiekworkshop en behoud de artikelcodes voor nabestellingen."
+      ],
+      [
+        "Plan een boekhandelsvitrine met deze kaarten van historische personen en de bijpassende schapmaterialen.",
+        "Schrijf schapkaartjes voor een selectie over wetenschapsgeschiedenis, met de voorraad in een aparte kolom.",
+        "Orden de decoratie voor een historische leesweek en geef aan welke materialen klaarliggen."
+      ]
+    ],
+    "names": [
+      "Aart Berend Catrien Diederik Eelco Femke Gerbrand Hanneke",
+      "Appelgaard Beukenhorst Duinakker Elzenbroek Groenewoud Haverkamp Lindenwaard Rietbergen"
+    ],
+    "merchants": [
+      "Papierwinkel Kopervink",
+      "Boekhandel Blauwe Eik",
+      "Kantoorzaak Lindenblad",
+      "Het Barnsteenpapier",
+      "Schappenhuis Wilg",
+      "Atelier Kraanvogel",
+      "Papierdepot Avondrood",
+      "Winkel Mosgroene Inkt"
+    ],
+    "products": [
+      "A4-papier",
+      "A5-schrift",
+      "DL-envelop",
+      "HB-potlood",
+      "C6-hoes",
+      "B5-map",
+      "karton 200 g/m²",
+      "M8-beugel"
+    ],
+    "packaging": [
+      "droog bewaren",
+      "breekbaar",
+      "deze kant boven",
+      "recyclebaar",
+      "pak van 12",
+      "matte afwerking",
+      "ongestreken",
+      "niet stapelen"
+    ],
+    "statuses": [
+      "voorraadcontrole gepland",
+      "klaar voor het schap",
+      "aantal klopt",
+      "tijdelijk niet leverbaar",
+      "controle afgerond",
+      "aanvulling aangevraagd",
+      "tentoongesteld",
+      "onderweg"
+    ],
+    "headers": [
+      "Omschrijving",
+      "Aantal",
+      "Stuksprijs",
+      "Te betalen",
+      "Boekingstekst",
+      "Subtotaal",
+      "Artikelcode",
+      "Btw-tarief"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Marie Skłodowska-Curie"
+    ],
+    "caption": "Historische persoon op de kaart",
+    "contact": "Workshoporganisatie / contact voor de levering",
+    "private": [
+      "Naam",
+      "E-mail",
+      "Telefoon",
+      "Bezorgadres"
+    ],
+    "closing": [
+      "Geef het resultaat als tabel met een korte toelichting op onduidelijke vermeldingen.",
+      "Zet de oorspronkelijke tekst naast elke voorgestelde correctie.",
+      "Noem de openstaande punten voordat je een volgende stap voorstelt.",
+      "Onderbouw de groepering met de aantallen; verzin geen ontbrekende voorraad."
+    ]
+  },
+  "pl": {
+    "tasks": [
+      [
+        "Zaprojektuj filtry wyszukiwania dla tego katalogu artykułów papierniczych. Pogrupuj produkty według formatu i materiału.",
+        "Zaproponuj filtry pozwalające odróżnić formaty papieru od modeli drukarek.",
+        "Zamień te pozycje katalogowe w zwięzłą tabelę porównawczą do wyszukiwarki sklepu."
+      ],
+      [
+        "Przygotuj dwukolumnowy układ etykiet opakowań: instrukcje obchodzenia się z towarem oraz opis produktu.",
+        "Skróć teksty na wąskie etykiety półkowe, zachowując wymiary i zalecenia dotyczące przechowywania.",
+        "Wskaż niespójne sformułowania na opakowaniach i zaproponuj jednolity styl."
+      ],
+      [
+        "Uporządkuj karty ze sklepu muzealnego według przedstawionej postaci historycznej. Pozostaw obok dane towaru.",
+        "Przygotuj zestawienie zapasów sklepu wystawowego na podstawie tych pamiątek i podpisów.",
+        "Ułóż karty o historii nauki w indeks dla zwiedzających, z osobną kolumną na produkty."
+      ],
+      [
+        "Odtwórz granice kolumn w tym fragmencie OCR paragonu. Wyjaśnij przyporządkowanie komórek do nagłówków.",
+        "Zamień eksport z kasy w czytelną tabelę i oddziel nagłówek sprzedawcy od pozycji transakcji.",
+        "Popraw układ zeskanowanych fragmentów paragonów bez uzupełniania nieczytelnych komórek."
+      ],
+      [
+        "Napisz krótkie komunikaty interfejsu dla tego widoku zapasów, korzystając z podanych statusów.",
+        "Przyporządkuj statusy magazynowe do zakładek filtrów i wskaż towary wymagające ponownego przeliczenia.",
+        "Przygotuj legendę statusów ekranu inwentaryzacji, rozróżniając kontrole oczekujące i zakończone."
+      ],
+      [
+        "Połącz te pozycje z katalogów dostawców. Zaznacz sprzeczne wymiary i zachowaj sformułowania każdego sprzedawcy.",
+        "Zaproponuj mapowanie pól przy imporcie kart produktów i wypisz niejednoznaczne kolumny.",
+        "Zaproponuj zasady wykrywania duplikatów; wspólny format papieru nie oznacza jeszcze tego samego artykułu."
+      ],
+      [
+        "Ułóż zestawy materiałów na warsztaty z tych pozycji magazynowych. Wskaż opakowania, które można podzielić.",
+        "Zamień spis zapasów pracowni w listę kompletacyjną pogrupowaną według materiału.",
+        "Przygotuj listę materiałów na warsztaty graficzne, zachowując kody artykułów potrzebne do zamówienia."
+      ],
+      [
+        "Zaplanuj witrynę księgarni z użyciem tych kart postaci historycznych i pasujących akcesoriów półkowych.",
+        "Napisz etykiety dla ekspozycji książek o historii nauki, podając stan zapasów w osobnej kolumnie.",
+        "Uporządkuj akcesoria na tydzień lektur historycznych i wskaż materiały gotowe do użycia."
+      ]
+    ],
+    "names": [
+      "Ambroży Bronisława Czesław Dobromiła Ewaryst Felicja Gniewomir Halina",
+      "Białobrzeski Chojnacki Dębowiec Gajewicz Jarzębowski Krzemieniecki Leszczyniec Modrzewiński"
+    ],
+    "merchants": [
+      "Papiernia Miedziana Zięba",
+      "Księgarnia Błękitny Dąb",
+      "Skład Lipowy Liść",
+      "Papier Bursztynowy",
+      "Półki pod Wierzbą",
+      "Pracownia Żuraw",
+      "Magazyn Wieczorne Kartki",
+      "Sklep Atrament i Mech"
+    ],
+    "products": [
+      "papier A4",
+      "zeszyt A5",
+      "koperta DL",
+      "ołówek HB",
+      "koszulka C6",
+      "teczka B5",
+      "karton 200 g/m²",
+      "wspornik M8"
+    ],
+    "packaging": [
+      "chronić przed wilgocią",
+      "ostrożnie",
+      "góra",
+      "do recyklingu",
+      "opakowanie 12 sztuk",
+      "wykończenie matowe",
+      "niepowlekany",
+      "nie piętrować"
+    ],
+    "statuses": [
+      "oczekuje na przeliczenie",
+      "gotowe do wyłożenia",
+      "kwota zgodna",
+      "chwilowo niedostępne",
+      "kontrola zakończona",
+      "zgłoszono uzupełnienie",
+      "na ekspozycji",
+      "w transporcie"
+    ],
+    "headers": [
+      "Nazwa towaru",
+      "Ilość",
+      "Cena jednostkowa",
+      "Do zapłaty",
+      "Opis księgowania",
+      "Suma częściowa",
+      "Kod artykułu",
+      "Stawka VAT"
+    ],
+    "figures": [
+      "Isaac Newton",
+      "Ada Lovelace",
+      "Karol Darwin",
+      "Michael Faraday",
+      "Mary Anning",
+      "Johannes Kepler",
+      "Galileusz",
+      "Maria Skłodowska-Curie"
+    ],
+    "caption": "Postać historyczna przedstawiona na karcie",
+    "contact": "Organizacja warsztatów / kontakt w sprawie dostawy",
+    "private": [
+      "Imię i nazwisko",
+      "E-mail",
+      "Telefon",
+      "Adres dostawy"
+    ],
+    "closing": [
+      "Przedstaw wynik w tabeli i krótko wyjaśnij niejednoznaczne wpisy.",
+      "Zachowaj pierwotne brzmienie obok każdej proponowanej poprawki.",
+      "Wypisz nierozstrzygnięte kwestie przed zaproponowaniem kolejnego kroku.",
+      "Uzasadnij podział podanymi ilościami; nie wymyślaj brakujących zapasów."
+    ]
+  }
+}
