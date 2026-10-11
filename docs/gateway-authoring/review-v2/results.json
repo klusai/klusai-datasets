@@ -1,0 +1,347 @@
+{
+  "n": 300,
+  "alpha": {
+    "panel": {
+      "estimate": null,
+      "ci95": null,
+      "defined_bootstraps": 0
+    },
+    "openai/codex-session-naturalness-self-review": {
+      "estimate": null,
+      "ci95": null,
+      "defined_bootstraps": 0
+    }
+  },
+  "ratings": {
+    "openai/codex-session-naturalness-self-review": {
+      "fluency": {
+        "median": 5.0,
+        "ci95": [
+          5.0,
+          5.0
+        ]
+      },
+      "naturalness": {
+        "median": 4.0,
+        "ci95": [
+          4.0,
+          4.0
+        ]
+      }
+    }
+  },
+  "bootstrap_replicates": 2000,
+  "sampling_seed": 12402,
+  "sampling_seed_count": 1,
+  "bootstrap_seed": 7701,
+  "config_status": "dev",
+  "release_ready": false,
+  "review_mode": "same-author self-review; packet hides scores but reviewer knew earlier aggregate scores",
+  "independent_judges": 0,
+  "native_human_reviewers": 0,
+  "model_scoring_seed_count": 0,
+  "gold_agreement": null,
+  "artifact_documents": {
+    "n": 300,
+    "flagged": 108,
+    "ci95": [
+      0.3077694365774567,
+      0.415770581153878
+    ]
+  },
+  "by_language": {
+    "ro": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "en": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "de": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "fr": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "es": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "it": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "nl": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "pl": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-naturalness-self-review": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        }
+      },
+      "ratings": {
+        "openai/codex-session-naturalness-self-review": {
+          "fluency": {
+            "median": 5.0,
+            "ci95": [
+              5.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    }
+  },
+  "provenance": {
+    "bench_revision": "14cfc44d5218e2f96081fc7ea8db5b07eb2880b3",
+    "panel_sha256": "50d97950461e1db7a391837e3be6a563d50303f50fef05925a7ee76f7f10a2b2",
+    "report_tool_sha256": "aaabbee5d42b9443c7adaec40c653b3c1287817d84109aaa73962ee135d14a6f",
+    "protocol_sha256": "c1dcb67199e23e1ff6606996987a80f0ba9967b61682ec6855383c8f2080127c",
+    "packet_sha256": "d2514ea1c60f70f72f4707a42354f5890048145dd5c254ad866b71597d59378e",
+    "judgments_sha256": "2e2cecc70b3ce9ba59cfdadb03f58e1900084c45de3d3a9b24b5847c9fd2c4c3"
+  },
+  "limitations": [
+    "Earlier aggregate scores were known to the author; this is not a blind validation pass.",
+    "Fresh membership excludes earlier sampled scenarios across languages, not entire template families.",
+    "Document bootstrap omits family and reviewer uncertainty; no independent delta/win claim.",
+    "No new gold annotation agreement, native review, or three-family panel is claimed.",
+    "Credential text was subsequently sanitized at fixed offsets; stored scores are historical, not scores for the sanitized revision."
+  ],
+  "credential_sanitization": {
+    "rated_before_sanitization": true,
+    "rescored": false,
+    "changed_review_documents": 7,
+    "original_text_hashes": "judgments.json:pre_sanitization_text_sha256"
+  }
+}

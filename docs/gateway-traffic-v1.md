@@ -1,8 +1,9 @@
 # gateway-traffic-v1 contract (RES-123)
 
-This is a **manifest and validation contract**, with no conversations generated.
-RES-124 authors the data. All volumes below are targets, not measured results;
-`n=0`, scoring seeds=0, CIs unavailable. No quality or held-out-clean claim is made.
+RES-123 established this **manifest and validation contract** without conversations.
+RES-124 now supplies a [local first tranche](gateway-authoring/README.md): 2,240 test /
+480 dev, status `dev`. The full volumes below remain release targets. Model scoring
+seeds=0; no quality, independent annotation accuracy or held-out-clean claim is made.
 
 `conf/gateway_traffic_manifest.yaml` pins licence evidence, source URLs/revisions,
 coverage requirements, the training inventory and immutable family reservations.

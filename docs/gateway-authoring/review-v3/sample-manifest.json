@@ -1,0 +1,52 @@
+{
+  "n": 300,
+  "population_n": 9600,
+  "sampling_seed": 12403,
+  "sampling_seed_count": 1,
+  "model_scoring_seed_count": 0,
+  "status": "awaiting_separate_blind_reviewer",
+  "method": "two per eligible language/split/family cell plus random extras, shuffled opaque IDs",
+  "exclusion": "union of both earlier reviewed scenario/translation groups across all languages",
+  "previous_samples": {
+    "docs/gateway-authoring/review/sample.json": "7a336c040f7379c0a782621bdc052d50ce4ee656c51ba6c4fc617249cf79d4ed",
+    "docs/gateway-authoring/review-v2/mapping.json": "98121932e5863aaf9dfb8af8ea172a69acc293a13ff2fa550b76669536f2be76"
+  },
+  "reviewer_files": {
+    "README.md": "18f10f54a157f775bff36c1aff3c7d7aa6a14c1d6b8f3c68eb83b009a351d1b9",
+    "rubric.md": "d16b7f873916d669cf8e86c7de5182bc65af4423752a9853e0e2d42dcbf9b72f",
+    "sample.json": "c12942e112ee00fd0b0f7df24a0c080ab40c4178830d66b4925ae3c08f6c7228",
+    "taxonomy.json": "1b97a9e9ca84a0d72a604d4c7d8d77b7371a6b263be4cf75bba836998ae6bfc9"
+  },
+  "mapping_sha256": "d5ba973ccb6df5e35a73da5ea158a96e959764eca0caf82dc219eb48830dc1f1",
+  "panel_rows_sha256": "0748ed9eaf80a6535bcbf177fe23b436ab0a91f2dc9e31db2bad5a5b2d23c500",
+  "sources": {
+    "artifacts/gateway-traffic-v1/originals/v3/test.jsonl": "ca372c5b58deaca514c553ac5326565d136f9abe7293ffe0729ef171778abe2e",
+    "artifacts/gateway-traffic-v1/originals/v3/dev.jsonl": "3401e3b42d739c6450e833e9f44b85fafa3cd44dae498c863f84d1b75ed743a8"
+  },
+  "strata": {
+    "nl/dev": 19,
+    "it/test": 18,
+    "de/dev": 19,
+    "es/dev": 19,
+    "nl/test": 18,
+    "pl/dev": 19,
+    "en/dev": 19,
+    "it/dev": 19,
+    "en/test": 19,
+    "fr/dev": 19,
+    "ro/test": 19,
+    "fr/test": 19,
+    "es/test": 18,
+    "de/test": 19,
+    "ro/dev": 19,
+    "pl/test": 18
+  },
+  "bench_revision": "14cfc44d5218e2f96081fc7ea8db5b07eb2880b3",
+  "limitations": [
+    "Shared author and template families; prior reviewed scenario groups are excluded, not entire families.",
+    "Balanced language/split/workflow sample; not population-weighted traffic estimates.",
+    "One sampling seed; no independent annotations, scores, CIs or agreement yet.",
+    "Reviewer folder is an information boundary, not access control; distribute only that folder for Stage A."
+  ],
+  "credential_sanitization": "Same frozen membership and gold offsets; provider-neutral token text; still unscored."
+}

@@ -1,7 +1,8 @@
 dataset: gateway-traffic-v1
 version: 1
+data_revision: 4
 config_status: dev
-generation_status: not_started
+generation_status: full_revision4_credential_sanitized
 languages:
 - ro
 - en
@@ -42,7 +43,7 @@ sources:
     url: https://github.com/klusai/klusai-datasets
     revision: 736665aa1c8908c73f6d0dd19b75d4541cf97b46
     revision_scope: Repository baseline before RES-123; no authored conversations yet. Each RES-124 record must pin its
-      actual artifact commit.
+      actual artifact Git object (clean input blob for squashed revisions).
     license: CC-BY-4.0
     license_url: https://creativecommons.org/licenses/by/4.0/legalcode.en
     license_evidence: conf/gateway_traffic_licenses/originals.txt
@@ -52,7 +53,7 @@ sources:
     - train
     - dev
     - test
-    artifact_path: artifacts/gateway-traffic-v1/originals/ (reserved, not generated)
+    artifact_path: artifacts/gateway-traffic-v1/originals/
     permitted_train: true
     permitted_redistribute: true
     license_verified_on: '2026-10-11'
@@ -110,7 +111,7 @@ exclusions:
 - all existing KP training families and translation/subject siblings
 ingestion: hf_hub_download at pinned revision, then pyarrow for single-file parquet; no streaming load_dataset
 release_gates:
-- No generation in RES-123; all volumes are targets, n=0.
+- RES-124 data revision 4 has 8000 test and 1600 dev; independent panel review remains pending.
 - Validate schema, offsets, source rights, artifact SHA-256 and immutable split ledger.
 - Refresh inventory after any KP training change; scan every corpus, never accept a partial path map.
 - 'Require documented family/subject/translation disjointness review: legacy corpora have incomplete identity metadata.'

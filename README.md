@@ -70,4 +70,5 @@ and model scores transfer to these revisions. See the frozen
 RES-123 defines the source manifest, frozen split reservations, conversation schema
 and offline coverage/training-overlap gates for `gateway-traffic-v1`.
 See [the contract and audit instructions](docs/gateway-traffic-v1.md).
-The 8,000 test / 1,600 dev conversations are targets for RES-124; none are generated here.
+RES-124 now contains the full local 8,000 test / 1,600 dev conversations (status `dev`).
+See [authoring and QA](docs/gateway-authoring/README.md); independent blind/native review remains open.
