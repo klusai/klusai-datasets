@@ -220,6 +220,9 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
     p = gen_person(rng)
     date = f"{rng.randint(1, 28):02d}.{rng.randint(1, 12):02d}.{rng.randint(1990, 2024)}"
     return {
+        "subsemnat": ("Subsemnatul" if p.sex == "M" else "Subsemnata", "O"),
+        "domiciliat": ("domiciliat" if p.sex == "M" else "domiciliată", "O"),
+        "internat": ("internat" if p.sex == "M" else "internată", "O"),
         "person": (f"{p.first_name} {p.last_name}", "PERSON"),
         "cnp": (p.cnp, "NATIONAL_ID"),
         "address": (p.address, "ADDRESS"),
@@ -234,16 +237,19 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
 def _stage_a_fallback(rng: random.Random) -> Doc:
     """Deterministic fallback: a stage-A template, so a run never stalls on a bad LLM body.
 
-    Uses only the stage-A templates whose slots are a subset of REQUIRED_SLOTS so the same coherent
-    person fills them; falls back further to the first such template. Fully offset-validated.
+    Uses only templates supported by the PII bundle and its gender-agreement fields.
+    Grammar slots never become narrator-required PII or annotated entities. Fails closed
+    if no compatible template remains; never selects a template with missing fields.
     """
+    available = set(REQUIRED_SLOTS) | {"subsemnat", "domiciliat", "internat"}
     candidates = [
         (dom, tmpl)
         for dom, tmpl in STAGE_A_TEMPLATES
-        if set(_SLOT_RE.findall(tmpl)) <= set(REQUIRED_SLOTS)
+        if set(_SLOT_RE.findall(tmpl)) <= available
     ]
-    pool = tuple(candidates) if candidates else STAGE_A_TEMPLATES
-    return fill_document(rng, pool, _fields)
+    if not candidates:
+        raise ValueError("No stage-A fallback template matches the available fields")
+    return fill_document(rng, tuple(candidates), _fields)
 
 
 def generate_stageb(config: StageBConfig, narrator: MlxNarrator | None = None) -> Iterator[dict]:

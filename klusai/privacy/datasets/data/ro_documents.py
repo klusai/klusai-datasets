@@ -34,16 +34,16 @@ __all__ = ["Doc", "_fill", "TEMPLATES", "gen_document", "generate_dataset", "ro_
 # punctuation separated so two entities never share a whitespace token.
 TEMPLATES = [
     ("legal",
-     "Subsemnatul {person}, CNP {cnp}, domiciliat în {address}, telefon {phone}, "
+     "{subsemnat} {person}, CNP {cnp}, {domiciliat} în {address}, telefon {phone}, "
      "declar pe propria răspundere la data de {date}."),
     ("legal",
      "Contract încheiat între {person} (CNP {cnp}) și societatea cu CUI {cui}, "
      "cont IBAN {iban}, la {date}."),
     ("clinical",
-     "Pacient: {person}, CNP {cnp}, internat la data de {date}. "
+     "Pacient: {person}, CNP {cnp}, {internat} la data de {date}. "
      "Telefon de contact: {phone}."),
     ("clinical",
-     "Bilet de externare — {person}, CNP {cnp}, domiciliat în {address}."),
+     "Bilet de externare — {person}, CNP {cnp}, {domiciliat} în {address}."),
     ("admin",
      "Către {person}, email {email}, vă comunicăm că plata în contul {iban} "
      "a fost înregistrată la {date}."),
@@ -59,6 +59,9 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
     email = f"{p.first_name}.{p.last_name}@example.ro".lower()
     date = f"{rng.randint(1, 28):02d}.{rng.randint(1, 12):02d}.{rng.randint(1990, 2024)}"
     return {
+        "subsemnat": ("Subsemnatul" if p.sex == "M" else "Subsemnata", "O"),
+        "domiciliat": ("domiciliat" if p.sex == "M" else "domiciliată", "O"),
+        "internat": ("internat" if p.sex == "M" else "internată", "O"),
         "person": (f"{p.first_name} {p.last_name}", "PERSON"),
         "cnp": (p.cnp, "NATIONAL_ID"),
         "address": (p.address, "ADDRESS"),
