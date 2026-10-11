@@ -64,3 +64,10 @@ identity-card numbers are omitted. Clinical PERSON/ORG_PARTY labels retain the v
 pending independent taxonomy adjudication. Neither lexical diversity nor the old panel
 and model scores transfer to these revisions. See the frozen
 [self-review protocol](docs/res77-v2-review-protocol.md); both configs remain `dev`.
+
+## Gateway traffic contract
+
+RES-123 defines the source manifest, frozen split reservations, conversation schema
+and offline coverage/training-overlap gates for `gateway-traffic-v1`.
+See [the contract and audit instructions](docs/gateway-traffic-v1.md).
+The 8,000 test / 1,600 dev conversations are targets for RES-124; none are generated here.

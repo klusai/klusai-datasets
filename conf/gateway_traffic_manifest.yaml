@@ -1,0 +1,119 @@
+dataset: gateway-traffic-v1
+version: 1
+config_status: dev
+generation_status: not_started
+languages:
+- ro
+- en
+- de
+- fr
+- es
+- it
+- nl
+- pl
+targets:
+  test: 1000
+  dev: 200
+subject_mix_percent:
+  negative: 20
+  small: 40
+  medium: 30
+  dense: 10
+length_mix_percent:
+  short: 50
+  medium: 35
+  long: 15
+required_labels:
+- PERSON
+- EMAIL
+- PHONE
+- ADDRESS
+- NATIONAL_ID
+- ACCOUNT_ID
+- DATE
+- CASE_NUMBER
+- COMPANY_ID
+- MRN
+- HEALTH_CONDITION
+- SECRET
+native_review_minimum_per_language: 100
+sources:
+  originals:
+    url: https://github.com/klusai/klusai-datasets
+    revision: 736665aa1c8908c73f6d0dd19b75d4541cf97b46
+    revision_scope: Repository baseline before RES-123; no authored conversations yet. Each RES-124 record must pin its
+      actual artifact commit.
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/legalcode.en
+    license_evidence: conf/gateway_traffic_licenses/originals.txt
+    attribution: KlusAI / Codex — gateway-traffic-v1 — https://github.com/klusai/klusai-datasets
+    stratum: original-synthetic
+    allowed_gateway_splits:
+    - train
+    - dev
+    - test
+    artifact_path: artifacts/gateway-traffic-v1/originals/ (reserved, not generated)
+    permitted_train: true
+    permitted_redistribute: true
+    license_verified_on: '2026-10-11'
+    license_sha256: 1467a94107023406b967a067ad77254df750cd04b7025ee539348523d8e0652e
+  openpii:
+    url: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1m
+    revision: ecfdc547f4a0955600cfe6ab98ba2a162207fcc0
+    revision_scope: Upstream dataset Git revision
+    license: CC-BY-4.0
+    license_url: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1m/blob/ecfdc547f4a0955600cfe6ab98ba2a162207fcc0/README.md
+    license_evidence: conf/gateway_traffic_licenses/openpii-card.md
+    attribution: Ai4Privacy / Ai Suisse SA — https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1m
+    stratum: external-synthetic
+    allowed_gateway_splits:
+    - train
+    - dev
+    - test
+    artifact_path: data/{train,validation}.jsonl
+    admission: Blocked until family/subject/translation identities and train overlap are audited. Never counted toward
+      original 8k/1.6k quotas.
+    permitted_train: true
+    permitted_redistribute: true
+    license_verified_on: '2026-10-11'
+    license_sha256: f6c425ec1b231ed9756b461682d82cec746183dea6031b860ce55d8e3854ad48
+  tab:
+    url: https://github.com/NorskRegnesentral/text-anonymization-benchmark
+    revision: 558e09e26d6b36f5f78440074e6a233946d98bd9
+    revision_scope: Upstream dataset Git revision
+    license: MIT
+    license_url: https://github.com/NorskRegnesentral/text-anonymization-benchmark/blob/558e09e26d6b36f5f78440074e6a233946d98bd9/LICENSE.txt
+    license_evidence: conf/gateway_traffic_licenses/tab-MIT.txt
+    attribution: Norsk Regnesentral; Pilán et al. (2022), Text Anonymization Benchmark
+    stratum: independent-real-anchor
+    allowed_gateway_splits: []
+    artifact_path: echr_test.json
+    anchor_manifest: conf/tab_echr_manifest.yaml
+    admission: Independent frozen anchor only; never convert held-out TAB cases into gateway train/dev/test.
+    permitted_train: true
+    permitted_redistribute: true
+    license_verified_on: '2026-10-11'
+    license_sha256: 9569b31acf50e1cb3f38f47220f2c3a42f533e07e72fe2d18c2871e89098a8c7
+split_plan:
+  path: conf/gateway_traffic_splits.json
+  sha256: f8004ecd49fea70fb71dee5e233dad8b51044deeac1bc8a790cd2828fb1677ff
+training_inventory:
+  path: conf/gateway_traffic_training_inventory.json
+  sha256: 6860095da661a3935111b1b5c1c8281b87ad49ba4dab1258774e174d6933f59d
+exclusions:
+- 'Piiranha: eval-only elsewhere, never training/base or gateway source'
+- Llama-bound data
+- NC/ND and unclear rights
+- unlicensed web chats
+- customer logs
+- direct HUDOC copying
+- all existing KP training families and translation/subject siblings
+ingestion: hf_hub_download at pinned revision, then pyarrow for single-file parquet; no streaming load_dataset
+release_gates:
+- No generation in RES-123; all volumes are targets, n=0.
+- Validate schema, offsets, source rights, artifact SHA-256 and immutable split ledger.
+- Refresh inventory after any KP training change; scan every corpus, never accept a partial path map.
+- 'Require documented family/subject/translation disjointness review: legacy corpora have incomplete identity metadata.'
+- External synthetic remains separately reported; TAB stays an independent anchor.
+- Native double annotation plus adjudication on >=100 conversations/language; freeze guide after agreement/miss analysis.
+- No real-traffic claim; status stays dev. Harness scoring and >=3 seeds are future work.

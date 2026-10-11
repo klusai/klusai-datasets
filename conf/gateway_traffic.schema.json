@@ -1,0 +1,505 @@
+{
+  "$defs": {
+    "Message": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "enum": [
+            "system",
+            "developer",
+            "user",
+            "assistant",
+            "tool"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "parts": {
+          "items": {
+            "$ref": "#/$defs/TextPart"
+          },
+          "minItems": 1,
+          "title": "Parts",
+          "type": "array"
+        }
+      },
+      "required": [
+        "role",
+        "parts"
+      ],
+      "title": "Message",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "source_revision": {
+          "pattern": "^[0-9a-f]{40}$",
+          "title": "Source Revision",
+          "type": "string"
+        },
+        "source_split": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source Split",
+          "type": "string"
+        },
+        "source_record_id": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Source Record Id",
+          "type": "string"
+        },
+        "artifact_path": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Artifact Path",
+          "type": "string"
+        },
+        "file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "File Sha256",
+          "type": "string"
+        },
+        "author": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Author",
+          "type": "string"
+        },
+        "tool": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Tool",
+          "type": "string"
+        },
+        "session": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Session",
+          "type": "string"
+        },
+        "generator_version": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Generator Version",
+          "type": "string"
+        },
+        "prompt_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Prompt Sha256",
+          "type": "string"
+        },
+        "content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Content Sha256",
+          "type": "string"
+        },
+        "seed": {
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        },
+        "identity_provenance": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Identity Provenance",
+          "type": "string"
+        },
+        "exclusions": {
+          "items": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "title": "Exclusions",
+          "type": "array"
+        },
+        "review": {
+          "$ref": "#/$defs/Review"
+        }
+      },
+      "required": [
+        "source_revision",
+        "source_split",
+        "source_record_id",
+        "artifact_path",
+        "file_sha256",
+        "author",
+        "tool",
+        "session",
+        "generator_version",
+        "prompt_sha256",
+        "content_sha256",
+        "seed",
+        "identity_provenance",
+        "exclusions",
+        "review"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "annotators": {
+          "items": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Annotators",
+          "type": "array"
+        },
+        "native_reviewers": {
+          "items": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "title": "Native Reviewers",
+          "type": "array"
+        },
+        "adjudicator": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Adjudicator"
+        },
+        "guide_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Guide Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "annotators",
+        "native_reviewers",
+        "adjudicator",
+        "guide_sha256"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Span": {
+      "additionalProperties": false,
+      "properties": {
+        "message": {
+          "minimum": 0,
+          "title": "Message",
+          "type": "integer"
+        },
+        "part": {
+          "minimum": 0,
+          "title": "Part",
+          "type": "integer"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "text": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Text",
+          "type": "string"
+        },
+        "label": {
+          "enum": [
+            "PERSON",
+            "ADDRESS",
+            "EMAIL",
+            "PHONE",
+            "URL",
+            "DATE",
+            "ACCOUNT_ID",
+            "SECRET",
+            "NATIONAL_ID",
+            "MRN",
+            "HEALTH_CONDITION",
+            "PROVIDER",
+            "FACILITY",
+            "CASE_NUMBER",
+            "COURT",
+            "STATUTE_REF",
+            "ORG_PARTY",
+            "COMPANY_ID"
+          ],
+          "title": "Label",
+          "type": "string"
+        },
+        "entity_id": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Entity Id",
+          "type": "string"
+        },
+        "subject_id": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Subject Id",
+          "type": "string"
+        },
+        "identifier_class": {
+          "enum": [
+            "DIRECT",
+            "QUASI"
+          ],
+          "title": "Identifier Class",
+          "type": "string"
+        },
+        "protection": {
+          "enum": [
+            "mask",
+            "pseudonymize",
+            "retain"
+          ],
+          "title": "Protection",
+          "type": "string"
+        }
+      },
+      "required": [
+        "message",
+        "part",
+        "start",
+        "end",
+        "text",
+        "label",
+        "entity_id",
+        "subject_id",
+        "identifier_class",
+        "protection"
+      ],
+      "title": "Span",
+      "type": "object"
+    },
+    "TextPart": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "text",
+          "default": "text",
+          "title": "Type",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "TextPart",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "gateway-traffic-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "config_status": {
+      "const": "dev",
+      "title": "Config Status",
+      "type": "string"
+    },
+    "taxonomy_version": {
+      "const": "0.2.0",
+      "title": "Taxonomy Version",
+      "type": "string"
+    },
+    "id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Id",
+      "type": "string"
+    },
+    "language": {
+      "enum": [
+        "ro",
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "nl",
+        "pl"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "secondary_languages": {
+      "items": {
+        "enum": [
+          "ro",
+          "en",
+          "de",
+          "fr",
+          "es",
+          "it",
+          "nl",
+          "pl"
+        ],
+        "type": "string"
+      },
+      "title": "Secondary Languages",
+      "type": "array"
+    },
+    "source_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "stratum": {
+      "enum": [
+        "original-synthetic",
+        "external-synthetic"
+      ],
+      "title": "Stratum",
+      "type": "string"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Scenario Id",
+      "type": "string"
+    },
+    "family_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Family Id",
+      "type": "string"
+    },
+    "source_document_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Source Document Id",
+      "type": "string"
+    },
+    "translation_group_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Translation Group Id",
+      "type": "string"
+    },
+    "subject_ids": {
+      "items": {
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "title": "Subject Ids",
+      "type": "array"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "dev",
+        "test"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "messages": {
+      "items": {
+        "$ref": "#/$defs/Message"
+      },
+      "maxItems": 8,
+      "minItems": 1,
+      "title": "Messages",
+      "type": "array"
+    },
+    "spans": {
+      "items": {
+        "$ref": "#/$defs/Span"
+      },
+      "title": "Spans",
+      "type": "array"
+    },
+    "features": {
+      "items": {
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "title": "Features",
+      "type": "array"
+    },
+    "dense_document": {
+      "title": "Dense Document",
+      "type": "boolean"
+    },
+    "token_count": {
+      "maximum": 2048,
+      "minimum": 32,
+      "title": "Token Count",
+      "type": "integer"
+    },
+    "tokenizer_id": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "title": "Tokenizer Id",
+      "type": "string"
+    },
+    "tokenizer_revision": {
+      "pattern": "^[0-9a-f]{40}$",
+      "title": "Tokenizer Revision",
+      "type": "string"
+    },
+    "truncated": {
+      "const": false,
+      "title": "Truncated",
+      "type": "boolean"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    }
+  },
+  "required": [
+    "schema_version",
+    "config_status",
+    "taxonomy_version",
+    "id",
+    "language",
+    "secondary_languages",
+    "source_id",
+    "stratum",
+    "scenario_id",
+    "family_id",
+    "source_document_id",
+    "translation_group_id",
+    "subject_ids",
+    "split",
+    "messages",
+    "spans",
+    "features",
+    "dense_document",
+    "token_count",
+    "tokenizer_id",
+    "tokenizer_revision",
+    "truncated",
+    "provenance"
+  ],
+  "title": "Conversation",
+  "type": "object"
+}

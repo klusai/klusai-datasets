@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "audited_on": "2026-10-11",
+  "models_revision": "be50353beab57c2db86f278e2f61d4c3e36bb8d4",
+  "datasets_revision": "736665aa1c8908c73f6d0dd19b75d4541cf97b46",
+  "scope": "All eight cached general-language training pools (entire 50k, including carved-out rows), all six local europriv JSONL artifacts, training scripts and available run manifests at the recorded repo revisions. Not an attestation of undisclosed/uncached corpora or later runs.",
+  "corpora": [
+    {
+      "id": "klusai/ds-kp-general-ro-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-ro-50k",
+      "revision": "9be5d61214d9afcc6698bb201d0f71249cf1faf9",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "2317c92aebbbe65b1a97722aec5e1f104b79e9a1d6a7235eb473102ea5874d05",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-en-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-en-50k",
+      "revision": "4de38d5e2062bb880a903a9b83b21d09ce4e8ce7",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "4205ac4b6a95f55ac856ad3e194cae300386daf5960c9539b92f4c1d7ecef4ba",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-de-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-de-50k",
+      "revision": "89ad6f3a49812017166d3c4714d40b4e0347b5a3",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "02dd1d6052235dddfc0e2f23ebaba46526f83bd08278c7717283de6956974692",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-fr-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-fr-50k",
+      "revision": "6dbed38bf913434d17d24de951129d428345c76d",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "f11d423858c7b6fd1d2b9a332a03ff3b0dfa7dc846a0f5f5bb482dbf12e9b872",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-es-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-es-50k",
+      "revision": "44ad8c8ca8eb364e00c52672f3f1db471b708efb",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "7bd2ee6065acb59e2d439b20e07c9ad7aa9db922e312b36339a1860b0ef074f9",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-it-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-it-50k",
+      "revision": "1f46211fd5ba203c0071a5885d09965068a3d627",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "f91f2ce9d7bc523e7d7107a591f0c757c780828436d3cba645433580d4ed3efd",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-nl-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-nl-50k",
+      "revision": "6e99ad415fee9e5768ec273e99a844e16de79fd9",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "5275ccc2e707f9ef186f579bfaea3d69d65712ddc861c89e57493b9be6aebf9f",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "klusai/ds-kp-general-pl-50k",
+      "url": "https://huggingface.co/datasets/klusai/ds-kp-general-pl-50k",
+      "revision": "00a2b5abde18b65598ca1a5e7af5979e720580a4",
+      "artifact_path": "data/train-00000-of-00001.parquet",
+      "file_sha256": "637b584717da110854c3b2daf67da56e9ea014c3448a08b57ff2766f25797b90",
+      "rows": 50000,
+      "role": "conservative-full-training-pool",
+      "identity_metadata": "absent"
+    },
+    {
+      "id": "local/en",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "43ef6d209d7a1f1792d5199ab39cebef5a98c4674ae73fd41bced4d076ccdc8b",
+      "artifact_path": "artifacts/europriv/en.jsonl",
+      "file_sha256": "43ef6d209d7a1f1792d5199ab39cebef5a98c4674ae73fd41bced4d076ccdc8b",
+      "rows": 300,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    },
+    {
+      "id": "local/en_cjeu_realprose_20k",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "5081fec158f341c1bde633af857c0fd8d3f66edd02a75a0854218e6c17fd2d76",
+      "artifact_path": "artifacts/europriv/en_cjeu_realprose_20k.jsonl",
+      "file_sha256": "5081fec158f341c1bde633af857c0fd8d3f66edd02a75a0854218e6c17fd2d76",
+      "rows": 20026,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    },
+    {
+      "id": "local/en_cjeu_skeleton_20k",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "137e51d26cc46f47d39d5010aaf09ed08e9b98ac5990fc7c657319f5378e30e3",
+      "artifact_path": "artifacts/europriv/en_cjeu_skeleton_20k.jsonl",
+      "file_sha256": "137e51d26cc46f47d39d5010aaf09ed08e9b98ac5990fc7c657319f5378e30e3",
+      "rows": 20000,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    },
+    {
+      "id": "local/en_stagea_matched_v1",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "8bb2b87eed0ef9cf07d85c3e93b32471d9dc1b184fc4f971cd5915b753bb6058",
+      "artifact_path": "artifacts/europriv/en_stagea_matched_v1.jsonl",
+      "file_sha256": "8bb2b87eed0ef9cf07d85c3e93b32471d9dc1b184fc4f971cd5915b753bb6058",
+      "rows": 2000,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    },
+    {
+      "id": "local/en_stageb_v1",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "f328ddd99955f3a8e1982c825c37abf1e4d64559fa2c55d7a8e546dc797465e9",
+      "artifact_path": "artifacts/europriv/en_stageb_v1.jsonl",
+      "file_sha256": "f328ddd99955f3a8e1982c825c37abf1e4d64559fa2c55d7a8e546dc797465e9",
+      "rows": 2000,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    },
+    {
+      "id": "local/ro_stageb_v1",
+      "url": "https://github.com/klusai/klusai-datasets",
+      "revision_kind": "artifact-sha256",
+      "revision": "9867e3815aba128e5fc28ed7df01170c51ae5393828c7a119858322866183fba",
+      "artifact_path": "artifacts/europriv/ro_stageb_v1.jsonl",
+      "file_sha256": "9867e3815aba128e5fc28ed7df01170c51ae5393828c7a119858322866183fba",
+      "rows": 2000,
+      "role": "training-or-conservatively-excluded-local-pool",
+      "identity_metadata": "incomplete"
+    }
+  ],
+  "training_receipts": [
+    {
+      "path": "runs/klu106-train-manifest.json",
+      "sha256": "1fe70f305e24152f497c694bcd3676c4329924aaaa5d39dfdc146b83a6b0dade"
+    },
+    {
+      "path": "runs/klu109-kp-anon-train-manifest.json",
+      "sha256": "43b56f30b5e4242b84714343e6f1a6ae019f5991301a54b2c4dad2250041508c"
+    },
+    {
+      "path": "runs/res19-carve-manifest.json",
+      "sha256": "671b1da170f869ed7a07fd70ced0a81087e7fd64f0b2e5369ded9ad9e5a5bc5d"
+    },
+    {
+      "path": "runs/res97-train-manifest.json",
+      "sha256": "e36537816b3667b94950c73c1a3b7755ab52cd6395fd5f0bfc5c93041979e104"
+    }
+  ],
+  "blocked_source_families": [
+    "kp-localepack-all",
+    "kp-stagea",
+    "kp-stageb",
+    "cjeu-layout",
+    "cjeu-realprose",
+    "tab-echr"
+  ],
+  "limitations": [
+    "Legacy rows do not carry globally stable subject, source-document or translation IDs. Semantic family/subject disjointness requires a recorded human audit before any release.",
+    "No gateway records exist in RES-123. A zero-candidate scan is inventory verification, not a held-out-clean claim.",
+    "Any new KP training input or revision invalidates this inventory and requires a new audit."
+  ]
+}
