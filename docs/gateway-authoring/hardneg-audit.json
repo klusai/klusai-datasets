@@ -1,0 +1,361 @@
+{
+  "status": "pass",
+  "rows": 15000,
+  "heldout_rows": 9600,
+  "parent_train_rows": 40000,
+  "subjects": 512,
+  "overlap": {
+    "family": 0,
+    "subject_id": 0,
+    "subject_value": 0,
+    "heldout_exact": 0,
+    "parent_exact": 0,
+    "within_exact": 0,
+    "raw_near_duplicate": 0,
+    "masked_near_duplicate": 0,
+    "provider_secret": 0
+  },
+  "cells": {
+    "ro": {
+      "n": 1500,
+      "spans": 9012,
+      "mix": {
+        "negative": 300,
+        "medium": 450,
+        "small": 600,
+        "dense": 150
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 498,
+        "1": 505,
+        "2": 497
+      },
+      "categories": {
+        "merchant": 8023,
+        "header": 10688,
+        "product": 7458,
+        "article_code": 7458,
+        "packaging": 7458,
+        "status": 7458,
+        "historical_figure": 1838
+      },
+      "min_tokens": 184,
+      "max_tokens": 967,
+      "min_hard_negatives": 21
+    },
+    "en": {
+      "n": 1500,
+      "spans": 8956,
+      "mix": {
+        "medium": 450,
+        "negative": 300,
+        "small": 600,
+        "dense": 150
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 483,
+        "1": 506,
+        "2": 511
+      },
+      "categories": {
+        "merchant": 8060,
+        "header": 10688,
+        "product": 7505,
+        "article_code": 7505,
+        "packaging": 7505,
+        "status": 7505,
+        "historical_figure": 1892
+      },
+      "min_tokens": 168,
+      "max_tokens": 783,
+      "min_hard_negatives": 21
+    },
+    "de": {
+      "n": 3000,
+      "spans": 17944,
+      "mix": {
+        "negative": 600,
+        "small": 1200,
+        "medium": 900,
+        "dense": 300
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 375,
+        "gateway-hardneg-v1/packaging-layout": 375,
+        "gateway-hardneg-v1/museum-shop-index": 375,
+        "gateway-hardneg-v1/receipt-column-recovery": 375,
+        "gateway-hardneg-v1/stock-status-interface": 375,
+        "gateway-hardneg-v1/supplier-field-mapping": 375,
+        "gateway-hardneg-v1/workshop-kit-picking": 375,
+        "gateway-hardneg-v1/bookshop-window-planning": 375
+      },
+      "layouts": {
+        "0": 1021,
+        "1": 958,
+        "2": 1021
+      },
+      "categories": {
+        "merchant": 15990,
+        "header": 21375,
+        "product": 14874,
+        "article_code": 14874,
+        "packaging": 14874,
+        "status": 14874,
+        "historical_figure": 3671
+      },
+      "min_tokens": 169,
+      "max_tokens": 832,
+      "min_hard_negatives": 21
+    },
+    "fr": {
+      "n": 1500,
+      "spans": 8986,
+      "mix": {
+        "negative": 300,
+        "medium": 450,
+        "small": 600,
+        "dense": 150
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 498,
+        "1": 499,
+        "2": 503
+      },
+      "categories": {
+        "merchant": 8004,
+        "header": 10688,
+        "product": 7423,
+        "article_code": 7423,
+        "packaging": 7423,
+        "status": 7423,
+        "historical_figure": 1834
+      },
+      "min_tokens": 185,
+      "max_tokens": 939,
+      "min_hard_negatives": 21
+    },
+    "es": {
+      "n": 1500,
+      "spans": 9010,
+      "mix": {
+        "small": 600,
+        "medium": 450,
+        "negative": 300,
+        "dense": 150
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 487,
+        "1": 505,
+        "2": 508
+      },
+      "categories": {
+        "merchant": 7992,
+        "header": 10688,
+        "product": 7441,
+        "article_code": 7441,
+        "packaging": 7441,
+        "status": 7441,
+        "historical_figure": 1866
+      },
+      "min_tokens": 178,
+      "max_tokens": 883,
+      "min_hard_negatives": 21
+    },
+    "it": {
+      "n": 1500,
+      "spans": 8940,
+      "mix": {
+        "negative": 300,
+        "medium": 450,
+        "small": 600,
+        "dense": 150
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 484,
+        "1": 543,
+        "2": 473
+      },
+      "categories": {
+        "merchant": 8023,
+        "header": 10688,
+        "product": 7457,
+        "article_code": 7457,
+        "packaging": 7457,
+        "status": 7457,
+        "historical_figure": 1851
+      },
+      "min_tokens": 173,
+      "max_tokens": 893,
+      "min_hard_negatives": 21
+    },
+    "nl": {
+      "n": 1500,
+      "spans": 9010,
+      "mix": {
+        "dense": 150,
+        "medium": 450,
+        "negative": 300,
+        "small": 600
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 188,
+        "gateway-hardneg-v1/packaging-layout": 188,
+        "gateway-hardneg-v1/museum-shop-index": 188,
+        "gateway-hardneg-v1/receipt-column-recovery": 188,
+        "gateway-hardneg-v1/stock-status-interface": 187,
+        "gateway-hardneg-v1/supplier-field-mapping": 187,
+        "gateway-hardneg-v1/workshop-kit-picking": 187,
+        "gateway-hardneg-v1/bookshop-window-planning": 187
+      },
+      "layouts": {
+        "0": 460,
+        "1": 527,
+        "2": 513
+      },
+      "categories": {
+        "merchant": 7951,
+        "header": 10688,
+        "product": 7370,
+        "article_code": 7370,
+        "packaging": 7370,
+        "status": 7370,
+        "historical_figure": 1823
+      },
+      "min_tokens": 179,
+      "max_tokens": 839,
+      "min_hard_negatives": 21
+    },
+    "pl": {
+      "n": 3000,
+      "spans": 18012,
+      "mix": {
+        "negative": 600,
+        "small": 1200,
+        "dense": 300,
+        "medium": 900
+      },
+      "families": {
+        "gateway-hardneg-v1/catalogue-facets": 375,
+        "gateway-hardneg-v1/packaging-layout": 375,
+        "gateway-hardneg-v1/museum-shop-index": 375,
+        "gateway-hardneg-v1/receipt-column-recovery": 375,
+        "gateway-hardneg-v1/stock-status-interface": 375,
+        "gateway-hardneg-v1/supplier-field-mapping": 375,
+        "gateway-hardneg-v1/workshop-kit-picking": 375,
+        "gateway-hardneg-v1/bookshop-window-planning": 375
+      },
+      "layouts": {
+        "0": 1005,
+        "1": 1013,
+        "2": 982
+      },
+      "categories": {
+        "merchant": 16025,
+        "header": 21375,
+        "product": 14873,
+        "article_code": 14873,
+        "packaging": 14873,
+        "status": 14873,
+        "historical_figure": 3711
+      },
+      "min_tokens": 193,
+      "max_tokens": 996,
+      "min_hard_negatives": 21
+    }
+  },
+  "files": {
+    "artifacts/gateway-traffic-v1/train-hardneg-kp.jsonl": "ed79040631e5fdb7e66e9df336dd908dde16244d20a65a3d2780babc3c29c59e",
+    "artifacts/gateway-traffic-v1/train-hardneg-metadata.jsonl": "fc2c8cba21a7327327521d1927991c8d40d43f51650a6a6780c20cefabad46f3",
+    "artifacts/gateway-traffic-v1/originals/hardneg-v1/pools.json": "7ef46ccc0124923131388d1c4aff0e6568764a08225bebd72110a452b21604dd",
+    "docs/gateway-authoring/prose-hardneg.json": "ffc5ad32dedb393e16196655664feed6bc01fdc3d87c51ee63e9ec79522b04d2",
+    "docs/gateway-authoring/hardneg.md": "bd452b98b718ed47f614d5dc545fe9f8bfcd822c04278fd2919943bf7849381d",
+    "conf/gateway_hardneg_manifest.json": "744a120ae069d42d08b2e6f07aa788a040be53793b4b51c5c6c00d7241392340",
+    "klusai/privacy/datasets/data/gateway_hardneg.py": "a5846c18fb003a751cc3779729eaa1d7b8ecc2685cae28f7619b813f64a95d4d",
+    "scripts/author_gateway_hardneg.py": "4db350d62bc1e7db07500f19099322fbf585e8f4ef50209cb294ac1e97910242",
+    "scripts/audit_gateway_hardneg.py": "c0101d1b2379aa2c66370519a2b05c337e95bccc7e5a72252747995d72beb416"
+  },
+  "heldout_files": {
+    "test": {
+      "path": "artifacts/gateway-traffic-v1/test.jsonl",
+      "sha256": "bfca65fcc3ac59eef2019bc600e4cee9266b6b4b203413511336467841b93cd6"
+    },
+    "dev": {
+      "path": "artifacts/gateway-traffic-v1/dev.jsonl",
+      "sha256": "eb59f81485860c100682253471bbba218a648ccb4f6926666bab3c29dfc4e751"
+    }
+  },
+  "parent_kp_sha256": "2e4e1dc522256033f9c860ac2dc2ad64a38dfad213407eac4955a879fb5640d7",
+  "generation_seeds": 1,
+  "generation_seed": 12715,
+  "scoring_seeds": 0,
+  "overlap_method": {
+    "threshold": 0.8,
+    "word_shingles": 5,
+    "permutations": 128,
+    "seed": 12703,
+    "views": [
+      "raw",
+      "PII-masked and numeric-normalized"
+    ],
+    "certification": "Complete exact Jaccard prefix join supplements MinHash candidates"
+  },
+  "limitations": [
+    "Census counts, not sampled estimates: sampling confidence intervals are not applicable.",
+    "No model training or harness scoring; no performance CI or win claim.",
+    "No independent native-language or semantic review; construction gold remains provisional.",
+    "Repeated templates and translated families limit independence; one deterministic generation seed.",
+    "No real PII is collected. Synthetic phone/address assignments are not verified against registries.",
+    "Only PERSON/EMAIL/PHONE/ADDRESS positives; parent TRAIN retains other labels and long-document coverage.",
+    "Parent TRAIN comparison covers identities and exact text, not near-duplicate semantics."
+  ]
+}

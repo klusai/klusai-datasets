@@ -1,0 +1,32 @@
+{
+  "id": "gateway-hardneg-v1",
+  "status": "dev",
+  "split": "train",
+  "rows": 15000,
+  "parent": "res-127-gateway-train / a5f9aef6081007d85b0090cacd9cc442e9bad1bf",
+  "source": {
+    "name": "Original KlusAI / Codex synthetic hard-negative prose and fictional subjects",
+    "url": "https://github.com/klusai/klusai-datasets",
+    "license": "CC-BY-4.0",
+    "attribution": "KlusAI / Codex, 2026; original prose, no external text source",
+    "trainable": true,
+    "redistributable": true
+  },
+  "language_rows": {"ro": 1500, "en": 1500, "de": 3000, "fr": 1500, "es": 1500, "it": 1500, "nl": 1500, "pl": 3000},
+  "subject_mix_percent": {"negative": 20, "small_1_2": 40, "medium_3_5": 30, "dense_6": 10},
+  "family_namespace": "gateway-hardneg-v1/",
+  "families": ["catalogue-facets", "packaging-layout", "museum-shop-index", "receipt-column-recovery", "stock-status-interface", "supplier-field-mapping", "workshop-kit-picking", "bookshop-window-planning"],
+  "family_policy": "New train-only families, not amendments to frozen gateway-v1 test/dev reservations. Three task variants per language/family; language adaptations share family IDs.",
+  "subject_policy": "64 new fictional contacts per language; normalized name/email/phone/address values exclude all parent TRAIN and current dev/test identifying values. No private heldout subject pool is reused.",
+  "negative_policy": "Product/packaging words, article codes, fictional merchant labels, receipt/table headings, status phrases and public historical figures are utility negatives. Public names/words may recur across splits; private subjects and task templates must not.",
+  "positive_labels": ["PERSON", "EMAIL", "PHONE", "ADDRESS"],
+  "artifact": "artifacts/gateway-traffic-v1/train-hardneg-kp.jsonl",
+  "metadata": "artifacts/gateway-traffic-v1/train-hardneg-metadata.jsonl",
+  "pools": "artifacts/gateway-traffic-v1/originals/hardneg-v1/pools.json",
+  "prose": "docs/gateway-authoring/prose-hardneg.json",
+  "guide": "docs/gateway-authoring/hardneg.md",
+  "audit": "docs/gateway-authoring/hardneg-audit.json",
+  "inventory_policy": "Append the hash-bound KP artifact to the training inventory before model use; no publication by this task.",
+  "generation_seed": 12715,
+  "external_sources": []
+}

@@ -75,3 +75,6 @@ See [authoring and QA](docs/gateway-authoring/README.md); independent blind/nati
 RES-127 adds a local 40,000-prompt TRAIN split (5,000 per language), independent train
 families and subject pools, and a KP-label model export. See [train reproduction and
 limitations](docs/gateway-authoring/train.md) and the [census audit](docs/gateway-authoring/train-audit.json).
+An additional 15,000 local hard-negative TRAIN prompts emphasize PL/DE, with new
+families and synthetic contact pools. See [generation and limits](docs/gateway-authoring/hardneg.md)
+and the [hard-negative census](docs/gateway-authoring/hardneg-audit.json).
