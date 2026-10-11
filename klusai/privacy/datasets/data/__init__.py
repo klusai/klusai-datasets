@@ -28,10 +28,12 @@ def _load_packs():
     from .nl_documents import nl_pack
     from .pl_documents import pl_pack
     from .pl_skeletons import pl_skeleton_pack
+    from .pl_skeletons_v2 import pl_skeleton_v2_pack
     from .ro_documents import ro_pack
     from .ro_skeletons import ro_skeleton_pack
     from .ro_skeletons_edu import ro_skeleton_edu_pack
     from .ro_skeletons_legal import ro_legal_skeleton_pack
+    from .ro_skeletons_v2 import ro_skeleton_v2_pack
     from .se_skeletons import se_skeleton_pack
     from .si_skeletons import si_skeleton_pack
     from .sk_skeletons import sk_skeleton_pack
@@ -43,6 +45,8 @@ def _load_packs():
         "ro-legal": ro_legal_skeleton_pack,  # KLU-111 legal-domain real-skeleton (EUR-Lex/ECHR/DSAR)
         "pl": pl_pack,
         "pl-realskeleton": pl_skeleton_pack,
+        "ro-realskeleton-v2": ro_skeleton_v2_pack,
+        "pl-realskeleton-v2": pl_skeleton_v2_pack,
         # RES-80 EU-breadth batch 1 — decode-bearing re-id for SE/CZ (personnummer / rodné číslo).
         "se-realskeleton": se_skeleton_pack,
         "cz-realskeleton": cz_skeleton_pack,

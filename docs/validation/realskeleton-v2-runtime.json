@@ -1,0 +1,11 @@
+{
+  "python": "3.13.12",
+  "base_origin_main": "736665aa1c8908c73f6d0dd19b75d4541cf97b46",
+  "harness_head": "43fafaa24cc635c115f1e1cb210e8a2bcb869020",
+  "patch_source_revision": "7335f6b69913054d87a07bde2d7e7f9360c282a2",
+  "harness_source_sha256": {
+    "europriv_bench.metrics": "2f4dbf9f2032a860136cbdebe02f90f4d705f31d8390812b9ec864ed019c533d",
+    "europriv_bench.national_id": "ec523af68c1ebb4cf19a9dffe309ccbf44935b21213f4eaec0d8f241b8844553",
+    "europriv_bench.spans": "1af42c93f1131dfd373af3068b4832a9112a1c6e6d6416c5c178373622b01cd2"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "config": "ro-realskeleton-v2",
+  "config_status": "dev",
+  "files_sha256": {
+    "heldout-review.jsonl": "cf320aebb7fd53c68ebb16e18116cbe0fea1f4e9f6cd8f0cc7d16e49b4daa470",
+    "self-review.jsonl": "f22d66f5c91cf9911fe70e994b19896813bbbc1dcaa7b1afa606d17cbdc14b9f",
+    "test.jsonl": "3b03b17125a643d5c1118ff476e61df704dd1458f2a1f9dc53140c3b21ab7bb7"
+  },
+  "generation_seed_count": 1,
+  "heldout_n": 300,
+  "heldout_seed": 7712,
+  "license": "CC-BY-4.0",
+  "n": 1500,
+  "parent_data_url": "https://huggingface.co/datasets/klusai/europriv-bench",
+  "protocol_sha256": "4c51ea33149b0b164405432ad14472fc48c3517d20b3ea8d369c21c9431eeca2",
+  "review_n": 100,
+  "review_seed": 7711,
+  "scope": "four correspondence types, one family; RO education family B not included",
+  "seed": 2026101277,
+  "source_kind": "original authored prose and existing synthetic generators; no new corpus",
+  "source_sha256": {
+    "docs/res77-v2-review-protocol.md": "4c51ea33149b0b164405432ad14472fc48c3517d20b3ea8d369c21c9431eeca2",
+    "klusai/privacy/datasets/data/__init__.py": "57fc3443abad9c9022ac383ecec91ff7f1644b292128b09dd4a504fe378c5c05",
+    "klusai/privacy/datasets/data/curate.py": "14c7bd216cafed23fd8338e032441300722e8f430f239a06399df2fd05fbd19a",
+    "klusai/privacy/datasets/data/cz_generators.py": "7c798329726f38935e3d3f8acda8154c4c5a60290e99fe6428d0cc3bae253f54",
+    "klusai/privacy/datasets/data/cz_skeletons.py": "affa6792fd66a5ce4ad019b10d0be49baa9ffc66b9084c7de1891a879fff2de2",
+    "klusai/privacy/datasets/data/de_documents.py": "b56d52a1a85e6f3f5d97e795246e97878334ae073f0894ee8288329e74222410",
+    "klusai/privacy/datasets/data/de_generators.py": "791ad1dc2d9e7c3726a66f1a63f1fe4b1730189a1149b2805650d852d637e548",
+    "klusai/privacy/datasets/data/dk_generators.py": "715de44f5f7c5d339155fc96ceeba4ae4d9f7c1f6692793cb53662798cbb3ab8",
+    "klusai/privacy/datasets/data/dk_skeletons.py": "0bc990a2adde2898b2778c05f013839516ea6b9285f604979ad3eb355304723b",
+    "klusai/privacy/datasets/data/ee_generators.py": "a6c82b4d7e1b2bec89495e23656ea348bd2077bc680125bd4e2fc138146f7b0d",
+    "klusai/privacy/datasets/data/ee_skeletons.py": "20e40ba1e0e2d6ef09d56c71761d4b6c0d3c81fd59c161ba1d6fd162edad5e88",
+    "klusai/privacy/datasets/data/en_documents.py": "a0168dd0646e61f573bef007e10486709046a5a33818c59749f6804a7cce6d51",
+    "klusai/privacy/datasets/data/en_generators.py": "dde4a98dbc3606b5659d4b4480472125819a1d5259b53a86c2f930d7479915f0",
+    "klusai/privacy/datasets/data/en_skeletons_legal.py": "211d04679dafedf4e266f18366b9cf687e202aba0c07698fd6ef98f235e04f75",
+    "klusai/privacy/datasets/data/en_stageb.py": "ff98c04e278995c32911c5efca10e05634a4ef4db888988e62715bdbb13f45a8",
+    "klusai/privacy/datasets/data/es_documents.py": "94666701a75cd698ae9ef74c93ac38a51bae4e8b421d701a1fb9e5ff659d0110",
+    "klusai/privacy/datasets/data/es_generators.py": "ba00cbba1dab925d01cecca810ad89ffb9b430787eb3941b04fc4ef9f4a04a96",
+    "klusai/privacy/datasets/data/fi_generators.py": "ace0fa083d3fe9d2faa265d69db3e64ac47a1bf15ee8252f9a6b9aeb8ff6554d",
+    "klusai/privacy/datasets/data/fi_skeletons.py": "e29f9ab0d2c163ef8eeb47bbd5de5b84053f26ffa8c4711899f4da9c7c9bc341",
+    "klusai/privacy/datasets/data/fr_documents.py": "fa8290b1e2299694958c1314ac78a7e37249a6be528f20dd919cb6e6caacc677",
+    "klusai/privacy/datasets/data/fr_generators.py": "ba5be52460d5d7fef162098d5c65ff5f138aaaaf866cefc59d172e90248be45c",
+    "klusai/privacy/datasets/data/hardgeneral.py": "4804785d6d3e900fa68026a3a69d5d0cf0892f602a3b6c45c3d1ab450787250a",
+    "klusai/privacy/datasets/data/it_documents.py": "88b50b38a8bd7fbf81db4aba81148670b66c87d20a0158e4c3b5b107569f8a6b",
+    "klusai/privacy/datasets/data/it_generators.py": "248322cfeae185ec4c3fcac24a1256d4ce0bfe5bb436052c38402b6ca7e3c7c5",
+    "klusai/privacy/datasets/data/it_skeletons.py": "7b643e059d9c4ef4ea3066e15ff4588d585d77c96477a10d73019749a548b78d",
+    "klusai/privacy/datasets/data/licensing.py": "1f0c3966be9406c70112a693a42bd26568de844b7d191a9d111bf7820a39eca2",
+    "klusai/privacy/datasets/data/localepack.py": "0d038d053c5c45d4d12703dc9da599b3f7d06afb2837d209f826216f760fe4aa",
+    "klusai/privacy/datasets/data/lt_generators.py": "2de66d9103552411be2019a36b3af122f9d8aa4fd2f7a1e9de794b546e057e54",
+    "klusai/privacy/datasets/data/lt_skeletons.py": "42bc212e247f191199aa88c0baf2edd84418628564cfaa30a4390a240dc9f025",
+    "klusai/privacy/datasets/data/nl_documents.py": "656a83a887751f3e11cd9307787a096b0bd6ed4c062825cb98a82cb6478351b4",
+    "klusai/privacy/datasets/data/nl_generators.py": "e5e414f72464577c8422fafd47fc82e848103409496dfc7d54f594c223bd0585",
+    "klusai/privacy/datasets/data/pl_documents.py": "6e3e4d1e781d7b14530591693cb8d63c5c4eb23303091aac63922aea4a94dccd",
+    "klusai/privacy/datasets/data/pl_generators.py": "8c46f0d37d6d3a0487788c47dbe61d2cf2ab4aad8d1071ec0119bd89174390bf",
+    "klusai/privacy/datasets/data/pl_skeletons.py": "46abbc0cf87b2258543508582a85dcca906267c006a7d6ed15e558a2ce3768eb",
+    "klusai/privacy/datasets/data/pl_skeletons_v2.py": "54ff7f39f7136c1896551e863072c0478bc12449b0d250c3739ffcd551396574",
+    "klusai/privacy/datasets/data/ro_documents.py": "23664185728dc58949f820548dc1dde4f6c3f478ad3c6866a03897f6f28536e4",
+    "klusai/privacy/datasets/data/ro_generators.py": "3b639bc7627bffa09e7ee117962826f7d396561b9b28c8ad25a3d0d82d0d1d49",
+    "klusai/privacy/datasets/data/ro_skeletons.py": "dcd8d9fb0273ba02c9bf648b66ff88a897875b89c8fa7ee2bbb222a05594586a",
+    "klusai/privacy/datasets/data/ro_skeletons_edu.py": "61e8f4249a656a0090178b3201b82887913c35b654cd446252b1ee376d25ee1a",
+    "klusai/privacy/datasets/data/ro_skeletons_legal.py": "fb183b60da2ba2300ee29d1e545d0ec97d2c060228e6ea081eb0f713430a88c0",
+    "klusai/privacy/datasets/data/ro_skeletons_v2.py": "685326bde7363d9e186ee6d9be2c5ab5d2d26b62f3d02e55d3a61a5d22c27151",
+    "klusai/privacy/datasets/data/ro_stageb.py": "ed9f0f540f5af47d492374f9a1048facd11e0023f2d9d9f7ed192a393a783b9c",
+    "klusai/privacy/datasets/data/se_generators.py": "75121a7433170fd2753a1dd8e6c6dade2491435846884162ecf3f1fa73a74b13",
+    "klusai/privacy/datasets/data/se_skeletons.py": "6b77e0e0221da190609b318d6d2514a25864f95d4e9c1011eaffa6711bdf128b",
+    "klusai/privacy/datasets/data/si_generators.py": "ce24e2b016faab82fcda50194d27b1ed57539fcca22d59d405911cbee0e63c0d",
+    "klusai/privacy/datasets/data/si_skeletons.py": "bad29a01042b2ff0be08ac85163b8b0ef4638433c9f1e3d57cc318da0a70ddd1",
+    "klusai/privacy/datasets/data/sk_generators.py": "43e6e75f72a44a467c0a6bd3f222f97da5919e6a2d12f16c0a0da31339e11519",
+    "klusai/privacy/datasets/data/sk_skeletons.py": "e45e79a52c2b2587b96ad574a45d7ac995435e065107a50c83f34b4306c9fb1c",
+    "klusai/privacy/datasets/data/synthetic.py": "12549246053b3ae27f1f5154e4a96e4380473f5a076f4eb9624fa401e5839658",
+    "scripts/generate_realskeleton_v2.py": "5d55dd889a344659728f9637cd2aab3940cc2b1a2e503de418abcceef7acf247"
+  },
+  "source_url": "https://github.com/klusai/klusai-datasets",
+  "strata": {
+    "admin": 370,
+    "clinical": 371,
+    "contract": 417,
+    "declaration": 342
+  },
+  "validation": {
+    "clinical_dob_sex_agreement": {
+      "n": 371,
+      "passed": 371,
+      "wilson_95": [
+        0.9897518183454066,
+        1.0000000000000002
+      ]
+    },
+    "raw_id_mentions_covered": {
+      "n": 1130,
+      "passed": 1130,
+      "wilson_95": [
+        0.996612010237734,
+        1.0000000000000002
+      ]
+    },
+    "strict_bioes_docs": {
+      "n": 1500,
+      "passed": 1500,
+      "wilson_95": [
+        0.9974455796394188,
+        1.0
+      ]
+    },
+    "valid_company_id": {
+      "n": 417,
+      "passed": 417,
+      "wilson_95": [
+        0.9908719940403783,
+        1.0
+      ]
+    },
+    "valid_decoded_subjects": {
+      "n": 1130,
+      "passed": 1130,
+      "wilson_95": [
+        0.996612010237734,
+        1.0000000000000002
+      ]
+    },
+    "valid_iban": {
+      "n": 417,
+      "passed": 417,
+      "wilson_95": [
+        0.9908719940403783,
+        1.0
+      ]
+    }
+  }
+}
