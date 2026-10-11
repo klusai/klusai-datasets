@@ -14,7 +14,6 @@ from klusai.privacy.datasets.data.gateway_authoring import (
     ROOT,
     allocation,
     attach_provenance,
-    get_tokenizer,
     splice,
 )
 from klusai.privacy.datasets.data.gateway_traffic import (
@@ -72,14 +71,18 @@ def test_tranche_schema_ledger_and_coverage(rows):
         assert set(cell["features"]) == set(FEATURES)
 
 
-def test_real_token_counts_offsets_and_uniqueness(rows):
-    tokenizer = get_tokenizer()
-    seen = set()
+def test_real_token_counts(rows, gateway_tokenizer):
     for row in rows:
         # Recount via batch encoder, independent of author's count_tokens wrapper.
         parts = [p.text for m in row.messages for p in m.parts]
-        encodings = tokenizer.encode_batch(parts, add_special_tokens=False)
+        encodings = gateway_tokenizer.encode_batch(parts, add_special_tokens=False)
         assert sum(len(e.ids) for e in encodings) == row.token_count
+
+
+def test_offsets_lengths_and_uniqueness(rows):
+    seen = set()
+    for row in rows:
+        parts = [p.text for m in row.messages for p in m.parts]
         assert 32 <= row.token_count <= 2048
         full = "\n".join(parts)
         assert full not in seen

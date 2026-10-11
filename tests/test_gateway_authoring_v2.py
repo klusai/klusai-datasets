@@ -58,15 +58,19 @@ def test_schema_coverage_and_append_only_ledger(rows):
     assert all(set(cell["features"]) == set(FEATURES) for cell in report["cells"].values())
 
 
+def test_whole_revision_token_counts(rows, gateway_tokenizer):
+    for row in rows:
+        parts = [p.text for m in row.messages for p in m.parts]
+        count = sum(len(e.ids) for e in gateway_tokenizer.encode_batch(parts, add_special_tokens=False))
+        assert count == row.token_count
+
+
 def test_whole_revision_offsets_lengths_and_distinct_text(rows, drafts):
-    tokenizer = v1.get_tokenizer()
     seen = set()
     for row, (_, draft) in zip(rows, drafts):
         parts = [p.text for m in row.messages for p in m.parts]
-        count = sum(len(e.ids) for e in tokenizer.encode_batch(parts, add_special_tokens=False))
-        assert count == row.token_count
         lo, hi = {"short": (32, 128), "medium": (129, 512), "long": (513, 2048)}[draft["intended_length"]]
-        assert lo <= count <= hi
+        assert lo <= row.token_count <= hi
         text = "\n".join(parts)
         assert text not in seen
         seen.add(text)

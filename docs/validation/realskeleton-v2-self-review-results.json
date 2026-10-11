@@ -1,0 +1,160 @@
+{
+  "pl": {
+    "annotations_sha256": "34ec56d7ec0ba9ef97d2a5c713ecdf405548c6efe0b9d87417262a454f98b92c",
+    "artifact_flagged": {
+      "count": 49,
+      "n": 100,
+      "wilson_95": [
+        0.39422017609719606,
+        0.5865196909699714
+      ]
+    },
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 7701,
+    "by_stratum": {
+      "admin": {
+        "flagged": 1,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      },
+      "clinical": {
+        "flagged": 25,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      },
+      "contract": {
+        "flagged": 23,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 3
+      },
+      "declaration": {
+        "flagged": 0,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      }
+    },
+    "fluency": {
+      "bootstrap_95": [
+        5.0,
+        5.0
+      ],
+      "distribution": {
+        "5": 100
+      },
+      "median": 5.0
+    },
+    "full_panel_pass": false,
+    "independent": false,
+    "judge": "Codex author self-review",
+    "judge_count": 1,
+    "limitations": "Conditional document CIs only; no judge, template-family or author-bias uncertainty",
+    "n": 100,
+    "naturalness": {
+      "bootstrap_95": [
+        4.0,
+        4.0
+      ],
+      "distribution": {
+        "3": 23,
+        "4": 77
+      },
+      "median": 4.0
+    },
+    "naturalness_at_least_4": {
+      "count": 77,
+      "n": 100,
+      "wilson_95": [
+        0.6784563709414978,
+        0.8415672182449819
+      ]
+    },
+    "naturalness_target_met_in_author_review": true,
+    "sample_sha256": "cbdd9622c41a7e2751573a0213129b863db84fa85adfcc6d0989d2a57460f64d",
+    "sampling": "25 per type without replacement, equal-stratum estimates",
+    "scored_generation_seed_count": 1,
+    "total_build_seed_count": 2
+  },
+  "ro": {
+    "annotations_sha256": "62e8c3b11f623c2174469894899abc0a67b643dc6b048650d58dd8038f9abe50",
+    "artifact_flagged": {
+      "count": 50,
+      "n": 100,
+      "wilson_95": [
+        0.4038317186407454,
+        0.5961682813592546
+      ]
+    },
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 7701,
+    "by_stratum": {
+      "admin": {
+        "flagged": 0,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      },
+      "clinical": {
+        "flagged": 25,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      },
+      "contract": {
+        "flagged": 25,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 3
+      },
+      "declaration": {
+        "flagged": 0,
+        "fluency_median": 5,
+        "n": 25,
+        "naturalness_median": 4
+      }
+    },
+    "fluency": {
+      "bootstrap_95": [
+        5.0,
+        5.0
+      ],
+      "distribution": {
+        "5": 100
+      },
+      "median": 5.0
+    },
+    "full_panel_pass": false,
+    "independent": false,
+    "judge": "Codex author self-review",
+    "judge_count": 1,
+    "limitations": "Conditional document CIs only; no judge, template-family or author-bias uncertainty",
+    "n": 100,
+    "naturalness": {
+      "bootstrap_95": [
+        4.0,
+        4.0
+      ],
+      "distribution": {
+        "3": 25,
+        "4": 75
+      },
+      "median": 4.0
+    },
+    "naturalness_at_least_4": {
+      "count": 75,
+      "n": 100,
+      "wilson_95": [
+        0.656955566782793,
+        0.8245477565380216
+      ]
+    },
+    "naturalness_target_met_in_author_review": true,
+    "sample_sha256": "f22d66f5c91cf9911fe70e994b19896813bbbc1dcaa7b1afa606d17cbdc14b9f",
+    "sampling": "25 per type without replacement, equal-stratum estimates",
+    "scored_generation_seed_count": 1,
+    "total_build_seed_count": 2
+  }
+}

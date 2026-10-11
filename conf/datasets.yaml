@@ -130,3 +130,7 @@ synthetic:
   # DK CPR mod-11 check was abolished in 2007 → format + century-table validation, not a checksum.
   - { name: ds-kp-dk-rs, domain: mixed, language: da, n: 1500, pack: dk-realskeleton, license: CC-BY-4.0 }
   - { name: ds-kp-fi-rs, domain: mixed, language: fi, n: 1500, pack: fi-realskeleton, license: CC-BY-4.0 }
+  # RES-77 local-only authored revisions, one correspondence family; independent review pending.
+  # Source: existing generators + original prose, https://github.com/klusai/klusai-datasets .
+  - { name: ro-realskeleton-v2, domain: mixed, language: ro, n: 1500, pack: ro-realskeleton-v2, license: CC-BY-4.0, config_status: dev }
+  - { name: pl-realskeleton-v2, domain: mixed, language: pl, n: 1500, pack: pl-realskeleton-v2, license: CC-BY-4.0, config_status: dev }

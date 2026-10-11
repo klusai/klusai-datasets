@@ -46,12 +46,12 @@ TEMPLATES = [
 {hospital} — Secția {section}
 
 Pacient: {patient}
-CNP: {cnp} , Serie/nr. act identitate: {ci}
-Data nașterii: {dob} , Cod asigurat: {cass}
+CNP: {cnp}, Serie/nr. act identitate: {ci}
+Data nașterii: {dob}, Cod asigurat: {cass}
 Domiciliu: {address}
 Telefon: {phone}
 
-Diagnostic principal: {condition} .
+Diagnostic principal: {condition}.
 Istoricul bolii: {pacient_word} s-a prezentat în data de {date} acuzând simptomatologia descrisă.
 Recomandări la externare: tratament conform schemei, control peste 30 de zile.
 
@@ -62,16 +62,16 @@ Data întocmirii: {date}"""),
 Nr. {contractno} din {date}
 
 Părțile contractante:
-1. {company} , cu sediul în {address2} , CUI {cui} , cont IBAN {iban} , reprezentată de {doctor} ;
-2. {patient} , CNP {cnp} , {domiciliat} în {address} , telefon {phone} , e-mail {email} .
+1. {company}, cu sediul în {address2}, CUI {cui}, cont IBAN {iban}, reprezentată de {doctor};
+2. {patient}, CNP {cnp}, {domiciliat} în {address}, telefon {phone}, e-mail {email}.
 
 Obiectul contractului îl constituie prestarea serviciilor convenite de părți.
-Prezentul contract s-a încheiat astăzi, {date} , în două exemplare."""),
+Prezentul contract s-a încheiat astăzi, {date}, în două exemplare."""),
 
     ("legal", """DECLARAȚIE PE PROPRIA RĂSPUNDERE
 
-{subsemnat} {patient} , CNP {cnp} , {posesor} actului de identitate seria/nr. {ci} ,
-{domiciliat} în {address} , telefon {phone} , e-mail {email} , declar pe propria răspundere,
+{subsemnat} {patient}, CNP {cnp}, {posesor} actului de identitate seria/nr. {ci},
+{domiciliat} în {address}, telefon {phone}, e-mail {email}, declar pe propria răspundere,
 cunoscând prevederile legale privind falsul în declarații, că datele furnizate sunt reale.
 
 Data: {date}
@@ -82,8 +82,8 @@ Adresa: {address}
 
 Ref: dosarul nr. {contractno} / {date}
 
-{salutation} {patient} , vă comunicăm că solicitarea dumneavoastră a fost
-înregistrată. Pentru informații suplimentare ne puteți contacta la {phone} sau {email} .
+{salutation} {patient}, vă comunicăm că solicitarea dumneavoastră a fost
+înregistrată. Pentru informații suplimentare ne puteți contacta la {sender_phone} sau {sender_email}.
 
 Cu stimă,
 {doctor}
@@ -112,6 +112,8 @@ def _fields(rng: random.Random) -> dict[str, tuple[str, str]]:
         "address": (patient.address, "ADDRESS"),
         "address2": (doctor.address, "ADDRESS"),
         "phone": (patient.phone, "PHONE"),
+        "sender_phone": (doctor.phone, "PHONE"),
+        "sender_email": (_ascii(f"{doctor.first_name}.{doctor.last_name}").lower() + "@example.ro", "EMAIL"),
         "email": (_ascii(f"{patient.first_name}.{patient.last_name}").lower() + "@example.ro", "EMAIL"),
         "iban": (patient.iban, "ACCOUNT_ID"),
         "cui": (gen_cui(rng), "COMPANY_ID"),

@@ -75,18 +75,21 @@ def test_frozen_ids_subjects_strata_and_quotas(drafts, rows):
     assert all(set(c["features"]) == set(FEATURES) for c in report["cells"].values())
 
 
-def test_whole_corpus_offsets_tokens_and_identity_fields(rows, drafts):
-    tokenizer = v3.v1.get_tokenizer()
+def test_whole_corpus_token_counts(rows, gateway_tokenizer):
+    for row in rows:
+        text = row.messages[0].parts[0].text
+        assert len(gateway_tokenizer.encode(text, add_special_tokens=False).ids) == row.token_count
+
+
+def test_whole_corpus_offsets_lengths_and_identity_fields(rows, drafts):
     seen = set()
     identifiers = {}
     for row, (_, draft) in zip(rows, drafts):
         text = row.messages[0].parts[0].text
         assert text not in seen
         seen.add(text)
-        count = len(tokenizer.encode(text, add_special_tokens=False).ids)
-        assert count == row.token_count
         lo, hi = {"short": (32, 128), "medium": (129, 512), "long": (513, 2048)}[draft["intended_length"]]
-        assert lo <= count <= hi
+        assert lo <= row.token_count <= hi
         assert "[[" not in text
         assert {s.subject_id for s in row.spans if s.label == "PERSON"} == set(row.subject_ids)
         dates = {s.subject_id: s.text for s in row.spans if s.label == "DATE"}
