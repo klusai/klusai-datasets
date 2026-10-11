@@ -1,0 +1,12 @@
+Gateway traffic originals — KlusAI / Codex
+
+Original scenarios authored for gateway-traffic-v1 by KlusAI using Codex are
+released under Creative Commons Attribution 4.0 International (CC-BY-4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+Attribution: KlusAI, gateway-traffic-v1, https://github.com/klusai/klusai-datasets
+This declaration covers our original contributions only. It does not relicense
+external sources or authorize copying customer logs, unlicensed web chats,
+Piiranha, Llama-bound material, NC/ND material, or direct HUDOC text.
+RES-123 reserves identifiers and defines validation; it contains no conversations.
+RES-124 must pin the actual authored artifact revision, file/content/prompt hashes,
+author, tool, session, seed, identity provenance and annotation/review provenance.

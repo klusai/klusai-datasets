@@ -39,3 +39,10 @@ python scripts/upload_dataset.py --help      # publish a prepared dataset to HF
 
 Naming: `ds-kp-{domain}-{lang}-{size}`. Cards carry YAML frontmatter
 (`language`, `license`, `task_categories: [token-classification]`, `tags: [pii, privacy, kp, {domain}]`).
+
+## Gateway traffic contract
+
+RES-123 defines the source manifest, frozen split reservations, conversation schema
+and offline coverage/training-overlap gates for `gateway-traffic-v1`.
+See [the contract and audit instructions](docs/gateway-traffic-v1.md).
+The 8,000 test / 1,600 dev conversations are targets for RES-124; none are generated here.
