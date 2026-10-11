@@ -1,7 +1,7 @@
 dataset: gateway-traffic-v1
 version: 1
 config_status: dev
-generation_status: not_started
+generation_status: first_tranche_authored
 languages:
 - ro
 - en
@@ -52,7 +52,7 @@ sources:
     - train
     - dev
     - test
-    artifact_path: artifacts/gateway-traffic-v1/originals/ (reserved, not generated)
+    artifact_path: artifacts/gateway-traffic-v1/originals/
     permitted_train: true
     permitted_redistribute: true
     license_verified_on: '2026-10-11'
@@ -110,7 +110,7 @@ exclusions:
 - all existing KP training families and translation/subject siblings
 ingestion: hf_hub_download at pinned revision, then pyarrow for single-file parquet; no streaming load_dataset
 release_gates:
-- No generation in RES-123; all volumes are targets, n=0.
+- RES-123 generated no conversations. RES-124 first tranche has 2240 test and 480 dev; full v1 targets remain unmet.
 - Validate schema, offsets, source rights, artifact SHA-256 and immutable split ledger.
 - Refresh inventory after any KP training change; scan every corpus, never accept a partial path map.
 - 'Require documented family/subject/translation disjointness review: legacy corpora have incomplete identity metadata.'

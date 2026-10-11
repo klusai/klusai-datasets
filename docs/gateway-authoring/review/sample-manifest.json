@@ -1,0 +1,32 @@
+{
+  "n": 300,
+  "population_n": 2720,
+  "seed": 77,
+  "seed_count": 1,
+  "method": "two per language/split/family cell, remaining slots random within language/split",
+  "sample_sha256": "7a336c040f7379c0a782621bdc052d50ce4ee656c51ba6c4fc617249cf79d4ed",
+  "source_sha256": {
+    "test.jsonl": "95a1cbe3ade38942117feb1a6ed1e4ed33d8fadff7642f98453572d37e95c9ee",
+    "dev.jsonl": "dbc21a3f38a1e09c0a157adc3fac81c2cf0b04cb08333d4b37e645566d82afd4"
+  },
+  "strata": {
+    "ro/test": 19,
+    "ro/dev": 19,
+    "en/test": 19,
+    "en/dev": 19,
+    "de/test": 19,
+    "de/dev": 19,
+    "fr/test": 19,
+    "fr/dev": 19,
+    "es/test": 18,
+    "es/dev": 19,
+    "it/test": 18,
+    "it/dev": 19,
+    "nl/test": 18,
+    "nl/dev": 19,
+    "pl/test": 18,
+    "pl/dev": 19
+  },
+  "bench_revision": "14cfc44d5218e2f96081fc7ea8db5b07eb2880b3",
+  "review_mode": "nonblind author self-review; not the frozen three-family panel"
+}

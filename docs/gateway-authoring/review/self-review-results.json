@@ -1,0 +1,374 @@
+{
+  "n": 300,
+  "alpha": {
+    "panel": {
+      "estimate": null,
+      "ci95": null,
+      "defined_bootstraps": 0
+    },
+    "openai/codex-session-gold-aware-self-review": {
+      "estimate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "defined_bootstraps": 2000
+    }
+  },
+  "ratings": {
+    "openai/codex-session-gold-aware-self-review": {
+      "fluency": {
+        "median": 4.0,
+        "ci95": [
+          4.0,
+          4.0
+        ]
+      },
+      "naturalness": {
+        "median": 3.0,
+        "ci95": [
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "bootstrap_replicates": 2000,
+  "review_mode": "gold-aware author self-review; agreement is not independent annotation accuracy",
+  "seed_count": 1,
+  "sampling_seed": 77,
+  "bootstrap_seed": 7701,
+  "config_status": "dev",
+  "release_ready": false,
+  "exact_document_agreement": {
+    "n": 300,
+    "identical": 300,
+    "ci95": [
+      0.9873570795309473,
+      0.9999999999999999
+    ]
+  },
+  "artifact_documents": {
+    "n": 300,
+    "flagged": 253,
+    "ci95": [
+      0.7978920773939222,
+      0.8800931172173283
+    ]
+  },
+  "independent_judges": 0,
+  "native_human_reviewers": 0,
+  "model_scoring_seeds": 0,
+  "provenance": {
+    "bench_revision": "14cfc44d5218e2f96081fc7ea8db5b07eb2880b3",
+    "panel_sha256": "50d97950461e1db7a391837e3be6a563d50303f50fef05925a7ee76f7f10a2b2",
+    "report_tool_sha256": "aaabbee5d42b9443c7adaec40c653b3c1287817d84109aaa73962ee135d14a6f",
+    "protocol_sha256": "c1dcb67199e23e1ff6606996987a80f0ba9967b61682ec6855383c8f2080127c",
+    "sample_sha256": "7a336c040f7379c0a782621bdc052d50ce4ee656c51ba6c4fc617249cf79d4ed",
+    "judgments_sha256": "25a8560acee1aa667f5d76873d957e0d5c327d02f684d3be841dcde36b58ea5f"
+  },
+  "by_language": {
+    "ro": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "en": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "de": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "fr": {
+      "n": 38,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "es": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "it": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              5.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "nl": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    },
+    "pl": {
+      "n": 37,
+      "alpha": {
+        "panel": {
+          "estimate": null,
+          "ci95": null,
+          "defined_bootstraps": 0
+        },
+        "openai/codex-session-gold-aware-self-review": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_bootstraps": 2000
+        }
+      },
+      "ratings": {
+        "openai/codex-session-gold-aware-self-review": {
+          "fluency": {
+            "median": 4.0,
+            "ci95": [
+              4.0,
+              4.0
+            ]
+          },
+          "naturalness": {
+            "median": 3.0,
+            "ci95": [
+              3.0,
+              3.0
+            ]
+          }
+        }
+      },
+      "bootstrap_replicates": 2000
+    }
+  },
+  "limitations": [
+    "Nonblind same-author approval is circular; alpha is descriptive only.",
+    "Document bootstrap does not cover template-family or judge uncertainty.",
+    "Not native review, three-family panel validation, or model performance scoring.",
+    "The upstream protocol's RO/PL four-stratum design is adapted, not claimed fulfilled."
+  ]
+}
