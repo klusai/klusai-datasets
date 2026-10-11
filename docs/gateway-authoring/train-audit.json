@@ -1,0 +1,595 @@
+{
+  "status": "pass",
+  "train_rows": 40000,
+  "heldout_rows": 9600,
+  "used_subjects": 4096,
+  "national_id_checks": {
+    "ro": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "en": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "de": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "fr": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "es": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "it": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "nl": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    },
+    "pl": {
+      "n": 512,
+      "passed": 512,
+      "wilson95": [
+        0.9925530242771171,
+        0.9999999999999999
+      ],
+      "scope": "Unique synthetic pool values; GB format only; census, not accuracy"
+    }
+  },
+  "overlap": {
+    "family": 0,
+    "subject": 0,
+    "subject_value": 0,
+    "exact": 0,
+    "within_train_exact": 0,
+    "provider_secret": 0,
+    "raw_near_duplicate": 0,
+    "masked_near_duplicate": 0
+  },
+  "cells": {
+    "ro": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 51,
+      "max_tokens": 916
+    },
+    "en": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 45,
+      "max_tokens": 875
+    },
+    "de": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 45,
+      "max_tokens": 888
+    },
+    "fr": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 52,
+      "max_tokens": 890
+    },
+    "es": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 43,
+      "max_tokens": 878
+    },
+    "it": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 43,
+      "max_tokens": 878
+    },
+    "nl": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 47,
+      "max_tokens": 893
+    },
+    "pl": {
+      "n": 5000,
+      "spans": 33204,
+      "mix": {
+        "small": 2000,
+        "dense": 500,
+        "medium": 1500,
+        "negative": 1000
+      },
+      "lengths": {
+        "medium": 1750,
+        "long": 750,
+        "short": 2500
+      },
+      "labels": [
+        "ACCOUNT_ID",
+        "ADDRESS",
+        "CASE_NUMBER",
+        "COMPANY_ID",
+        "DATE",
+        "EMAIL",
+        "HEALTH_CONDITION",
+        "MRN",
+        "NATIONAL_ID",
+        "PERSON",
+        "PHONE",
+        "SECRET"
+      ],
+      "features": [
+        "address",
+        "aliases",
+        "bank_account",
+        "card",
+        "case_id",
+        "code_switch",
+        "company_id",
+        "dob",
+        "email",
+        "health_condition",
+        "json_code",
+        "medical_id",
+        "national_id",
+        "obfuscated_identifier",
+        "phone",
+        "public_date",
+        "public_org",
+        "public_statute",
+        "punctuation",
+        "quoted_history",
+        "repeated_entity",
+        "secret",
+        "split_identifier",
+        "tool_payload",
+        "unicode"
+      ],
+      "min_tokens": 46,
+      "max_tokens": 918
+    }
+  },
+  "minhash": {
+    "seed": 12703,
+    "permutations": 128,
+    "bands": 32,
+    "rows_per_band": 4,
+    "word_shingles": 5,
+    "threshold": 0.8,
+    "certification": "Complete exact Jaccard prefix join at the same threshold; raw and PII-masked/numeric-normalized full text",
+    "unique_heldout": {
+      "raw": 9600,
+      "masked": 3507
+    },
+    "unique_train": {
+      "raw": 40000,
+      "masked": 462
+    }
+  },
+  "parent_ledger_sha256": "ca6aaa442d1f91f5aa35dd5b3b5190183e332a1e631770c3ecb92bfa4808b2df",
+  "ledger_sha256": "dffd924c55377bba216b62d670028c73da0708cb55deb7f7046e8d8795c609a3",
+  "ledger_entries": 197328,
+  "generation_seeds": 1,
+  "scoring_seeds": 0,
+  "files": {
+    "artifacts/gateway-traffic-v1/train.jsonl": "7b111be8cae7b76b14d4c5e77fb45ee8d07622125faebeec90622ee58bd8c98d",
+    "artifacts/gateway-traffic-v1/train-kp.jsonl": "2e4e1dc522256033f9c860ac2dc2ad64a38dfad213407eac4955a879fb5640d7",
+    "artifacts/gateway-traffic-v1/originals/train-v1/train.jsonl": "63a020a783830fb3c9d0c7fee6fd850bec36f42e67245bf29193aa5285bd8618",
+    "artifacts/gateway-traffic-v1/originals/train-v1/pools.json": "ed23f73e8ba274b83f387c1ca25b03febe4661d42a65f712deead0e4908ba798",
+    "artifacts/gateway-traffic-v1/test.jsonl": "bfca65fcc3ac59eef2019bc600e4cee9266b6b4b203413511336467841b93cd6",
+    "artifacts/gateway-traffic-v1/dev.jsonl": "eb59f81485860c100682253471bbba218a648ccb4f6926666bab3c29dfc4e751",
+    "docs/gateway-authoring/prose-train.json": "8049aa656b3086bc76e9cb5c7e85ed8dab626b15f910d2b0e7dd6a036358c8be",
+    "docs/gateway-authoring/train.md": "9fd7b1a52351381ac376a9a7fe003a0a0b46e543c8405a20d811e26f04689bdb",
+    "conf/gateway_traffic_splits.json": "f8004ecd49fea70fb71dee5e233dad8b51044deeac1bc8a790cd2828fb1677ff"
+  },
+  "limitations": [
+    "No model training or harness scoring; no performance claim or performance CI.",
+    "No independent semantic/native review; lexical overlap gates are not semantic proof.",
+    "Census counts have no sampling CI; one deterministic generation seed.",
+    "Legacy training-inventory semantic disjointness is outside this train-vs-heldout audit."
+  ]
+}

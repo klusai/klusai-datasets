@@ -1,0 +1,354 @@
+{
+  "en": {
+    "asks": [
+      "Draft a warranty repair request for the appliance owners below. The fault appears only after the machine warms up; ask for a collection slot.",
+      "Allocate the instalments below to the outstanding invoices. Explain which balance remains and prepare a payment-plan confirmation.",
+      "Check this payroll registration packet before the first salary run. Identify the fields that payroll should verify with each new employee.",
+      "Prepare a referral handover for these patients. Distinguish the existing condition from the reason for referral; do not suggest treatment.",
+      "Organise these witness contacts for a bicycle-damage claim. Draft a request for their written accounts without deciding who was responsible.",
+      "Prepare an offboarding checklist for these departing colleagues. Separate access revocation from the retention of shared work.",
+      "Help remove confidential values from this diagnostic trace. Explain which fields the logging formatter must replace before writing to disk.",
+      "Draft a ferry accessibility request for these passengers. Confirm the boarding assistance and cabin requirements without changing the sailing."
+    ],
+    "negative": [
+      "Compare these published warranty durations. Product reference numbers identify appliances, not their owners.",
+      "Explain this public instalment calculator. The numbers are example invoice amounts and interest rates, not bank details.",
+      "Turn this public shift policy into a checklist. These are job grades and work-pattern codes, with no employee records.",
+      "Simplify this public referral-routing guide. Department codes identify services; no patient information is included.",
+      "Create a glossary for this public consumer-rights timeline. Keep the legislative dates and references visible.",
+      "Review this sample file-retention policy. The path components are application modules, not user accounts.",
+      "Explain why this histogram puts boundary values in the wrong bucket. The measurements are temperatures from a public test fixture.",
+      "Compare these published ferry deck plans. The numbers denote deck sections and ramp widths, not passenger bookings."
+    ],
+    "context": "Use the supplied evidence as the limit of the draft. Put unresolved details in a separate list of questions. Keep amounts, sequence and responsibilities explicit so a colleague can check the reasoning. The output will be reviewed before it is sent; do not invent confirmations or missing events.",
+    "closing": "Give the next practical step and explain what still needs confirmation.",
+    "labels": [
+      "Contact",
+      "Email",
+      "Phone",
+      "Address",
+      "Tax identifier",
+      "Account",
+      "Card",
+      "Birth date",
+      "Reference",
+      "Company registration",
+      "Patient record",
+      "Condition",
+      "Credential"
+    ],
+    "names": [
+      "Ronan Elspeth Cormac Ailsa Niall Sorcha Euan Maeve",
+      "Keir Blythe Oran Carys Iona Tadhg Enid Eira",
+      "Ashcombe Fenwick Hatherley Penrose Strathmore Westcott Calderwood Fairbairn"
+    ]
+  },
+  "ro": {
+    "asks": [
+      "Redactează o cerere de reparație în garanție pentru proprietarii de mai jos. Defecțiunea apare după încălzirea aparatului; solicită o dată pentru preluare.",
+      "Repartizează ratele de mai jos între facturile neachitate. Explică soldul rămas și pregătește confirmarea planului de plată.",
+      "Verifică acest dosar de înregistrare salarială înainte de prima plată. Arată ce date trebuie confirmate cu fiecare angajat nou.",
+      "Pregătește predarea acestor trimiteri medicale. Separă afecțiunea existentă de motivul trimiterii, fără recomandări de tratament.",
+      "Organizează contactele martorilor pentru o cerere privind deteriorarea unei biciclete. Solicită relatări scrise, fără să stabilești vinovăția.",
+      "Pregătește lista de închidere a accesului pentru colegii care pleacă. Separă revocarea permisiunilor de păstrarea documentelor comune.",
+      "Ajută-mă să elimin valorile confidențiale din această urmă de diagnostic. Explică ce câmpuri trebuie înlocuite înainte de scrierea pe disc.",
+      "Redactează o cerere de asistență la îmbarcarea pe feribot. Confirmă nevoile de acces și de cabină fără să schimbi cursa."
+    ],
+    "negative": [
+      "Compară duratele de garanție publicate aici. Numerele sunt referințe de produs, nu identificatori ai proprietarilor.",
+      "Explică acest calculator public de rate. Numerele sunt sume și dobânzi demonstrative, nu date bancare.",
+      "Transformă politica publică de ture într-o listă de verificare. Codurile reprezintă funcții și programe, fără dosare de angajați.",
+      "Simplifică ghidul public pentru direcționarea trimiterilor. Codurile sunt ale serviciilor, fără date despre pacienți.",
+      "Creează un glosar pentru cronologia publică a drepturilor consumatorilor. Păstrează datele legislative și referințele.",
+      "Verifică exemplul de politică pentru păstrarea fișierelor. Căile indică module ale aplicației, nu conturi personale.",
+      "Explică de ce histograma pune valorile de la limită în intervalul greșit. Temperaturile provin dintr-un exemplu public de test.",
+      "Compară planurile publice ale punților feribotului. Numerele indică sectoare și lățimi de rampe, nu rezervări."
+    ],
+    "context": "Folosește numai dovezile furnizate. Pune detaliile neclarificate într-o listă separată de întrebări. Păstrează explicit sumele, ordinea și responsabilitățile, astfel încât un coleg să poată verifica raționamentul. Textul va fi revizuit înainte de trimitere; nu inventa confirmări sau evenimente lipsă.",
+    "closing": "Precizează următorul pas practic și ce mai trebuie confirmat.",
+    "labels": [
+      "Contact",
+      "E-mail",
+      "Telefon",
+      "Adresă",
+      "Identificator fiscal",
+      "Cont",
+      "Card",
+      "Data nașterii",
+      "Referință",
+      "Înregistrare firmă",
+      "Fișă pacient",
+      "Afecțiune",
+      "Credențial"
+    ],
+    "names": [
+      "Dacian Sânziana Tiberiu Ilinca Octavian Raluca Călin Zamfira",
+      "Teofil Iuliana Doru Anisia Valeriu Sabina Miron Otilia",
+      "Bârsan Codreanu Mărgineanu Păduraru Sălăgean Vătășescu Zăvoianu Ardeleanu"
+    ]
+  },
+  "de": {
+    "asks": [
+      "Formuliere eine Garantieanfrage für die folgenden Gerätebesitzer. Der Fehler tritt erst nach dem Aufwärmen auf; bitte um einen Abholtermin.",
+      "Ordne die folgenden Raten den offenen Rechnungen zu. Erkläre den Restbetrag und entwirf eine Bestätigung des Zahlungsplans.",
+      "Prüfe diese Anmeldung zur Lohnabrechnung vor der ersten Auszahlung. Welche Angaben muss die Personalstelle mit den neuen Beschäftigten bestätigen?",
+      "Bereite die Übergabe dieser Überweisungen vor. Trenne die bestehende Erkrankung vom Überweisungsgrund und empfehle keine Behandlung.",
+      "Ordne diese Zeugenkontakte für einen Anspruch wegen eines beschädigten Fahrrads. Bitte um schriftliche Aussagen, ohne die Schuldfrage zu entscheiden.",
+      "Erstelle eine Austrittscheckliste für diese Beschäftigten. Trenne den Entzug von Zugriffsrechten von der Aufbewahrung gemeinsamer Unterlagen.",
+      "Hilf mir, vertrauliche Werte aus dieser Diagnosespur zu entfernen. Welche Felder muss die Protokollierung vor dem Speichern ersetzen?",
+      "Entwirf eine Anfrage zur barrierefreien Fährreise für diese Reisenden. Bestätige Einstiegshilfe und Kabinenbedarf, ohne die Abfahrt zu ändern."
+    ],
+    "negative": [
+      "Vergleiche die veröffentlichten Garantiefristen. Die Nummern bezeichnen Produkte und keine Besitzer.",
+      "Erkläre diesen öffentlichen Ratenrechner. Die Zahlen sind Beispielbeträge und Zinssätze, keine Bankverbindungen.",
+      "Mache aus der öffentlichen Schichtrichtlinie eine Checkliste. Die Codes bezeichnen Stellenstufen und Arbeitsmodelle, keine Beschäftigten.",
+      "Vereinfache den öffentlichen Leitfaden für Überweisungswege. Die Kürzel bezeichnen Dienste; Patientendaten fehlen vollständig.",
+      "Erstelle ein Glossar zur öffentlichen Zeitleiste der Verbraucherrechte. Gesetzesdaten und Fundstellen sollen erhalten bleiben.",
+      "Prüfe diese beispielhafte Aufbewahrungsrichtlinie. Die Pfade bezeichnen Anwendungsmodule, keine Benutzerkonten.",
+      "Warum ordnet dieses Histogramm Grenzwerte dem falschen Intervall zu? Die Temperaturen stammen aus einem öffentlichen Testbeispiel.",
+      "Vergleiche die veröffentlichten Fährdeckpläne. Die Zahlen stehen für Abschnitte und Rampenbreiten, nicht für Buchungen."
+    ],
+    "context": "Beschränke den Entwurf auf die vorliegenden Belege. Sammle ungeklärte Angaben in einer eigenen Fragenliste. Beträge, Reihenfolge und Zuständigkeiten müssen nachvollziehbar bleiben, damit jemand die Begründung prüfen kann. Vor dem Versand wird der Text geprüft; erfinde keine Bestätigungen oder fehlenden Ereignisse.",
+    "closing": "Nenne den nächsten praktischen Schritt und die noch offenen Bestätigungen.",
+    "labels": [
+      "Kontakt",
+      "E-Mail",
+      "Telefon",
+      "Anschrift",
+      "Steuerkennung",
+      "Konto",
+      "Karte",
+      "Geburtsdatum",
+      "Vorgang",
+      "Firmenregister",
+      "Patientenakte",
+      "Erkrankung",
+      "Zugangswert"
+    ],
+    "names": [
+      "Ansgar Mechthild Falk Dorothea Veit Adelheid Bodo Gesine",
+      "Reimar Ottilie Lutz Friederike Arndt Hedi Enno Wiebke",
+      "Ahrensfeld Birkenkamp Dornbusch Eichenauer Felsenthal Gronwald Hasenwinkel Lindhorst"
+    ]
+  },
+  "fr": {
+    "asks": [
+      "Rédige une demande de réparation sous garantie pour ces propriétaires. La panne apparaît après la chauffe; demande un créneau de collecte.",
+      "Affecte les versements ci-dessous aux factures encore dues. Explique le solde et prépare une confirmation de l’échéancier.",
+      "Vérifie ce dossier d’inscription à la paie avant le premier versement. Quelles données faut-il confirmer avec chaque nouvelle recrue ?",
+      "Prépare la transmission de ces orientations médicales. Distingue la maladie existante du motif d’orientation sans proposer de traitement.",
+      "Organise ces contacts de témoins pour un dossier de vélo endommagé. Demande leurs récits écrits sans attribuer de responsabilité.",
+      "Prépare une liste de départ pour ces collègues. Sépare la révocation des accès de la conservation des documents communs.",
+      "Aide-moi à retirer les valeurs confidentielles de cette trace de diagnostic. Quels champs faut-il remplacer avant l’écriture sur disque ?",
+      "Rédige une demande d’accessibilité pour ces passagers du ferry. Confirme l’aide à l’embarquement et les besoins de cabine sans modifier la traversée."
+    ],
+    "negative": [
+      "Compare ces durées de garantie publiées. Les références numériques désignent des appareils, pas leurs propriétaires.",
+      "Explique ce calculateur public de mensualités. Les nombres représentent des montants et taux fictifs, pas des coordonnées bancaires.",
+      "Transforme cette politique publique de roulement en liste de contrôle. Les codes désignent des catégories de postes, pas des salariés.",
+      "Simplifie ce guide public d’orientation médicale. Les codes désignent des services; aucune donnée de patient n’est présente.",
+      "Crée un glossaire de cette chronologie publique des droits des consommateurs. Conserve les dates législatives et références.",
+      "Vérifie cet exemple de politique de conservation. Les chemins désignent des modules logiciels, pas des comptes personnels.",
+      "Pourquoi cet histogramme classe-t-il les valeurs limites dans le mauvais intervalle ? Les températures viennent d’un exemple public de test.",
+      "Compare ces plans publics des ponts du ferry. Les nombres désignent des zones et largeurs de rampes, pas des réservations."
+    ],
+    "context": "Limite le brouillon aux éléments fournis. Regroupe les points incertains dans une liste de questions séparée. Garde les montants, l’ordre et les responsabilités explicites pour permettre une vérification du raisonnement. Le texte sera relu avant envoi; n’invente ni confirmation ni événement manquant.",
+    "closing": "Indique la prochaine étape concrète et ce qui reste à confirmer.",
+    "labels": [
+      "Contact",
+      "Courriel",
+      "Téléphone",
+      "Adresse",
+      "Identifiant fiscal",
+      "Compte",
+      "Carte",
+      "Naissance (MM/AA)",
+      "Dossier",
+      "Immatriculation",
+      "Dossier patient",
+      "Affection",
+      "Valeur secrète"
+    ],
+    "names": [
+      "Géraud Solène Amaury Clémence Loïc Maëlle Erwann Ombeline",
+      "Guilhem Isaline Côme Aliénor Yvon Sidonie Gaël Apolline",
+      "Aubepierre Bellecombe Chanteloup Delaroche Fontenelle Hautefeuille Kerbrat Montfaucon"
+    ]
+  },
+  "es": {
+    "asks": [
+      "Redacta una solicitud de reparación en garantía para estas personas. El fallo aparece cuando el aparato se calienta; pide una fecha de recogida.",
+      "Asigna las cuotas siguientes a las facturas pendientes. Explica el saldo restante y prepara la confirmación del plan de pagos.",
+      "Revisa esta inscripción en nómina antes del primer abono. Indica qué datos debe confirmar personal con cada nueva incorporación.",
+      "Prepara el traslado de estas derivaciones médicas. Distingue la enfermedad existente del motivo de derivación sin recomendar tratamientos.",
+      "Organiza estos contactos de testigos para una reclamación por daños en una bicicleta. Pide relatos escritos sin decidir quién tuvo la culpa.",
+      "Prepara una lista de baja para estos compañeros. Separa la retirada de permisos de la conservación del trabajo compartido.",
+      "Ayúdame a quitar los valores confidenciales de esta traza de diagnóstico. Explica qué campos debe sustituir el registro antes de escribir en disco.",
+      "Redacta una petición de accesibilidad para estos pasajeros del ferry. Confirma la ayuda de embarque y las necesidades de camarote sin cambiar la travesía."
+    ],
+    "negative": [
+      "Compara estos plazos públicos de garantía. Los números identifican productos, no propietarios.",
+      "Explica esta calculadora pública de cuotas. Los números son importes y tipos de interés de ejemplo, no datos bancarios.",
+      "Convierte esta política pública de turnos en una lista de comprobación. Los códigos representan categorías y horarios, no empleados.",
+      "Simplifica esta guía pública de derivaciones. Los códigos identifican servicios; no hay datos de pacientes.",
+      "Crea un glosario de esta cronología pública de derechos del consumidor. Conserva las fechas legislativas y las referencias.",
+      "Revisa esta política de conservación de ejemplo. Las rutas indican módulos de la aplicación, no cuentas personales.",
+      "¿Por qué este histograma coloca los valores límite en el intervalo incorrecto? Las temperaturas son de una prueba pública.",
+      "Compara estos planos públicos del ferry. Los números representan zonas y anchuras de rampas, no reservas."
+    ],
+    "context": "Limita el borrador a las pruebas aportadas. Pon los puntos sin resolver en una lista de preguntas aparte. Mantén explícitos los importes, el orden y las responsabilidades para que otra persona pueda comprobar el razonamiento. Se revisará antes de enviarlo; no inventes confirmaciones ni hechos ausentes.",
+    "closing": "Indica el siguiente paso práctico y lo que falta por confirmar.",
+    "labels": [
+      "Contacto",
+      "Correo",
+      "Teléfono",
+      "Dirección",
+      "Identificador fiscal",
+      "Cuenta",
+      "Tarjeta",
+      "Nacimiento",
+      "Referencia",
+      "Registro mercantil",
+      "Historia clínica",
+      "Afección",
+      "Credencial"
+    ],
+    "names": [
+      "Iñaki Leire Unai Aitana Iker Nerea Eloy Arantxa",
+      "Xabier Mireia Eneko Itziar Biel Ainhoa Nuño Irati",
+      "Aguirregabiria Belmonte Castañeda Echevarría Fuentelsaz Goikoetxea Madariaga Urrutikoetxea"
+    ]
+  },
+  "it": {
+    "asks": [
+      "Scrivi una richiesta di riparazione in garanzia per questi proprietari. Il guasto compare dopo il riscaldamento; chiedi una data di ritiro.",
+      "Assegna le rate seguenti alle fatture ancora aperte. Spiega il saldo residuo e prepara la conferma del piano di pagamento.",
+      "Controlla questa iscrizione al libro paga prima del primo versamento. Quali dati deve confermare il personale con i nuovi assunti?",
+      "Prepara il passaggio di queste richieste di visita specialistica. Distingui la patologia esistente dal motivo dell’invio, senza suggerire cure.",
+      "Organizza questi contatti di testimoni per una richiesta relativa a una bicicletta danneggiata. Chiedi resoconti scritti senza attribuire colpe.",
+      "Prepara una lista di uscita per questi colleghi. Separa la revoca degli accessi dalla conservazione dei documenti condivisi.",
+      "Aiutami a rimuovere i valori riservati da questa traccia diagnostica. Quali campi deve sostituire il sistema prima di scrivere su disco?",
+      "Scrivi una richiesta di accessibilità per questi passeggeri del traghetto. Conferma assistenza all’imbarco e necessità di cabina senza cambiare la corsa."
+    ],
+    "negative": [
+      "Confronta queste durate pubbliche della garanzia. I numeri identificano prodotti, non proprietari.",
+      "Spiega questo calcolatore pubblico delle rate. I numeri sono importi e tassi dimostrativi, non coordinate bancarie.",
+      "Trasforma questa politica pubblica dei turni in una lista di controllo. I codici indicano livelli e orari, non dipendenti.",
+      "Semplifica questa guida pubblica agli invii specialistici. I codici identificano servizi; non ci sono dati dei pazienti.",
+      "Crea un glossario di questa cronologia pubblica dei diritti dei consumatori. Conserva date legislative e riferimenti.",
+      "Controlla questo esempio di conservazione dei file. I percorsi indicano moduli applicativi, non account personali.",
+      "Perché questo istogramma assegna i valori limite all’intervallo sbagliato? Le temperature provengono da una prova pubblica.",
+      "Confronta questi piani pubblici dei ponti del traghetto. I numeri indicano settori e larghezze delle rampe, non prenotazioni."
+    ],
+    "context": "Limita la bozza agli elementi forniti. Raccogli i dettagli irrisolti in un elenco separato di domande. Mantieni espliciti importi, ordine e responsabilità affinché un collega possa verificare il ragionamento. Il testo sarà rivisto prima dell’invio; non inventare conferme o eventi mancanti.",
+    "closing": "Indica il prossimo passo concreto e ciò che resta da confermare.",
+    "labels": [
+      "Contatto",
+      "Email",
+      "Telefono",
+      "Indirizzo",
+      "Codice fiscale",
+      "Conto",
+      "Carta",
+      "Nascita (GG/MM/AA)",
+      "Riferimento",
+      "Registro impresa",
+      "Cartella clinica",
+      "Patologia",
+      "Credenziale"
+    ],
+    "names": [
+      "Alvise Elettra Lapo Fiordaliso Manfredi Sveva Tancredi Nives",
+      "Folco Diletta Cosimo Lavinia Jacopo Ottavia Tiziano Allegra",
+      "Altobelli Bellavigna Casalvecchio Dallatorre Ferracuti Malaspina Pallavicini Venturini"
+    ]
+  },
+  "nl": {
+    "asks": [
+      "Schrijf een garantieverzoek voor deze eigenaren. Het apparaat valt pas na het opwarmen uit; vraag om een ophaalmoment.",
+      "Verdeel de onderstaande termijnen over de openstaande facturen. Leg het restbedrag uit en maak een bevestiging van de betalingsregeling.",
+      "Controleer deze salarisregistratie vóór de eerste uitbetaling. Welke gegevens moet personeelszaken met de nieuwe medewerkers bevestigen?",
+      "Bereid de overdracht van deze verwijzingen voor. Onderscheid de bestaande aandoening van de verwijsreden zonder behandeling te adviseren.",
+      "Orden deze getuigencontacten voor een claim over een beschadigde fiets. Vraag om schriftelijke verklaringen zonder schuld vast te stellen.",
+      "Maak een vertrekchecklist voor deze collega’s. Scheid het intrekken van toegang van het bewaren van gedeelde documenten.",
+      "Help vertrouwelijke waarden uit dit diagnosespoor te verwijderen. Welke velden moet de logger vervangen voordat hij naar schijf schrijft?",
+      "Schrijf een toegankelijkheidsverzoek voor deze veerbootpassagiers. Bevestig instaphulp en hutbehoeften zonder de afvaart te wijzigen."
+    ],
+    "negative": [
+      "Vergelijk deze openbare garantietermijnen. De nummers verwijzen naar producten en niet naar eigenaren.",
+      "Leg deze openbare termijncalculator uit. De cijfers zijn voorbeeldbedragen en rentepercentages, geen bankgegevens.",
+      "Maak een checklist van dit openbare roosterbeleid. De codes zijn functiegroepen en werkpatronen, geen medewerkers.",
+      "Vereenvoudig deze openbare verwijsgids. De codes duiden diensten aan; er staan geen patiëntgegevens in.",
+      "Maak een woordenlijst bij deze openbare tijdlijn over consumentenrechten. Behoud de wetsdata en verwijzingen.",
+      "Controleer dit voorbeeld van een bewaarbeleid. De paden verwijzen naar softwaremodules en niet naar gebruikersaccounts.",
+      "Waarom plaatst dit histogram grenswaarden in het verkeerde interval? De temperaturen komen uit een openbare test.",
+      "Vergelijk deze openbare veerbootplattegronden. De nummers zijn dekzones en hellingbreedtes, geen boekingen."
+    ],
+    "context": "Beperk het concept tot de aangeleverde gegevens. Zet onduidelijke punten in een aparte vragenlijst. Houd bedragen, volgorde en verantwoordelijkheden zichtbaar zodat een collega de redenering kan controleren. De tekst wordt vóór verzending nagekeken; verzin geen bevestigingen of ontbrekende gebeurtenissen.",
+    "closing": "Noem de volgende praktische stap en wat nog bevestigd moet worden.",
+    "labels": [
+      "Contact",
+      "E-mail",
+      "Telefoon",
+      "Adres",
+      "Fiscaal nummer",
+      "Rekening",
+      "Kaart",
+      "Geboortedatum",
+      "Referentie",
+      "Bedrijfsregister",
+      "Patiëntdossier",
+      "Aandoening",
+      "Toegangswaarde"
+    ],
+    "names": [
+      "Sjoerd Marije Wytse Lidewij Jelle Froukje Douwe Aafke",
+      "Tjeerd Nienke Fedde Dieuwke Hidde Rixt Riemer Femke",
+      "Buitendijk Dassenberg Elzenhorst Goudswaard Haverkamp IJzendoorn Korenwinder Veenbrink"
+    ]
+  },
+  "pl": {
+    "asks": [
+      "Napisz wniosek o naprawę gwarancyjną dla tych właścicieli. Usterka pojawia się po rozgrzaniu urządzenia; poproś o termin odbioru.",
+      "Przypisz poniższe raty do niezapłaconych faktur. Wyjaśnij pozostałe saldo i przygotuj potwierdzenie planu spłaty.",
+      "Sprawdź zgłoszenie do listy płac przed pierwszą wypłatą. Które dane kadry powinny potwierdzić z nowymi pracownikami?",
+      "Przygotuj przekazanie tych skierowań. Oddziel istniejącą chorobę od powodu skierowania, bez proponowania leczenia.",
+      "Uporządkuj kontakty świadków w sprawie uszkodzonego roweru. Poproś o pisemne relacje bez rozstrzygania winy.",
+      "Przygotuj listę czynności dla odchodzących pracowników. Oddziel odebranie uprawnień od zachowania wspólnych dokumentów.",
+      "Pomóż usunąć poufne wartości z tego śladu diagnostycznego. Które pola rejestrator musi zastąpić przed zapisem na dysk?",
+      "Napisz prośbę o dostępność dla tych pasażerów promu. Potwierdź pomoc przy wejściu i wymagania kabinowe bez zmiany rejsu."
+    ],
+    "negative": [
+      "Porównaj te publiczne okresy gwarancji. Numery oznaczają produkty, nie właścicieli.",
+      "Wyjaśnij ten publiczny kalkulator rat. Liczby są przykładowymi kwotami i stopami procentowymi, nie danymi bankowymi.",
+      "Zamień publiczną politykę zmianową w listę kontrolną. Kody oznaczają stanowiska i rozkłady pracy, nie pracowników.",
+      "Uprość publiczny przewodnik kierowania do poradni. Kody oznaczają usługi; nie ma tu danych pacjentów.",
+      "Utwórz słowniczek do publicznej osi czasu praw konsumentów. Zachowaj daty ustaw i odwołania.",
+      "Sprawdź przykładową politykę przechowywania plików. Ścieżki wskazują moduły aplikacji, nie konta użytkowników.",
+      "Dlaczego histogram przypisuje wartości graniczne do złego przedziału? Temperatury pochodzą z publicznego testu.",
+      "Porównaj publiczne plany pokładów promu. Liczby oznaczają sekcje i szerokości ramp, nie rezerwacje."
+    ],
+    "context": "Ogranicz projekt do dostarczonych materiałów. Niewyjaśnione szczegóły umieść w osobnej liście pytań. Zachowaj jawne kwoty, kolejność i odpowiedzialność, aby inna osoba mogła sprawdzić rozumowanie. Tekst zostanie sprawdzony przed wysłaniem; nie wymyślaj potwierdzeń ani brakujących zdarzeń.",
+    "closing": "Wskaż następny praktyczny krok i informacje wymagające potwierdzenia.",
+    "labels": [
+      "Kontakt",
+      "Email",
+      "Telefon",
+      "Adres",
+      "Identyfikator podatkowy",
+      "Rachunek",
+      "Karta",
+      "Data urodzenia",
+      "Referencja",
+      "Rejestr firmy",
+      "Karta pacjenta",
+      "Choroba",
+      "Sekret"
+    ],
+    "names": [
+      "Bolesław Dobrochna Miłosz Bogna Ziemowit Jagna Radomir Dobrawa",
+      "Witold Malwina Gniewomir Żaneta Sambor Aldona Mieszko Łucja",
+      "Brzeziński Chmielowiec Dąbrowiecki Jarzębiński Kozłowiecki Modrzewski Olszewicki Wierzbicki"
+    ]
+  }
+}

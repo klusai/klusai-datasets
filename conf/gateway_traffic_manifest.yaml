@@ -118,3 +118,107 @@ release_gates:
 - External synthetic remains separately reported; TAB stays an independent anchor.
 - Native double annotation plus adjudication on >=100 conversations/language; freeze guide after agreement/miss analysis.
 - No real-traffic claim; status stays dev. Harness scoring and >=3 seeds are future work.
+train_extension:
+  issue: RES-127
+  revision: 1
+  status: local-synthetic-unreviewed
+  target_total: 40000
+  per_language: 5000
+  seed: 127
+  generation_seed_count: 1
+  scoring_seed_count: 0
+  source_id: originals
+  source_url: https://github.com/klusai/klusai-datasets
+  license: CC-BY-4.0
+  family_policy: Previously empty train reservations, independently authored; frozen split plan unchanged.
+  families:
+  - id: gateway-v1/family-000
+    workflow: support
+    slots_per_language: 625
+    task: warranty repair collection
+  - id: gateway-v1/family-003
+    workflow: billing
+    slots_per_language: 625
+    task: invoice instalment allocation
+  - id: gateway-v1/family-006
+    workflow: hr
+    slots_per_language: 625
+    task: payroll registration
+  - id: gateway-v1/family-009
+    workflow: clinical_appointment
+    slots_per_language: 625
+    task: referral handover
+  - id: gateway-v1/family-012
+    workflow: legal_intake
+    slots_per_language: 625
+    task: bicycle-damage witness intake
+  - id: gateway-v1/family-015
+    workflow: internal_it
+    slots_per_language: 625
+    task: employee offboarding
+  - id: gateway-v1/family-018
+    workflow: code_log_debugging
+    slots_per_language: 625
+    task: diagnostic-log redaction / histogram boundary debugging
+  - id: gateway-v1/family-021
+    workflow: travel
+    slots_per_language: 625
+    task: ferry accessibility
+  subject_pools:
+    id_pattern: gateway-v1/train-pool/{language}/{0000..0511}
+    subjects_per_language: 512
+    total: 4096
+    path: artifacts/gateway-traffic-v1/originals/train-v1/pools.json
+    sha256: ed23f73e8ba274b83f387c1ca25b03febe4661d42a65f712deead0e4908ba798
+    names: New three-component lexical pools in docs/gateway-authoring/prose-train.json.
+    identifiers: Deterministic locale draws, reject normalized dev/test and prior train pool identifying values.
+    shared_nonidentity_values:
+    - DATE
+    - HEALTH_CONDITION
+    aliases: Two-component name abbreviations, audited against heldout identifying surfaces.
+  frozen_heldout:
+    test:
+      path: artifacts/gateway-traffic-v1/test.jsonl
+      sha256: bfca65fcc3ac59eef2019bc600e4cee9266b6b4b203413511336467841b93cd6
+    dev:
+      path: artifacts/gateway-traffic-v1/dev.jsonl
+      sha256: eb59f81485860c100682253471bbba218a648ccb4f6926666bab3c29dfc4e751
+  artifacts:
+    artifacts/gateway-traffic-v1/originals/train-v1/train.jsonl: 63a020a783830fb3c9d0c7fee6fd850bec36f42e67245bf29193aa5285bd8618
+    artifacts/gateway-traffic-v1/originals/train-v1/pools.json: ed23f73e8ba274b83f387c1ca25b03febe4661d42a65f712deead0e4908ba798
+    artifacts/gateway-traffic-v1/train.jsonl: 7b111be8cae7b76b14d4c5e77fb45ee8d07622125faebeec90622ee58bd8c98d
+    artifacts/gateway-traffic-v1/train-kp.jsonl: 2e4e1dc522256033f9c860ac2dc2ad64a38dfad213407eac4955a879fb5640d7
+    docs/gateway-authoring/prose-train.json: 8049aa656b3086bc76e9cb5c7e85ed8dab626b15f910d2b0e7dd6a036358c8be
+    docs/gateway-authoring/train.md: 9fd7b1a52351381ac376a9a7fe003a0a0b46e543c8405a20d811e26f04689bdb
+  source_blob: 8b9b75434a32e6bcc7629c79f6e9a5005d192409
+  kp_format:
+    keys:
+    - text
+    - spans
+    - language
+    - domain
+    span_keys:
+    - start
+    - end
+    - label
+    offsets: Unicode characters; two-newline message/part separator
+    consumer_repo: klusai/klusai-models
+    encoder_revision: be50353beab57c2db86f278e2f61d4c3e36bb8d4
+    res100_revision: 880e610612717b62b9d55749328c97b4bf563dbb
+    consumer_paths:
+    - scripts/train.py
+    - scripts/prepare_res100_data.py
+    - klusai/privacy/models/training/moe.py
+  audit:
+    receipt: docs/gateway-authoring/train-audit.json
+    minhash_permutations: 128
+    minhash_seed: 12703
+    word_shingles: 5
+    jaccard_threshold: 0.8
+    views:
+    - raw
+    - PII-masked with numeric parameters normalized
+    certification: Exact Jaccard prefix join covers MinHash candidate misses.
+    scope: All 40000 train vs all 9600 frozen current dev/test records. No semantic/native review.
+  inventory_policy: Append this artifact to the KP training inventory before using it in a model run; old receipt remains
+    historical.
